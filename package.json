@@ -10,12 +10,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
+    "husky": "^8.0.3",
     "next": "13.3.0",
     "postcss": "8.4.21",
     "react": "18.2.0",
