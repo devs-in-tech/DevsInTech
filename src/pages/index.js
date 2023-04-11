@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Hello } from "../components";
+import About from "./about";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
         <meta name="description" content="Devs In Tech Community website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hello />
+      <About />
     </>
   );
 }
