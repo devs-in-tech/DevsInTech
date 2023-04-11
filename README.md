@@ -1,2 +1,2 @@
 # OpenSourceHub
-Community Website
+DevsInTech Community Website
