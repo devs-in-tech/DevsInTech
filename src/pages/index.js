@@ -1,6 +1,5 @@
 import Head from "next/head";
-import About from "./about";
-
+import Script from "next/script";
 export default function Home() {
   return (
     <>
@@ -9,7 +8,8 @@ export default function Home() {
         <meta name="description" content="Devs In Tech Community website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <About />
+      <Script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></Script>
+      <Script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></Script>
     </>
   );
 }
