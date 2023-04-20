@@ -1,5 +1,4 @@
 const Stats = ({ stats }) => {
-  console.log("Props", stats);
   return (
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-14 mx-auto">
