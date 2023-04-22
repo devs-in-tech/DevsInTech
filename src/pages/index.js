@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import Script from "next/script";
-import About from "./about";
 import Home from "./home";
 
 export default function Main() {
@@ -13,7 +12,6 @@ export default function Main() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Home />
-      <About />
       <Script
         type="module"
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

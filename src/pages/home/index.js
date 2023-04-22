@@ -1,21 +1,11 @@
-import Stats from "@/components/stats";
+import { AboutCommunity } from "@/components";
 
 const Home = () => {
-  const stats = [
-    {
-      name: "Members",
-      number: 600,
-    },
-    {
-      name: "Events",
-      number: 20,
-    },
-    {
-      name: "GitHub Stars",
-      number: 100,
-    },
-  ];
-  return <Stats stats={stats} />;
+  return (
+    <>
+      <AboutCommunity />
+    </>
+  );
 };
 
 export default Home;
