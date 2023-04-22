@@ -62,3 +62,7 @@ Before starting, you need to install the following on your computer.
    npm start
    ```
 6. Visit [http://localhost:3000](http://localhost:3000) to view the application
+
+## 🙏Support
+
+Don't forget to leave a star ⭐️
