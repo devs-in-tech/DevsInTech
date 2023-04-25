@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import Script from "next/script";
 import Home from "./home";
@@ -20,7 +19,6 @@ export default function Main() {
         nomodule
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
       ></Script>
-      <Navbar />
     </>
   );
 }
