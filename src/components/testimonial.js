@@ -1,6 +1,5 @@
 import Image from "next/image";
-import React, { useState, useEffect } from "react";
-import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import { useState, useEffect } from "react";
 
 function TestimonialCarousel({ testimonials }) {
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
