@@ -43,3 +43,11 @@ body {
   background-clip: text;
   --webkit-text-fill-color: transparent;
 }
+
+.hero-heading {
+  background: radial-gradient(50% 50% at 50% 50%, #a5f7a8 22.09%, #af7af2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  --webkit-text-fill-color: transparent;
+}
