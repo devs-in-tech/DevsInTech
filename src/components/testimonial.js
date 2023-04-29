@@ -39,7 +39,7 @@ const testimonials = [
 ];
 
 const Testimonial = ({ testimonial }) => (
-  <div className="bg-transparent p-6 rounded-lg border transition-all transition-300 m-6 p-4 h-100">
+  <div className="bg-transparent p-6 rounded-lg transition-all transition-300 m-6 p-4 h-100">
     <p className="text-grey-200">{testimonial.text}</p>
     <div className="flex items-center mt-4">
       <div className="flex-shrink-0">
