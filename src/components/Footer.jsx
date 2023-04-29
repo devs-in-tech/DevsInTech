@@ -10,16 +10,16 @@ import logo from "../../public/Images/logo.jpg";
 
 const Footer = () => {
   return (
-    <footer className="fixed bg-black bottom-0 mb-6 font-sans">
-      <div className="grid grid-cols-7">
+    <footer className="bg-black bottom-0 mb-6 font-primary">
+      <div className="flex flex-col gap-8 justify-between content-center md:flex-row">
         {/* Logo */}
         <div className="grid-auto">
           <div className="flex flex-col justify-center">
             <Image
               src={logo}
               alt="DevsInTech"
-              width={110}
-              height={110}
+              width={140}
+              height={140}
               className="mx-auto"
             />
             <p className="font-medium text-center justify-items-center">
@@ -30,15 +30,14 @@ const Footer = () => {
 
         {/* About Us */}
 
-        <div className="text-xl col-span-5">
-          <div>
-            <p className="max-w-xl text-left leading-relaxed text-white flex-auto">
+          <div className="flex flex-col content-center">
+            <p className="text-center text-white text-md sm:text-lg md:text-xl md:text-left">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
               consequuntur amet culpa cum itaque neque. Lorem ipsum dolor, sit
               amet consectetur adipisicing elit. Incidunt consequuntur amet
               culpa cum itaque neque.
             </p>
-            <ul className="mt-16 flex justify-center gap-6 sm:justify-start md:gap-8">
+            <ul className="mt-6 flex justify-center gap-6 md:justify-start md:gap-8">
               <li>
                 <Link
                   href="/"
@@ -88,12 +87,11 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-        </div>
 
         {/* COLUMNS */}
-        <div className="mr-16">
+        <div className="m-auto">
           <div className="flex justify-end gap-16 flex-auto">
-            <div className="text-center sm:text-center">
+            <div className="text-center sm:text-center font-secondary">
               <p className="text-lg font-medium text-white">Community</p>
 
               <nav aria-label="Footer About Nav" className="mt-4 text-center">
@@ -205,7 +203,7 @@ const Footer = () => {
       </div>
       <div className="mt-12 mb-0">
         <div className="text-center font-thin sm:flex sm:justify-center sm:text-center">
-          <p className="mt-4 text-2xl text-black dark:text-white sm:order-first sm:mt-0">
+          <p className="mt-4 text-xl text-black dark:text-white sm:order-first sm:mt-0">
             &copy; 2023 by DevsInTech Community
           </p>
         </div>
