@@ -90,8 +90,8 @@ const Footer = () => {
 
         {/* COLUMNS */}
         <div className="m-auto">
-          <div className="flex justify-end gap-16 flex-auto">
-            <div className="text-center sm:text-center font-secondary">
+          <div className="flex justify-between gap-16">
+            <div className="text-center font-secondary">
               <p className="text-lg font-medium text-white">Community</p>
 
               <nav aria-label="Footer About Nav" className="mt-4 text-center">
@@ -143,7 +143,7 @@ const Footer = () => {
                 </ul>
               </nav>
             </div>
-            <div className="text-center sm:text-center">
+            <div className="text-center font-secondary">
               <p className="text-lg font-medium text-white">Events</p>
 
               <nav
