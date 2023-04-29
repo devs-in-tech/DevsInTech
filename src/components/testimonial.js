@@ -1,80 +1,99 @@
-import Image from "next/image";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
-function TestimonialCarousel({ testimonials }) {
-  const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
+const testimonials = [
+  {
+    id: 1,
+    name: "John Doe",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida sit amet mi vitae dictum. Nam auctor risus non urna bibendum, vel sagittis enim tincidunt.",
+  },
+  {
+    id: 2,
+    name: "Jane Doe",
+    text: "Sed non justo non felis facilisis semper. Aliquam sit amet turpis vitae ipsum aliquet mattis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+  },
+  {
+    id: 3,
+    name: "Bob Smith",
+    text: "Vivamus ullamcorper, lacus quis pulvinar venenatis, mi orci aliquam erat, vel suscipit lorem nisi at leo. Integer feugiat tincidunt enim, vitae dictum sapien aliquam nec.",
+  },
+  {
+    id: 4,
+    name: "Alice Johnson",
+    text: "Praesent eget sapien vel risus placerat accumsan. Suspendisse potenti. In euismod magna at lectus gravida auctor. Etiam ullamcorper dolor id semper fermentum.",
+  },
+  {
+    id: 5,
+    name: "Mark Davis",
+    text: "Curabitur vel mauris eleifend, pulvinar massa vitae, lacinia velit. Sed vel odio lacinia, consectetur nisl vel, ultricies odio. Nullam imperdiet leo vel tellus malesuada, quis consequat arcu volutpat.",
+  },
+  {
+    id: 6,
+    name: "Emily Johnson",
+    text: "Ut ac est purus. Curabitur accumsan non lorem ac posuere. Integer ac lorem velit. Aliquam sem nunc, bibendum eget sapien a, pharetra consectetur leo.",
+  },
+  {
+    id: 7,
+    name: "Bob Smith",
+    text: "Vivamus ullamcorper, lacus quis pulvinar venenatis, mi orci aliquam erat, vel suscipit lorem nisi at leo. Integer feugiat tincidunt enim, vitae dictum sapien aliquam nec.",
+  },
+];
 
-  // Set a timer to change the testimonial every 3 seconds
+const Testimonial = ({ testimonial }) => (
+  <div className="bg-transparent p-6 rounded-lg border transition-all transition-300 m-6 p-4 h-100">
+    <p className="text-grey-200">{testimonial.text}</p>
+    <div className="flex items-center mt-4">
+      <div className="flex-shrink-0">
+        <img className="w-12 h-12 rounded-full" src="https://via.placeholder.com/150" alt={testimonial.name} />
+      </div>
+      <div className="ml-4">
+        <div className="text-gray-500 font-medium">{testimonial.name}</div>
+      </div>
+    </div>
+  </div>
+);
+
+const TestimonialCarousel = () => {
+  const [current, setCurrent] = useState(0);
+
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setCurrentTestimonialIndex((prevIndex) =>
-        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-      );
+    const interval = setInterval(() => {
+      setCurrent((current + 1) % testimonials.length);
     }, 3000);
+    return () => clearInterval(interval);
+  }, [current]);
 
-    // Clear the timer when the component unmounts or the testimonial changes
-    return () => clearTimeout(timer);
-  }, [currentTestimonialIndex, testimonials.length]);
-
-  const previousTestimonial = () => {
-    setCurrentTestimonialIndex((prevIndex) =>
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-    );
-  };
-
-  const nextTestimonial = () => {
-    setCurrentTestimonialIndex((prevIndex) =>
-      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const currentTestimonial = testimonials[currentTestimonialIndex];
+  const visibleTestimonials = [testimonials[current]];
+  if (current + 1 < testimonials.length) {
+    visibleTestimonials.push(testimonials[current + 1]);
+  }
+  if (current + 2 < testimonials.length) {
+    visibleTestimonials.push(testimonials[current + 2]);
+  } else {
+    visibleTestimonials.push(testimonials[(current + 2) % testimonials.length]);
+  }
 
   return (
-    <div className="flex flex-col items-center">
-      {/* Display current testimonial */}
-      <div className="bg-transparent shadow-lg p-6 text-gray-800 max-w-md text-center transition-all duration-500">
-        <div className="flex flex-col items-center mb-6">
-          <div className="relative w-16 h-16 rounded-full mb-2 overflow-hidden">
-            <Image
-              src={currentTestimonial.image}
-              alt={currentTestimonial.name}
-              className="absolute w-full h-full object-cover transition-all duration-500 transform scale-100 hover:scale-110"
-              width={64}
-              height={64}
-            />
+    <div className="flex flex-col items-center justify-center">
+      <div className="flex items-center mb-6">
+        {visibleTestimonials.map((testimonial) => (
+          <div key={testimonial.id} className="w-1/3 px-4">
+            <Testimonial testimonial={testimonial} />
           </div>
-          <p className="text-white text-lg font-medium">{currentTestimonial.testimonial}</p>
-          <span className="text-gray-400 text-sm m-2">{currentTestimonial.name}</span>
-        </div>
-        {/* Add navigation buttons */}
-        <div className="flex justify-between">
-          <button
-            className="bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition duration-300"
-            onClick={previousTestimonial}
-          >
-            {`<`}
-          </button>
-          <button
-            className="bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition duration-300"
-            onClick={nextTestimonial}
-          >
-            {`>`}
-          </button>
-        </div>
+        ))}
       </div>
-      <div className="h-6 w-64 mt-4 flex items-center justify-center">
+      <div className="flex justify-center">
         {testimonials.map((testimonial, index) => (
           <div
-            key={index}
-            className={`h-2 w-2 rounded-full ${
-              index === currentTestimonialIndex ? "bg-white" : "bg-gray-600"
-            } mx-1 transition-all duration-500`}
-          />
+            key={testimonial.id}
+            className={`h-2 w-2 rounded-full mx-2 bg-gray-400 ${current === index ? "bg-gray-200" : "bg-gray-900"
+              }`}
+            onClick={() => setCurrent(index)}
+          ></div>
         ))}
       </div>
     </div>
   );
-}
+};
+
 
 export default TestimonialCarousel;
