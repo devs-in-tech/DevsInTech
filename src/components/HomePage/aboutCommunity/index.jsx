@@ -1,4 +1,4 @@
-import Header from "../header";
+import Header from "../../header";
 import Stats from "../stats";
 
 const AboutCommunity = () => {
@@ -19,7 +19,7 @@ const AboutCommunity = () => {
   return (
     <>
       <Header name="What is DevsInTech Community?" />
-      <p className="my-10 text-justify font-secondary">
+      <p className="my-10 text-justify font-secondary text-white">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. . Lorem ipsum dolor
         sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
