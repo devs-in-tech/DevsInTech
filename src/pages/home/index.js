@@ -1,6 +1,6 @@
 import { AboutCommunity } from "@/components";
 import Cards from "@/components/Events_Cards/Cards";
-import HeroSection from "@/components/HeroSection/HeroSection";
+import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 
 const Home = () => {
