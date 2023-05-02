@@ -8,7 +8,7 @@ const HeroSection = () => {
           <h1 className="hero-heading md:text-7xl text-6xl font-medium">
             Devs In Tech Community
           </h1>
-          <p className="md:text-2xl text-xl">
+          <p className="md:text-2xl text-xl text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. . Lorem
             ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
