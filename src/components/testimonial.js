@@ -39,8 +39,8 @@ const testimonials = [
 ];
 
 const Testimonial = ({ testimonial }) => (
-  <div className="bg-transparent p-6 rounded-lg transition-all transition-300 m-6 p-4 h-100">
-    <p className="text-grey-200">{testimonial.text}</p>
+  <div className="bg-black p-6 rounded-lg delay-150 hover:-translate-y-1 duration-300 hover:scale-110 m-6 p-4 h-100">
+    <p className="text-white">{testimonial.text}</p>
     <div className="flex items-center mt-4">
       <div className="flex-shrink-0">
         <img className="w-12 h-12 rounded-full" src="https://via.placeholder.com/150" alt={testimonial.name} />
@@ -76,7 +76,7 @@ const TestimonialCarousel = () => {
     <div className="flex flex-col items-center justify-center">
       <div className="flex items-center mb-6">
         {visibleTestimonials.map((testimonial) => (
-          <div key={testimonial.id} className="w-1/3 px-4">
+          <div key={testimonial.id}>
             <Testimonial testimonial={testimonial} />
           </div>
         ))}
