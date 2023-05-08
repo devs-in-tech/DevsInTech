@@ -42,7 +42,7 @@ Before starting, you need to install the following on your computer.
 
 [![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/downloads)
 
-[![NPM](https://img.shields.io/badge/NPM-%23326ce9.svg?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/)
+[![pnpm](https://img.shields.io/static/v1?style=for-the-badge&message=pnpm&color=222222&logo=pnpm&logoColor=F69220&label=)](https://pnpm.io/)
 
 ### 🛠️ Installation
 
@@ -57,11 +57,11 @@ Before starting, you need to install the following on your computer.
    ```
 4. Install all dependencies.
    ```
-   npm install
+   pnpm i
    ```
 5. Start the application.
    ```
-   npm start
+   pnpm dev
    ```
 6. Visit [http://localhost:3000](http://localhost:3000) to view the application
 
