@@ -2,6 +2,8 @@
 
 <p align="center"><a href="/"><img src="https://user-images.githubusercontent.com/76242769/233774732-447713dd-db8d-4c95-9c66-827ef84cbcf8.png" title="Logo" alt="Logo" height="150px"/></a></p>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5d47c2fd-0dc1-4af2-ba5a-8519bf5ec74d/deploy-status)](https://app.netlify.com/sites/devsintech/deploys)
+
 ## 👋 Join Us
 
 Want to have some fun and find some linke minded people? Join our community and participate in our weekly coffee chats. Let's work together to spread the opportunities via open source! 🚀
@@ -40,7 +42,7 @@ Before starting, you need to install the following on your computer.
 
 [![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/downloads)
 
-[![NPM](https://img.shields.io/badge/NPM-%23326ce9.svg?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/)
+[![pnpm](https://img.shields.io/static/v1?style=for-the-badge&message=pnpm&color=222222&logo=pnpm&logoColor=F69220&label=)](https://pnpm.io/)
 
 ### 🛠️ Installation
 
@@ -55,11 +57,11 @@ Before starting, you need to install the following on your computer.
    ```
 4. Install all dependencies.
    ```
-   npm install
+   pnpm i
    ```
 5. Start the application.
    ```
-   npm start
+   pnpm dev
    ```
 6. Visit [http://localhost:3000](http://localhost:3000) to view the application
 

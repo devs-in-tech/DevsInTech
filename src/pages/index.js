@@ -20,7 +20,6 @@ export default function Main() {
         nomodule
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
       ></Script>
-      <Navbar />
     </>
   );
 }

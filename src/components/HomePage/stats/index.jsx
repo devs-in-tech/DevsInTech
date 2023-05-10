@@ -1,7 +1,7 @@
 const Stats = ({ stats }) => {
   return (
     <section className="text-gray-600 body-font">
-      <div className="container px-5 py-14 mx-auto">
+      <div className="container px-5 py-4 mx-auto">
         <div className="flex flex-wrap -m-4 text-center">
           {stats &&
             stats.map((data, index) => {
