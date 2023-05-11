@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Logo from "../../public/logo2.png";
+import Button from "./button";
 
 const Navbar = () => {
   let Links = [
@@ -31,7 +32,7 @@ const Navbar = () => {
           <ion-icon name={open ? "close" : "menu"}></ion-icon>
         </div>
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+          className={`md:flex md:items-center md:pb-0 pb-12 md:justify-around absolute md:static md:z-auto left-0 w-full md:pl-44 pl-9 transition-all duration-500 ease-in ${
             open ? "top-24  bg-black" : "top-[-550px]"
           }`}
         >
@@ -45,6 +46,9 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+          <span className="md:ml-auto">
+            <Button name="Join Us" url="https://discord.gg/kpN7ZnPv" />
+          </span>
         </ul>
       </div>
     </div>
