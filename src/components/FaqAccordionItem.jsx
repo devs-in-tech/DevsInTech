@@ -6,14 +6,14 @@ const FaqAccordionItem = ({ faq }) => {
   const [expanded, setExpanded] = useState(false);
   return (
     <div
-      className="text-white font-gilroy border-b-[1px] px-4 md:py-6 py-4 border-white"
+      className="text-white  font-gilroy border-b-[1px] px-4 md:py-6 py-4 border-white"
       onClick={() => {
         setExpanded((prev) => !prev);
       }}
     >
-      <div className="cursor-pointer flex items-start py-3 gap-16 justify-between">
+      <div className="cursor-pointer flex items-start py-2 gap-16 justify-between">
         <h3
-          className={`md:text-4xl sm:text-3xl text-2xl leading-none ${
+          className={`md:text-2xl sm:text-3xl text-xl leading-none ${
             expanded && "mb-1"
           }`}
         >
