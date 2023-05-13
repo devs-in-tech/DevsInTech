@@ -44,11 +44,14 @@ const Navbar = () => {
             </li>
           ))}
           <span className="md:hidden block">
-            <Button name="Join Us" url="https://discord.gg/kpN7ZnPv" />
+            <Button
+              name="Join Us"
+              url="https://discord.com/invite/g7FmxB9uZp"
+            />
           </span>
         </ul>
         <span className="md:ml-auto md:block hidden">
-          <Button name="Join Us" url="https://discord.gg/kpN7ZnPv" />
+          <Button name="Join Us" url="https://discord.com/invite/g7FmxB9uZp " />
         </span>
       </div>
       <div
