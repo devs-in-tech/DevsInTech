@@ -17,7 +17,10 @@ const HeroSection = () => {
             incididunt ut labore et dolore magna aliqua.
           </p>
           <div className="flex gap-8 items-center justify-center md:justify-start">
-            <Button name="Join Discord" url="https://discord.gg/kpN7ZnPv" />
+            <Button
+              name="Join Discord"
+              url="https://discord.com/invite/g7FmxB9uZp "
+            />
             <Button
               name="Follow on Twitter"
               url="https://twitter.com/devs_in_tech"
