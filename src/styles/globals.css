@@ -28,4 +28,7 @@ body {
   width: 90%;
   margin: auto;
   background-color: black;
+  /* 1280px */
+  max-width: 100rem;
+  @apply mx-auto w-11/12;
 }

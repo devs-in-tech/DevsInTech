@@ -5,7 +5,7 @@ function Cards() {
   return (
     <main className="container mx-auto py-14 px-8">
       <Header name="Latest Events In DevsInTech" />
-      <div className="grid md:grid-cols-2 mt-10 lg:grid-cols-3 gap-6 max-w-xs md:max-w-full m-auto">
+      <div className="grid md:grid-cols-2 my-10 lg:grid-cols-3 gap-6 max-w-xs md:max-w-full m-auto">
         {data &&
           data.map((card) => (
             <div key={null} className="shadow-lg rounded-lg bg-[#13161B] p-5">
