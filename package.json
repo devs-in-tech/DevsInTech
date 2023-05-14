@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=14.0.0",
+    "pnpm": ">=6.0.0"
   },
   "scripts": {
     "dev": "next dev",
@@ -11,8 +12,7 @@
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --write .",
-    "prepare": "husky install",
-    "preinstall": "npx only-allow pnpm"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@commitlint/cli": "^17.6.3",

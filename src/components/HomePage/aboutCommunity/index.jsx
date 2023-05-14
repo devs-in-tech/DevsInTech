@@ -1,4 +1,5 @@
 import Header from "../../header";
+import Introductionvideo from "../Introductionvideo";
 import Stats from "../stats";
 
 const AboutCommunity = () => {
@@ -30,6 +31,7 @@ const AboutCommunity = () => {
         magna aliqua.
       </p>
       <Stats stats={stats} />
+      <Introductionvideo embedLink="https://www.youtube.com/embed/d3xoKUDSY_A" />
     </>
   );
 };

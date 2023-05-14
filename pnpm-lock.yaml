@@ -1,50 +1,52 @@
 lockfileVersion: '6.0'
 
-dependencies:
-  '@commitlint/cli':
-    specifier: ^17.6.3
-    version: 17.6.3
-  '@commitlint/config-conventional':
-    specifier: ^17.6.3
-    version: 17.6.3
-  autoprefixer:
-    specifier: 10.4.14
-    version: 10.4.14(postcss@8.4.23)
-  eslint:
-    specifier: 8.40.0
-    version: 8.40.0
-  eslint-config-next:
-    specifier: 13.4.1
-    version: 13.4.1(eslint@8.40.0)(typescript@5.0.4)
-  framer-motion:
-    specifier: ^10.12.8
-    version: 10.12.8(react-dom@18.2.0)(react@18.2.0)
-  husky:
-    specifier: ^8.0.3
-    version: 8.0.3
-  next:
-    specifier: 13.4.1
-    version: 13.4.1(react-dom@18.2.0)(react@18.2.0)
-  postcss:
-    specifier: 8.4.23
-    version: 8.4.23
-  react:
-    specifier: 18.2.0
-    version: 18.2.0
-  react-dom:
-    specifier: 18.2.0
-    version: 18.2.0(react@18.2.0)
-  react-icons:
-    specifier: ^4.8.0
-    version: 4.8.0(react@18.2.0)
-  tailwindcss:
-    specifier: 3.3.2
-    version: 3.3.2(ts-node@10.9.1)
+importers:
 
-devDependencies:
-  prettier:
-    specifier: 2.8.8
-    version: 2.8.8
+  .:
+    dependencies:
+      '@commitlint/cli':
+        specifier: ^17.6.3
+        version: 17.6.3
+      '@commitlint/config-conventional':
+        specifier: ^17.6.3
+        version: 17.6.3
+      autoprefixer:
+        specifier: 10.4.14
+        version: 10.4.14(postcss@8.4.23)
+      eslint:
+        specifier: 8.40.0
+        version: 8.40.0
+      eslint-config-next:
+        specifier: 13.4.1
+        version: 13.4.1(eslint@8.40.0)(typescript@5.0.4)
+      framer-motion:
+        specifier: ^10.12.8
+        version: 10.12.8(react-dom@18.2.0)(react@18.2.0)
+      husky:
+        specifier: ^8.0.3
+        version: 8.0.3
+      next:
+        specifier: 13.4.1
+        version: 13.4.1(react-dom@18.2.0)(react@18.2.0)
+      postcss:
+        specifier: 8.4.23
+        version: 8.4.23
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: 18.2.0
+        version: 18.2.0(react@18.2.0)
+      react-icons:
+        specifier: ^4.8.0
+        version: 4.8.0(react@18.2.0)
+      tailwindcss:
+        specifier: 3.3.2
+        version: 3.3.2(ts-node@10.9.1)
+    devDependencies:
+      prettier:
+        specifier: 2.8.8
+        version: 2.8.8
 
 packages:
 
@@ -768,7 +770,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.5
-      caniuse-lite: 1.0.30001482
+      caniuse-lite: 1.0.30001486
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -832,7 +834,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001482
+      caniuse-lite: 1.0.30001486
       electron-to-chromium: 1.4.385
       node-releases: 2.0.10
       update-browserslist-db: 1.0.11(browserslist@4.21.5)
@@ -883,8 +885,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /caniuse-lite@1.0.30001482:
-    resolution: {integrity: sha512-F1ZInsg53cegyjroxLNW9DmrEQ1SuGRTO1QlpA0o2/6OpQ0gFeDRoq1yFmnr8Sakn9qwwt9DmbxHB6w167OSuQ==}
+  /caniuse-lite@1.0.30001486:
+    resolution: {integrity: sha512-uv7/gXuHi10Whlj0pp5q/tsK/32J2QSqVRKQhs2j8VsDCjgyruAh/eEXHF822VqO9yT6iZKw3nRwZRSPBE9OQg==}
     dev: false
 
   /chalk@2.4.2:
@@ -2543,7 +2545,7 @@ packages:
       '@next/env': 13.4.1
       '@swc/helpers': 0.5.1
       busboy: 1.6.0
-      caniuse-lite: 1.0.30001482
+      caniuse-lite: 1.0.30001486
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)

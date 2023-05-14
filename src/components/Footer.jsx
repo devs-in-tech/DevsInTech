@@ -10,7 +10,7 @@ import logo from "../../public/Images/logo.jpg";
 
 const Footer = () => {
   return (
-    <footer className="bg-black bottom-0 mb-6 font-primary">
+    <footer className="bg-black bottom-0 mb-6 pt-32 font-primary">
       <div className="flex flex-col gap-8 justify-between content-center md:flex-row">
         {/* Logo */}
         <div className="grid-auto">
@@ -30,63 +30,63 @@ const Footer = () => {
 
         {/* About Us */}
 
-          <div className="flex flex-col content-center">
-            <p className="text-center text-white text-md sm:text-lg md:text-xl md:text-left">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-              consequuntur amet culpa cum itaque neque. Lorem ipsum dolor, sit
-              amet consectetur adipisicing elit. Incidunt consequuntur amet
-              culpa cum itaque neque.
-            </p>
-            <ul className="mt-6 flex justify-center gap-6 md:justify-start md:gap-8">
-              <li>
-                <Link
-                  href="/"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
-                >
-                  <FaFacebookF size={20} />
-                </Link>
-              </li>
+        <div className="flex flex-col content-center">
+          <p className="text-center text-white text-md sm:text-lg md:text-xl md:text-left">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+            consequuntur amet culpa cum itaque neque. Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Incidunt consequuntur amet culpa
+            cum itaque neque.
+          </p>
+          <ul className="mt-6 flex justify-center gap-6 md:justify-start md:gap-8">
+            <li>
+              <Link
+                href="/"
+                rel="noreferrer"
+                target="_blank"
+                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+              >
+                <FaFacebookF size={20} />
+              </Link>
+            </li>
 
-              <li>
-                <Link
-                  href="https://twitter.com/devs_in_tech"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
-                >
-                  <FaTwitter size={20} />
-                </Link>
-              </li>
+            <li>
+              <Link
+                href="https://twitter.com/devs_in_tech"
+                rel="noreferrer"
+                target="_blank"
+                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+              >
+                <FaTwitter size={20} />
+              </Link>
+            </li>
 
-              {/* LinkedIn Icon */}
+            {/* LinkedIn Icon */}
 
-              <li>
-                <Link
-                  href="/"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
-                >
-                  <FaLinkedinIn size={20} />
-                </Link>
-              </li>
+            <li>
+              <Link
+                href="/"
+                rel="noreferrer"
+                target="_blank"
+                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+              >
+                <FaLinkedinIn size={20} />
+              </Link>
+            </li>
 
-              {/* Instagram icon */}
+            {/* Instagram icon */}
 
-              <li>
-                <Link
-                  href="/"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
-                >
-                  <FaInstagram size={20} />
-                </Link>
-              </li>
-            </ul>
-          </div>
+            <li>
+              <Link
+                href="/"
+                rel="noreferrer"
+                target="_blank"
+                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+              >
+                <FaInstagram size={20} />
+              </Link>
+            </li>
+          </ul>
+        </div>
 
         {/* COLUMNS */}
         <div className="m-auto">
