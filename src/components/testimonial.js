@@ -54,22 +54,53 @@ const Testimonial = ({ testimonial }) => (
 
 const TestimonialCarousel = () => {
   const [current, setCurrent] = useState(0);
+  const [numVisible, setNumVisible] = useState(3);
 
-  const visibleTestimonials = [
-    testimonials[current],
-    testimonials[(current + 1) % testimonials.length],
-    testimonials[(current + 2) % testimonials.length],
-  ];
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth < 640) {
+        setNumVisible(1);
+      } else if (screenWidth < 768) {
+        setNumVisible(2);
+      } else if (screenWidth < 1024) {
+        setNumVisible(3);
+      } else {
+        setNumVisible(3);
+      }
+    };
+
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleResize);
+    }
+
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener("resize", handleResize);
+      }
+    };
+  }, []);
+
+  const visibleTestimonials = testimonials.slice(
+    current,
+    current + numVisible
+  );
 
   const goToPrev = () => {
-    setCurrent((current - 1 + testimonials.length) % testimonials.length);
+    if (current === 0) {
+      setCurrent(testimonials.length - numVisible);
+    } else {
+      setCurrent(current - 1);
+    }
   };
 
   const goToNext = () => {
-    setCurrent((current + 1) % testimonials.length);
+    if (current === testimonials.length - numVisible) {
+      setCurrent(0);
+    } else {
+      setCurrent(current + 1);
+    }
   };
-
-
 
   return (
     <div className="flex flex-col items-center justify-center">
@@ -78,7 +109,7 @@ const TestimonialCarousel = () => {
           onClick={goToPrev}
           className="bg-gray-800 text-white rounded-full p-3 flex justify-center items-center mr-2"
         >
-          {`<`}
+          {"<"}
         </button>
         {visibleTestimonials.map((testimonial) => (
           <div key={testimonial.id}>
@@ -89,15 +120,16 @@ const TestimonialCarousel = () => {
           onClick={goToNext}
           className="bg-gray-800 text-white rounded-full p-4 flex justify-center items-center ml-2"
         >
-          {`>`}
+          {">"}
         </button>
       </div>
       <div className="flex justify-center">
         {testimonials.map((testimonial, index) => (
           <div
             key={testimonial.id}
-            className={`h-2 w-2 rounded-full mx-2 bg-gray-400 ${current === index ? "bg-gray-200" : "bg-gray-900"
-              }`}
+            className={`h-2 w-2 rounded-full mx-2 bg-gray-400 ${
+              current === index ? "bg-gray-200" : "bg-gray-900"
+            }`}
             onClick={() => setCurrent(index)}
           ></div>
         ))}
@@ -105,6 +137,5 @@ const TestimonialCarousel = () => {
     </div>
   );
 };
-
 
 export default TestimonialCarousel;
