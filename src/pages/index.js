@@ -10,7 +10,9 @@ export default function Main() {
         <meta name="description" content="Devs In Tech Community website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className="main">
       <Home />
+      </div>
       <Script
         type="module"
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

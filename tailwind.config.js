@@ -16,9 +16,9 @@ module.exports = {
         primary: ["Inter", "sans-serif"],
         secondary: ["Noto Sans", "sans-serif"],
       },
-      width: {
-        "fill-available": "-webkit-fill-available",
-      },
+      // width: {
+      //   "fill-available": "-webkit-fill-available",
+      // },
     },
   },
   plugins: [],

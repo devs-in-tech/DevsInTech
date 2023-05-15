@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+*{
+  margin: 0;
+  padding: 0;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -25,10 +28,22 @@
 }
 
 body {
-  width: 90%;
+   /* width: 100%; */
   margin: auto;
-  background-color: black;
+ background-color: black; 
   /* 1280px */
-  max-width: 100rem;
-  @apply mx-auto w-11/12;
+  /* max-width: 100rem; */
+  @apply mx-auto w-11/12; 
+}
+.main{
+  margin-left:43px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 745px) {
+.faqsection{
+  width: 100vw;
+}
 }
