@@ -11,9 +11,9 @@ const FaqAccordionItem = ({ faq }) => {
         setExpanded((prev) => !prev);
       }}
     >
-      <div className="cursor-pointer flex items-start py-2 gap-16 justify-between">
+      <div className="cursor-pointer flex items-start md:py-2 py-0 gap-16 justify-between">
         <h3
-          className={`md:text-xl sm:text-2xl text-xl leading-none ${
+          className={`md:text-xl sm:text-2xl text-lg leading-none ${
             expanded && "mb-1"
           }`}
         >
