@@ -18,7 +18,7 @@ const AboutCommunity = () => {
     },
   ];
   return (
-    <>
+    <div className="sm:mt-0 mt-16">
       <Header name="What is DevsInTech Community?" />
       <p className="my-10 text-justify font-secondary text-white">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -32,7 +32,7 @@ const AboutCommunity = () => {
       </p>
       <Stats stats={stats} />
       <Introductionvideo embedLink="https://www.youtube.com/embed/d3xoKUDSY_A" />
-    </>
+    </div>
   );
 };
 
