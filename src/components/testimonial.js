@@ -63,8 +63,6 @@ const TestimonialCarousel = () => {
         setNumVisible(1);
       } else if (screenWidth < 768) {
         setNumVisible(2);
-      } else if (screenWidth < 1024) {
-        setNumVisible(3);
       } else {
         setNumVisible(3);
       }
@@ -127,9 +125,8 @@ const TestimonialCarousel = () => {
         {testimonials.map((testimonial, index) => (
           <div
             key={testimonial.id}
-            className={`h-2 w-2 rounded-full mx-2 bg-gray-400 ${
-              current === index ? "bg-gray-200" : "bg-gray-900"
-            }`}
+            className={`h-2 w-2 rounded-full mx-2 bg-gray-400 ${current === index ? "bg-gray-200" : "bg-gray-900"
+              }`}
             onClick={() => setCurrent(index)}
           ></div>
         ))}
