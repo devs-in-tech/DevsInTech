@@ -13,7 +13,7 @@ const FaqAccordion = () => {
               <FaqAccordionItem faq={faq} key={index} />
             ))}
         </div>
-        <div className="flex justify-center m-auto items-center w-[500px] h-[500px] md:w-full md:h-full">
+        <div className="flex justify-center m-auto items-center w-72 h-72 sm:w-96 sm:h-96 md:w-full md:h-full">
           <iframe
             src="https://embed.lottiefiles.com/animation/104452"
             className="w-full h-full m-auto"
