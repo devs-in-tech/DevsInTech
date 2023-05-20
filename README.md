@@ -20,7 +20,7 @@ Want to have some fun and find some linke minded people? Join our community and 
 # Contribute
 
 We welcome contributions in our community.<br>
-Before making a contribution, check the <a href="https://github.com/devs-in-tech/DevsInTech/main/CONTRIBUTING.md">Contribution guide.</a>
+Before making a contribution, check the <a href="https://github.com/devs-in-tech/DevsInTech/blob/main/CONTRIBUTING.md">Contribution guide.</a>
 
 # Code of Conduct
 
