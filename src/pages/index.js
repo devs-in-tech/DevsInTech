@@ -9,7 +9,7 @@ export default function Main() {
       <Head>
         <title>Devs In Tech</title>
         <meta name="description" content="Devs In Tech Community website" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo2.png" />
       </Head>
       <Home />
       <Script
