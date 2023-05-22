@@ -9,12 +9,9 @@ const HeroSection = () => {
             Devs In Tech Community
           </h1>
           <p className="md:text-2xl font-secondary sm:text-xl text-lg text-white sm:text-start text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. . Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
+           Welcome to Devs in Tech🔥! We are more than a community, we are an open-source movement for tech enthusiasts.
+           Level up⬆ your skills, find your niche, and stand out in the tech world. 
+           Join us, rock the tech universe together with our events and activities!
           </p>
           <div className="flex flex-wrap gap-8 items-center justify-center md:justify-start">
             <Button
