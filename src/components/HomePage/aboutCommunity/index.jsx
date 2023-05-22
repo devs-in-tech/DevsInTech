@@ -18,9 +18,9 @@ const AboutCommunity = () => {
     },
   ];
   return (
-    <div className="sm:mt-0 mt-16">
+    <div className="sm:mt-10 mt-16">
       <Header name="What is DevsInTech Community?" />
-      <p className="my-10 text-justify font-secondary text-white">
+      <p className="my-7 text-justify font-secondary text-white">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. . Lorem ipsum dolor
         sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
