@@ -32,3 +32,35 @@ body {
   max-width: 100rem;
   @apply mx-auto w-11/12;
 }
+
+
+.HoverNav {
+  display: inline-block;
+  position: relative;
+}
+
+.HoverNav::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+to right,
+#AF7AF2 ,
+#cd76e5,
+#c281e3,
+#80e8b6,
+#6ceaad,
+#A5F7A8
+);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.HoverNav:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

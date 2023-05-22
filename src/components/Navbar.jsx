@@ -37,7 +37,7 @@ const Navbar = () => {
             >
               <Link
                 href={link.link}
-                className="text-white hover:text-gray-400 duration-500"
+                className="HoverNav text-white duration-500"
               >
                 {link.name}
               </Link>
