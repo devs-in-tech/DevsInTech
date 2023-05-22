@@ -1,3 +1,4 @@
+import { FaDiscord, FaTwitter } from "react-icons/fa";
 import Button from "../button";
 
 const HeroSection = () => {
@@ -20,10 +21,12 @@ const HeroSection = () => {
             <Button
               name="Join Discord"
               url="https://discord.com/invite/g7FmxB9uZp "
+              Icon={FaDiscord}
             />
             <Button
               name="Follow on Twitter"
               url="https://twitter.com/devs_in_tech"
+              Icon={FaTwitter}
             />
           </div>
         </div>
