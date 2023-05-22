@@ -19,7 +19,7 @@ const FaqAccordion = () => {
             className="w-full h-full m-auto"
           ></iframe>
         </div>
-      </div>
+      </div> 
     </>
   );
 };
