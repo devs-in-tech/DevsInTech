@@ -30,8 +30,13 @@ html {
 body {
   width: 90%;
   margin: auto;
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
   background-color: black;
+  background-size: 100% 26%;
+
   /* 1280px */
   max-width: 100rem;
+  position: relative;
   @apply mx-auto w-11/12;
 }
