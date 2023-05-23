@@ -3,7 +3,9 @@ import Image from "next/image";
 import data from "../../content/events";
 function Cards() {
   return (
-    <main className="container mx-auto py-14 px-8">
+    <main className="container mx-auto py-14 px-8"
+      id="events"
+    >
       <Header name="Latest Events In DevsInTech" />
       <div className="grid md:grid-cols-2 my-10 lg:grid-cols-3 gap-6 max-w-xs md:max-w-full m-auto">
         {data &&
