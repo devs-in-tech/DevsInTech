@@ -9,11 +9,10 @@ import {
 import logo from "../../public/Images/logo.jpg";
 
 const Footer = () => {
-
   let year = new Date().getFullYear;
 
   return (
-    <footer className="bg-black bottom-0 mb-6 pt-32 font-primary">
+    <footer className=" bottom-0 mb-6 pt-32 font-primary">
       <div className="flex flex-col gap-8 justify-between content-center md:flex-row">
         {/* Logo */}
         <div className="grid-auto">

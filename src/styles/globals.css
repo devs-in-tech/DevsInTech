@@ -33,7 +33,7 @@ body {
   background-image: url(bg.jpg);
   background-repeat: no-repeat;
   background-color: black;
-  background-size: 100% 26%;
+  background-size: 100% 100%;
 
   /* 1280px */
   max-width: 100rem;
