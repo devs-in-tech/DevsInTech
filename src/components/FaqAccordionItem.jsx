@@ -19,11 +19,13 @@ const FaqAccordionItem = ({ faq }) => {
         >
           {faq.question}
         </h3>
-        {expanded ? (
-          <AiOutlineClose className="text-2xl" />
-        ) : (
-          <AiOutlinePlus className="text-2xl" />
-        )}
+        <div>
+          {expanded ? (
+            <AiOutlineClose className="text-2xl" />
+          ) : (
+            <AiOutlinePlus className="text-2xl" />
+          )}
+        </div>
       </div>
       <AnimatePresence initial={false}>
         {expanded && (
