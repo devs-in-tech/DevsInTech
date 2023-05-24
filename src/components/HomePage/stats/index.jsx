@@ -6,7 +6,7 @@ const Stats = ({ stats }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCount((prevCount) => prevCount + 1);
-    }, 100); // Adjust the interval duration as needed
+    }, 10); // Adjust the interval duration as needed
 
     return () => {
       clearInterval(interval);
