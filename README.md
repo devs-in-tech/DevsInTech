@@ -6,7 +6,7 @@
 
 ## 👋 Join Us
 
-Want to have some fun and find some linke minded people? Join our community and participate in our weekly coffee chats. Let's work together to spread the opportunities via open source! 🚀
+Want to have some fun and find some like-minded people? Join our community and participate in our weekly coffee chats. Let's work together to spread the opportunities via open source! 🚀
 
 <a href="https://discord.com/invite/g7FmxB9uZp"><img src="https://img.icons8.com/color/2x/discord--v2.png" title="Discord" alt="Discord Community" height="60px"></img></a>
 <a href="https://twitter.com/devs_in_tech"><img src="https://img.icons8.com/fluency/2x/twitter.png" title="Twitter" alt="Twitter Account" height="60px"></img></a>

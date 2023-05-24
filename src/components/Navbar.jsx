@@ -7,8 +7,8 @@ import Button from "./button";
 const Navbar = () => {
   let Links = [
     { name: "Home", link: "/" },
-    { name: "About Us", link: "/" },
-    { name: "Events", link: "/" },
+    { name: "About Us", link: "/#aboutCommunity" },
+    { name: "Events", link: "/#events" },
     { name: "Team", link: "/" },
   ];
   let [open, setOpen] = useState(false);

@@ -6,12 +6,12 @@ const FaqAccordionItem = ({ faq }) => {
   const [expanded, setExpanded] = useState(false);
   return (
     <div
-      className="text-white  font-gilroy border-b-[1px] px-4 md:py-2 py-4 border-white"
+      className="text-white  font-gilroy border-b-[1px] px-4 md:py-2 py-4 border-white  hover:border-sky-500/100"
       onClick={() => {
         setExpanded((prev) => !prev);
       }}
     >
-      <div className="cursor-pointer flex items-start md:py-2 py-0 gap-16 justify-between">
+      <div className="cursor-pointer flex items-start md:py-2 py-0 gap-16 justify-between  hover:text-sky-500/100">
         <h3
           className={`md:text-xl sm:text-2xl text-lg leading-none ${
             expanded && "mb-1"
@@ -19,11 +19,13 @@ const FaqAccordionItem = ({ faq }) => {
         >
           {faq.question}
         </h3>
-        {expanded ? (
-          <AiOutlineClose className="text-2xl" />
-        ) : (
-          <AiOutlinePlus className="text-2xl" />
-        )}
+        <div>
+          {expanded ? (
+            <AiOutlineClose className="text-2xl" />
+          ) : (
+            <AiOutlinePlus className="text-2xl" />
+          )}
+        </div>
       </div>
       <AnimatePresence initial={false}>
         {expanded && (
