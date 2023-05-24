@@ -6,7 +6,7 @@ const FaqAccordionItem = ({ faq }) => {
   const [expanded, setExpanded] = useState(false);
   return (
     <div
-      className="text-white  font-gilroy border-b-[1px] px-4 md:py-2 py-4 border-white  hover:border-sky-500/100"
+      className="text-white  font-gilroy border-b-[1px] px-4 md:py-2 py-4 border-white dark:text-black hover:border-sky-500/100 dark:border-black"
       onClick={() => {
         setExpanded((prev) => !prev);
       }}

@@ -20,7 +20,7 @@ const AboutCommunity = () => {
   return (
     <div className="sm:mt-10 mt-16" id="aboutCommunity">
       <Header name="What is DevsInTech Community?" />
-      <p className="my-7 text-justify font-secondary text-white">
+      <p className="my-7 text-justify font-secondary text-white dark:text-black">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. . Lorem ipsum dolor
         sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt

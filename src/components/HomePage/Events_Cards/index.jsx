@@ -10,7 +10,7 @@ function Cards() {
       <div className="grid md:grid-cols-2 my-10 lg:grid-cols-3 gap-6 max-w-xs md:max-w-full m-auto">
         {data &&
           data.map((card) => (
-            <div key={null} className="shadow-lg rounded-lg bg-[#13161B] p-5">
+            <div key={null} className="shadow-lg rounded-lg bg-[#13161B] dark:bg-white p-5">
               <Image
                 className="rounded t-lg w-fill-available"
                 src={card.img}
@@ -20,7 +20,7 @@ function Cards() {
                 <h3 className="text-3 xl font-bold mb-3 text-[#A5F7A8]">
                   {card.title}
                 </h3>
-                <p className="text-lg font-normal text-white ">{card.text}</p>
+                <p className="text-lg font-normal text-white dark:text-black">{card.text}</p>
               </div>
             </div>
           ))}

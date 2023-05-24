@@ -7,7 +7,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 const Home = () => {
   return (
-    <>
+    <div className="dark:bg-white">
       <Navbar />
       <HeroSection />
       <ScrollToTop />
@@ -15,7 +15,7 @@ const Home = () => {
       <Cards />
       <FaqAccordion />
       <Footer />
-    </>
+    </div>
   );
 };
 

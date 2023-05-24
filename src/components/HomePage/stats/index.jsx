@@ -10,7 +10,7 @@ const Stats = ({ stats }) => {
                   <h2 className="title-font font-medium sm:text-4xl text-3xl text-transparent bg-clip-text bg-gradient-to-br from-[#FF008A] to-[#6100FF]">
                     {data.number}+
                   </h2>
-                  <p className="leading-relaxed text-white mt-2">{data.name}</p>
+                  <p className="leading-relaxed text-white dark:text-black mt-2">{data.name}</p>
                 </div>
               );
             })}
