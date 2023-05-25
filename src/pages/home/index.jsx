@@ -7,7 +7,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 const Home = () => {
   return (
-    <div className="dark:bg-white">
+    <div className="dark:bg-white bg-black">
       <Navbar />
       <HeroSection />
       <ScrollToTop />

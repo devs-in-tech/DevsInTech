@@ -14,7 +14,7 @@ const Footer = () => {
   let year = new Date().getFullYear;
 
   return (
-    <footer className="bg-black dark:bg-white bottom-0 mb-6 pt-32 font-primary">
+    <footer className="bg-black dark:bg-white bottom-0  pt-32 font-primary">
       <div className="flex flex-col gap-8 justify-between content-center md:flex-row">
         {/* Logo */}
         <div className="grid-auto">
@@ -47,7 +47,7 @@ const Footer = () => {
                 href="/"
                 rel="noreferrer"
                 target="_blank"
-                className="text-black transition dark:hover:text-gray-700/75 dark:text-black hover:text-gray-100/90"
+                className="text-white transition dark:hover:text-gray-700/75 dark:text-black hover:text-gray-100/90"
               >
                 <FaFacebookF size={20} />
               </Link>
@@ -58,7 +58,7 @@ const Footer = () => {
                 href="https://twitter.com/devs_in_tech"
                 rel="noreferrer"
                 target="_blank"
-                className="text-black transition dark:hover:text-gray-700/75 dark:text-black hover:text-gray-100/90"
+                className="text-white transition dark:hover:text-gray-700/75 dark:text-black hover:text-gray-100/90"
               >
                 <FaTwitter size={20} />
               </Link>
@@ -71,7 +71,7 @@ const Footer = () => {
                 href="/"
                 rel="noreferrer"
                 target="_blank"
-                className="text-black transition dark:hover:text-gray-700/75 dark:text-black hover:text-gray-100/90"
+                className="text-white transition dark:hover:text-gray-700/75 dark:text-black hover:text-gray-100/90"
               >
                 <FaLinkedinIn size={20} />
               </Link>
@@ -84,7 +84,7 @@ const Footer = () => {
                 href="/"
                 rel="noreferrer"
                 target="_blank"
-                className="text-black transition dark:hover:text-gray-700/75 dark:text-black hover:text-gray-100/90"
+                className="text-white transition dark:hover:text-gray-700/75 dark:text-black hover:text-gray-100/90"
               >
                 <FaInstagram size={20} />
               </Link>
@@ -220,7 +220,7 @@ const Footer = () => {
       </div>
       <div className="mt-12 mb-0">
         <div className="text-center font-thin sm:flex sm:justify-center sm:text-center">
-          <p className="mt-4 text-xl text-white dark:text-black sm:order-first sm:mt-0">
+          <p className="mt-4 text-xl text-white dark:text-black sm:order-first sm:mt-0 ">
             &copy; {year} by DevsInTech Community
           </p>
         </div>

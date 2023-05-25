@@ -6,7 +6,7 @@ const FaqAccordion = () => {
   return (
     <>
       <Header name="Frequently Asked Questions" />
-      <div className="grid md:grid-cols-2 mt-10">
+      <div className="grid md:grid-cols-2 mt-10  bg-black dark:bg-white text-white">
         <div>
           {faqs &&
             faqs.map((faq, index) => (

@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
   let [open, setOpen] = useState(false);
   return (
-    <div className="w-full top-0 left-0 dark:bg-white bg-black">
+    <div className="w-full top-0 left-0 dark:bg-white bg-black ">
       <div className="md:flex md:items-center md:justify-between py-4 px-7">
         <div
           className="font-bold text-base cursor-pointer flex flex-col md:items-center font-secondary 
@@ -25,9 +25,10 @@ const Navbar = () => {
           </span>
           DevsInTech
         </div>
+
         <ul
- className={`md:flex md:items-center md:pb-0 px-20 md:px-0 pb-12 md:justify-center absolute md:static md:z-auto left-0 w-full transition-top transition-bg duration-500 ease-in dark:bg-white ${
- open ? "top-24 bg-black" : "top-[-550px]"
+ className={`md:flex md:items-center md:pb-0 px-20 md:px-0 pb-12 md:justify-center absolute md:static md:z-auto left-0 w-full transition-top bg-black dark:bg-white  ease-in   ${
+ open ? "top-24" : "top-[-550px]"
  }`}
  >
 
@@ -38,7 +39,7 @@ const Navbar = () => {
             >
               <Link
                 href={link.link}
-                className="text-white dark:text-black hover:text-gray-400 duration-500"
+                className="text-white dark:text-black hover:text-gray-400"
               >
                 {link.name}
               </Link>
