@@ -28,6 +28,9 @@ importers:
       next:
         specifier: 13.4.1
         version: 13.4.1(react-dom@18.2.0)(react@18.2.0)
+      pnpm:
+        specifier: ^8.5.1
+        version: 8.5.1
       postcss:
         specifier: 8.4.23
         version: 8.4.23
@@ -2822,6 +2825,12 @@ packages:
   /pirates@4.0.5:
     resolution: {integrity: sha512-8V9+HQPupnaXMA23c5hvl69zXvTwTzyAYasnkb0Tts4XvO4CliqONMOnvlq26rkhLC3nWDFBJf73LU1e1VZLaQ==}
     engines: {node: '>= 6'}
+    dev: false
+
+  /pnpm@8.5.1:
+    resolution: {integrity: sha512-W6elL7Nww0a/MCICkzpkbxW6f99TQuX4DuJoDjWp39X08PKDkEpg4cgj3d6EtgYADcdQWl/eM8NdlLJVE3RgpA==}
+    engines: {node: '>=16.14'}
+    hasBin: true
     dev: false
 
   /postcss-import@15.1.0(postcss@8.4.23):
