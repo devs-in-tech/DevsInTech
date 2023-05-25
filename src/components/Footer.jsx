@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
+  FaDiscord,
 } from "react-icons/fa";
 import logo from "../../public/logo2.png";
 
@@ -86,6 +87,19 @@ const Footer = () => {
                 className="text-black transition dark:hover:text-gray-700/75 dark:text-black hover:text-gray-100/90"
               >
                 <FaInstagram size={20} />
+              </Link>
+            </li>
+
+            {/* Discord icon */}
+
+            <li>
+              <Link
+                href="https://discord.com/invite/g7FmxB9uZp"
+                rel="noreferrer"
+                target="_blank"
+                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+              >
+                <FaDiscord size={20} />
               </Link>
             </li>
           </ul>
