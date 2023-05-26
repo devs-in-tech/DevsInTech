@@ -56,19 +56,19 @@ const Footer = () => {
               <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">Events</h2>
               <nav className="list-none mb-10">
                 <li>
-                  <Link href="/" className="text-gray-400 hover:text-white">Collaborate</Link>
+                  <Link href="/" className="text-gray-400 hover:text-white">Company</Link>
                 </li>
                 <li>
-                  <Link href="/" className="text-gray-400 hover:text-white">Community</Link>
+                  <Link href="/" className="text-gray-400 hover:text-white">About Us</Link>
                 </li>
                 <li>
-                  <Link href="/" className="text-gray-400 hover:text-white">Courses</Link>
+                  <Link href="/" className="text-gray-400 hover:text-white">Support</Link>
                 </li>
                 <li>
-                  <Link href="/" className="text-gray-400 hover:text-white">Webinars</Link>
+                  <Link href="/" className="text-gray-400 hover:text-white">Blogs</Link>
                 </li>
                 <li>
-                  <Link href="/" className="text-gray-400 hover:text-white">Meetups</Link>
+                  <Link href="/" className="text-gray-400 hover:text-white">Team</Link>
                 </li>
               </nav>
             </div>
