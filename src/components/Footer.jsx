@@ -11,221 +11,120 @@ import logo from "../../public/Images/logo.jpg";
 
 const Footer = () => {
 
-  let year = new Date().getFullYear;
+
+  let year = new Date().getFullYear();
 
   return (
-    <footer className="bg-black bottom-0 mb-6 pt-32 font-primary">
-      <div className="flex flex-col gap-8 justify-between content-center md:flex-row">
-        {/* Logo */}
-        <div className="grid-auto">
-          <div className="flex flex-col justify-center">
-            <Image
-              src={logo}
-              alt="DevsInTech"
-              width={140}
-              height={140}
-              className="mx-auto"
-            />
-            <p className="font-medium text-center justify-items-center">
-              DevsInTech
+    <>
+      <footer className="bg-black font-primary body-font">
+        <div className="container px-5 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col" bis_skin_checked={1}>
+          <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left" bis_skin_checked={1}>
+            <Link href="/" className="flex flex-col title-font font-medium items-center md:flex-row md:justify-start justify-center text-white">
+              <Image
+                src={logo}
+                alt="DevsInTech"
+                width={140}
+                height={140}
+                className="w-40 h-40 md:w-32 md:h-32 text-white rounded-full"
+              />
+              <span className="text-xl font-medium text-center justify-items-center">DevsInTech</span>
+            </Link>
+            <p className="mt-2 text-sm text-gray-500">Write what describes you the most.</p>
+          </div>
+          <div id="dash" className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left justify-end text-center" bis_skin_checked={1}>
+          <div className="lg:w-1/4 md:w-1/2 w-full px-4" bis_skin_checked={1}>
+              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">Community</h2>
+              <nav className="list-none mb-10">
+                <li>
+                  <Link href="/" className="text-gray-400 hover:text-white">Collaborate</Link>
+                </li>
+                <li>
+                  <Link href="/" className="text-gray-400 hover:text-white">Community</Link>
+                </li>
+                <li>
+                  <Link href="/" className="text-gray-400 hover:text-white">Courses</Link>
+                </li>
+                <li>
+                  <Link href="/" className="text-gray-400 hover:text-white">Webinars</Link>
+                </li>
+                <li>
+                  <Link href="/" className="text-gray-400 hover:text-white">Meetups</Link>
+                </li>
+              </nav>
+            </div>
+          <div className="lg:w-1/4 md:w-1/2 w-full px-4" bis_skin_checked={1}>
+              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">Events</h2>
+              <nav className="list-none mb-10">
+                <li>
+                  <Link href="/" className="text-gray-400 hover:text-white">Collaborate</Link>
+                </li>
+                <li>
+                  <Link href="/" className="text-gray-400 hover:text-white">Community</Link>
+                </li>
+                <li>
+                  <Link href="/" className="text-gray-400 hover:text-white">Courses</Link>
+                </li>
+                <li>
+                  <Link href="/" className="text-gray-400 hover:text-white">Webinars</Link>
+                </li>
+                <li>
+                  <Link href="/" className="text-gray-400 hover:text-white">Meetups</Link>
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div className="bg-black font-primary bg-opacity-75" bis_skin_checked={1}>
+          <div className="container mx-auto py-10 px-5 flex flex-wrap flex-col sm:flex-row" bis_skin_checked={1}>
+            <p className="text-gray-400 text-sm text-center sm:text-left">© {year} DevsInTech —
+              <Link href="/" rel="noopener noreferrer" className="text-gray-500 ml-1" target="_blank">@DevsInTech</Link>
             </p>
+            <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <Link
+                  href="/"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="text-gray-400 pl-2transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+                >
+                  <FaFacebookF size={20} />
+                </Link>
+                <Link
+                  href="https://twitter.com/devs_in_tech"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="text-gray-400 pl-2 transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+                >
+                  <FaTwitter size={20} />
+                </Link>
+                <Link
+                  href="/"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="text-gray-400 pl-2 transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+                >
+                  <FaInstagram size={20} />
+                </Link>
+                <Link
+                  href="/"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="text-gray-400 pl-2 transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+                >
+                  <FaLinkedinIn size={20} />
+                </Link>
+                <Link
+                  href="https://discord.com/invite/g7FmxB9uZp"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="text-gray-400 pl-2 transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+                >
+                  <FaDiscord size={20} />
+                </Link>
+            </span>
           </div>
         </div>
-
-        {/* About Us */}
-
-        <div className="flex flex-col content-center">
-          <p className="text-center text-white text-md sm:text-lg md:text-xl md:text-left">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-            consequuntur amet culpa cum itaque neque. Lorem ipsum dolor, sit
-            amet consectetur adipisicing elit. Incidunt consequuntur amet culpa
-            cum itaque neque.
-          </p>
-          <ul className="mt-6 flex justify-center gap-6 md:justify-start md:gap-8">
-            <li>
-              <Link
-                href="/"
-                rel="noreferrer"
-                target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
-              >
-                <FaFacebookF size={20} />
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                href="https://twitter.com/devs_in_tech"
-                rel="noreferrer"
-                target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
-              >
-                <FaTwitter size={20} />
-              </Link>
-            </li>
-
-            {/* LinkedIn Icon */}
-
-            <li>
-              <Link
-                href="/"
-                rel="noreferrer"
-                target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
-              >
-                <FaLinkedinIn size={20} />
-              </Link>
-            </li>
-
-            {/* Instagram icon */}
-
-            <li>
-              <Link
-                href="/"
-                rel="noreferrer"
-                target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
-              >
-                <FaInstagram size={20} />
-              </Link>
-            </li>
-
-            {/* Discord icon */}
-
-            <li>
-              <Link
-                href="https://discord.com/invite/g7FmxB9uZp"
-                rel="noreferrer"
-                target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
-              >
-                <FaDiscord size={20} />
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        {/* COLUMNS */}
-        <div className="m-auto">
-          <div className="flex justify-between gap-16">
-            <div className="text-center font-secondary">
-              <p className="text-lg font-medium text-white">Community</p>
-
-              <nav aria-label="Footer About Nav" className="mt-4 text-center">
-                <ul className="space-y-4 font-light text-xs">
-                  <li>
-                    <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
-                    >
-                      Collaborate
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
-                    >
-                      Communicate
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
-                    >
-                      Courses
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
-                    >
-                      Webinars
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
-                    >
-                      Meetups
-                    </Link>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div className="text-center font-secondary">
-              <p className="text-lg font-medium text-white">Events</p>
-
-              <nav
-                aria-label="Footer Services Nav"
-                className="mt-4 text-center"
-              >
-                <ul className="space-y-4 font-light text-xs">
-                  <li>
-                    <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
-                    >
-                      Collaborate
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
-                    >
-                      Events
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
-                    >
-                      Courses
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
-                    >
-                      Webinars
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="/"
-                    >
-                      Meetups
-                    </Link>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="mt-12 mb-0">
-        <div className="text-center font-thin sm:flex sm:justify-center sm:text-center">
-          <p className="mt-4 text-xl text-black dark:text-white sm:order-first sm:mt-0">
-            &copy; {year} by DevsInTech Community
-          </p>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 };
 
