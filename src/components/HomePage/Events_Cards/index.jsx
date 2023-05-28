@@ -3,14 +3,12 @@ import Image from "next/image";
 import data from "../../content/events";
 function Cards() {
   return (
-    <main className="container mx-auto py-14 px-8"
-      id="events"
-    >
+    <main className="container mx-auto py-14 px-8" id="events">
       <Header name="Latest Events In DevsInTech" />
       <div className="grid md:grid-cols-2 my-10 lg:grid-cols-3 gap-6 max-w-xs md:max-w-full m-auto">
         {data &&
           data.map((card) => (
-            <div key={null} className="shadow-lg rounded-lg bg-[#13161B] p-5">
+            <div key={null} className="cursor-pointer transition-all duration-200 ease-in transform  sm:hover:scale-105 hover:z-50 shadow-lg rounded-lg bg-[#13161B] p-5">
               <Image
                 className="rounded t-lg w-fill-available"
                 src={card.img}
