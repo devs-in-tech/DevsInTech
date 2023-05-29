@@ -34,6 +34,7 @@ const Navbar = () => {
             <li
               key={link.name}
               className="md:ml-8 whitespace-nowrap text-xl md:my-0 my-7"
+              onClick={() => setOpen(!open)}
             >
               <Link
                 href={link.link}
