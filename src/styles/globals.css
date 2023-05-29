@@ -35,3 +35,21 @@ body {
   max-width: 100rem;
   @apply mx-auto w-11/12;
 }
+
+/*Scroll Bar*/
+::-webkit-scrollbar {
+  width: 16px; /* Width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100vw;
+  background: transparent;
+  margin-block: 0.4em;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 0.21em solid transparent;
+  border-radius: 100px;
+  background: linear-gradient(#a569f4,#A7DEB6);
+  background-clip: content-box;
+}
