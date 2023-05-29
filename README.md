@@ -47,7 +47,7 @@ We welcome contributions in our community. Learn how to start contributing, from
 
 # Code of Conduct
 
-Check out the <a href="https://github.com/devs-in-tech/DevsInTech/main/CODE_OF_CONDUCT.md">Code of Conduct</a> to know an inclusive environment that respects all contributions.
+Check out the <a href="https://github.com/devs-in-tech/DevsInTech/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> to know an inclusive environment that respects all contributions.
 
 # License
 
