@@ -5,10 +5,14 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
+  FaDiscord,
 } from "react-icons/fa";
 import logo from "../../public/Images/logo.jpg";
 
 const Footer = () => {
+
+  let year = new Date().getFullYear;
+
   return (
     <footer className="bg-black bottom-0 mb-6 pt-32 font-primary">
       <div className="flex flex-col gap-8 justify-between content-center md:flex-row">
@@ -83,6 +87,19 @@ const Footer = () => {
                 className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
                 <FaInstagram size={20} />
+              </Link>
+            </li>
+
+            {/* Discord icon */}
+
+            <li>
+              <Link
+                href="https://discord.com/invite/g7FmxB9uZp"
+                rel="noreferrer"
+                target="_blank"
+                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+              >
+                <FaDiscord size={20} />
               </Link>
             </li>
           </ul>
@@ -204,7 +221,7 @@ const Footer = () => {
       <div className="mt-12 mb-0">
         <div className="text-center font-thin sm:flex sm:justify-center sm:text-center">
           <p className="mt-4 text-xl text-black dark:text-white sm:order-first sm:mt-0">
-            &copy; 2023 by DevsInTech Community
+            &copy; {year} by DevsInTech Community
           </p>
         </div>
       </div>
