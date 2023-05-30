@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Logo from "../../public/logo2.png";
 import Button from "./button";
+import  HeaderSocialMedia from "./HeaderSocialMedia";
 
 const Navbar = () => {
   let Links = [
@@ -44,16 +45,13 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-          <span className="md:hidden block">
-            <Button
-              name="Join Us"
-              url="https://discord.com/invite/g7FmxB9uZp"
-            />
-          </span>
+          <div className="md:hidden flex gap-4">
+          <HeaderSocialMedia width={35} height={30}/>
+          </div>
         </ul>
-        <span className="md:ml-auto md:block hidden">
-          <Button name="Join Us" url="https://discord.com/invite/g7FmxB9uZp " />
-        </span>
+        <div className="lg:flex lg:gap-5 hidden">
+       <HeaderSocialMedia width={47} height={47}/>
+        </div>
       </div>
       <div
         onClick={() => setOpen(!open)}
