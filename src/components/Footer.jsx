@@ -1,17 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
+  FaDiscord,
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
-  FaDiscord,
 } from "react-icons/fa";
 import logo from "../../public/Images/logo.jpg";
 
 const Footer = () => {
-
-  let year = new Date().getFullYear;
+  let year = new Date().getFullYear();
 
   return (
     <footer className="bg-black bottom-0 mb-6 pt-32 font-primary">
