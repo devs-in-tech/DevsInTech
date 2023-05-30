@@ -1,8 +1,14 @@
 # DevsInTech 🚀
 
 <p align="center"><a href="/"><img src="https://user-images.githubusercontent.com/76242769/233774732-447713dd-db8d-4c95-9c66-827ef84cbcf8.png" title="Logo" alt="Logo" height="150px"/></a></p>
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5d47c2fd-0dc1-4af2-ba5a-8519bf5ec74d/deploy-status)](https://app.netlify.com/sites/devsintech/deploys)
+<div align="center">
+  <br>
+<img src="https://api.netlify.com/api/v1/badges/5d47c2fd-0dc1-4af2-ba5a-8519bf5ec74d/deploy-status" />
+<img src="https://img.shields.io/github/issues/devs-in-tech/DevsInTech" />
+<img src="https://img.shields.io/github/license/devs-in-tech/DevsInTech" />
+<img src="https://img.shields.io/github/forks/devs-in-tech/DevsInTech" />
+<img src="https://img.shields.io/github/stars/devs-in-tech/DevsInTech" />
+</div>
 
 # About Us
 
