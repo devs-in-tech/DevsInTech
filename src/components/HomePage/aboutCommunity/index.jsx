@@ -1,10 +1,6 @@
 import Header from "../../header";
 import Introductionvideo from "../Introductionvideo";
 import Stats from "../stats";
-import Lottie from "lottie-web";
-import animation from "./animation/animation.json";
-import { useEffect } from "react";
-import { LottieInteractivity } from "@lottiefiles/lottie-interactivity";
 
 const AboutCommunity = () => {
   const stats = [
@@ -50,7 +46,7 @@ const AboutCommunity = () => {
       </p>
       <Stats stats={stats} />
       </div>
-      <iframe src="https://embed.lottiefiles.com/animation/144103" className="md:w-[500px] w-[300px] md:ml-0 ml-[55px] md:h-[380px] h-[300px] rounded-lg"></iframe>
+      <iframe src="https://embed.lottiefiles.com/animation/144103" className="md:w-[500px] w-[300px]  md:h-[380px] h-[300px] rounded-lg"></iframe>
       </div>
       <div className="rounded-lg p-10 font-semibold">
       <Header name="Watch Here"/>
