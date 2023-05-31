@@ -10,6 +10,7 @@ const Navbar = () => {
     { name: "About Us", link: "/#aboutCommunity" },
     { name: "Events", link: "/#events" },
     { name: "Team", link: "/" },
+    { name: "FAQs", link: "/#faqs" },
   ];
   let [open, setOpen] = useState(false);
   return (
