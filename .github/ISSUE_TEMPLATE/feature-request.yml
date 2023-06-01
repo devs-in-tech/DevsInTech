@@ -1,4 +1,5 @@
-name: Feature Request 💡
+labels:
+  name: "Feature Request 💡"
 description: Have any new idea or new feature for Devsintech? Please request!
 title: "[Feature] <description>"
 labels: ["Goal: addition"]
