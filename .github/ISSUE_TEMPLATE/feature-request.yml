@@ -24,10 +24,12 @@ body:
       description: Add any other context or anything else about this idea
     validations:
       required: false
-- type: checkbox
-  id: gssoc
-  attributes:
-    label: GSSoC Contributor
-    description: Please click on this checkbox if you are participating in GSSoC this year
-  validations:
-    required: false
+ - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct
+      options:
+        - label: I agree to follow this project's Code of Conduct
+        - label: "I am a GSSoC'23 contributor"
+          required: false
