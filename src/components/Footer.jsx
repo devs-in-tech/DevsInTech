@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
+  FaDiscord,
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
@@ -9,6 +10,8 @@ import {
 import logo from "../../public/Images/logo.jpg";
 
 const Footer = () => {
+  let year = new Date().getFullYear();
+
   return (
     <footer className="bg-black bottom-0 mb-6 pt-32 font-primary">
       <div className="flex flex-col gap-8 justify-between content-center md:flex-row">
@@ -32,10 +35,9 @@ const Footer = () => {
 
         <div className="flex flex-col content-center">
           <p className="text-center text-white text-md sm:text-lg md:text-xl md:text-left">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-            consequuntur amet culpa cum itaque neque. Lorem ipsum dolor, sit
-            amet consectetur adipisicing elit. Incidunt consequuntur amet culpa
-            cum itaque neque.
+            <a href="https://devsintech.netlify.app/">DevsInTech</a> is a thriving and welcoming community of developers,
+            tech professionals,and enthusiasts who share a common passion for technology.
+            We are an Open-source project available on <a href="https://github.com/devs-in-tech/DevsInTech">GitHub</a>
           </p>
           <ul className="mt-6 flex justify-center gap-6 md:justify-start md:gap-8">
             <li>
@@ -83,6 +85,19 @@ const Footer = () => {
                 className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
                 <FaInstagram size={20} />
+              </Link>
+            </li>
+
+            {/* Discord icon */}
+
+            <li>
+              <Link
+                href="https://discord.com/invite/g7FmxB9uZp"
+                rel="noreferrer"
+                target="_blank"
+                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+              >
+                <FaDiscord size={20} />
               </Link>
             </li>
           </ul>
@@ -204,7 +219,7 @@ const Footer = () => {
       <div className="mt-12 mb-0">
         <div className="text-center font-thin sm:flex sm:justify-center sm:text-center">
           <p className="mt-4 text-xl text-black dark:text-white sm:order-first sm:mt-0">
-            &copy; 2023 by DevsInTech Community
+            &copy; {year} by DevsInTech Community
           </p>
         </div>
       </div>

@@ -7,13 +7,14 @@ import Button from "./button";
 const Navbar = () => {
   let Links = [
     { name: "Home", link: "/" },
-    { name: "About Us", link: "/" },
-    { name: "Events", link: "/" },
+    { name: "About Us", link: "/#aboutCommunity" },
+    { name: "Events", link: "/events" },
     { name: "Team", link: "/" },
+    { name: "FAQs", link: "/#faqs" },
   ];
   let [open, setOpen] = useState(false);
   return (
-    <div className="w-full top-0 left-0">
+    <div className="w-full z-999 top-0 left-0 sticky bg-black">
       <div className="md:flex md:items-center md:justify-between py-4 px-7">
         <div
           className="font-bold text-base cursor-pointer flex flex-col md:items-center font-secondary 
@@ -34,6 +35,7 @@ const Navbar = () => {
             <li
               key={link.name}
               className="md:ml-8 whitespace-nowrap text-xl md:my-0 my-7"
+              onClick={() => setOpen(!open)}
             >
               <Link
                 href={link.link}
