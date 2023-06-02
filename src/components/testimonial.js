@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Header from "./header";
 
 const testimonials = [
   {
@@ -101,38 +102,41 @@ const TestimonialCarousel = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="flex items-center mb-6">
-        <button
-          onClick={goToPrev}
-          className="bg-gray-800 text-white rounded-full p-3 flex justify-center items-center mr-2"
-        >
-          {"<"}
-        </button>
-        {visibleTestimonials.map((testimonial) => (
-          <div key={testimonial.id}>
-            <Testimonial testimonial={testimonial} />
+    <div className="py-10">
+      <Header name="What Our Members Say About Us" />
+        <div className="flex flex-col items-center justify-center">
+          <div className="flex items-center mb-6">
+            <button
+              onClick={goToPrev}
+              className="bg-gray-800 text-white rounded-full p-3 flex justify-center items-center mr-2"
+            >
+              {"<"}
+            </button>
+            {visibleTestimonials.map((testimonial) => (
+              <div key={testimonial.id}>
+                <Testimonial testimonial={testimonial} />
+              </div>
+            ))}
+            <button
+              onClick={goToNext}
+              className="bg-gray-800 text-white rounded-full p-4 flex justify-center items-center ml-2"
+            >
+              {">"}
+            </button>
           </div>
-        ))}
-        <button
-          onClick={goToNext}
-          className="bg-gray-800 text-white rounded-full p-4 flex justify-center items-center ml-2"
-        >
-          {">"}
-        </button>
+          <div className="flex justify-center">
+            {testimonials.map((testimonial, index) => (
+              <div
+                key={testimonial.id}
+                className={`h-2 w-2 rounded-full mx-2 bg-gray-400 ${current === index ? "bg-gray-200" : "bg-gray-900"
+                  }`}
+                onClick={() => setCurrent(index)}
+              ></div>
+            ))}
+          </div>
+        </div>
       </div>
-      <div className="flex justify-center">
-        {testimonials.map((testimonial, index) => (
-          <div
-            key={testimonial.id}
-            className={`h-2 w-2 rounded-full mx-2 bg-gray-400 ${current === index ? "bg-gray-200" : "bg-gray-900"
-              }`}
-            onClick={() => setCurrent(index)}
-          ></div>
-        ))}
-      </div>
-    </div>
-  );
+      );
 };
 
-export default TestimonialCarousel;
+      export default TestimonialCarousel;
