@@ -8,7 +8,10 @@ function Cards() {
       <div className="grid md:grid-cols-2 my-10 lg:grid-cols-3 gap-6 max-w-xs md:max-w-full m-auto">
         {data &&
           data.map((card) => (
-            <div key={null} className="cursor-pointer transition-all duration-200 ease-in transform  sm:hover:scale-105 hover:z-50 shadow-lg rounded-lg bg-[#13161B] p-5">
+            <div
+              key={card.key}
+              className="cursor-pointer transition-all duration-200 ease-in transform  sm:hover:scale-105 hover:z-50 shadow-lg rounded-lg bg-[#13161B] p-5"
+            >
               <Image
                 className="rounded t-lg w-fill-available"
                 src={card.img}
