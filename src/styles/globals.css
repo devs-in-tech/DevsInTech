@@ -50,6 +50,23 @@ body {
 ::-webkit-scrollbar-thumb {
   border: 0.21em solid transparent;
   border-radius: 100px;
-  background: linear-gradient(#a569f4,#A7DEB6);
+  background: linear-gradient(#a569f4, #a7deb6);
   background-clip: content-box;
+}
+
+/*Hero-Section Text*/
+.fade-in {
+  opacity: 0;
+  animation: fade-in-animation 1s ease-in-out forwards;
+}
+
+@keyframes fade-in-animation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
