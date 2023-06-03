@@ -49,7 +49,7 @@ const Navbar = () => {
           <HeaderSocialMedia width={35} height={30}/>
           </div>
         </ul>
-        <div className="lg:flex lg:gap-5 hidden">
+        <div className="lg:flex lg:gap-5 hidden md:flex md:gap-3">
        <HeaderSocialMedia width={47} height={47}/>
         </div>
       </div>
