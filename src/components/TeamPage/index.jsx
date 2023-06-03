@@ -5,7 +5,6 @@ import TeamData from "../content/team";
 import Header from "../header";
 
 const TeamPage = () => {
-  console.log("team ", TeamData[0]);
   return (
     <div className="mt-5">
       <Header name="Team Members" />
