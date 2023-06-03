@@ -1,17 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
+  FaDiscord,
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
-  FaDiscord,
 } from "react-icons/fa";
 import logo from "../../public/Images/logo.jpg";
 
 const Footer = () => {
-
-  let year = new Date().getFullYear;
+  let year = new Date().getFullYear();
 
   return (
     <footer className="bg-black bottom-0 mb-6 pt-32 font-primary">
@@ -36,10 +35,9 @@ const Footer = () => {
 
         <div className="flex flex-col content-center">
           <p className="text-center text-white text-md sm:text-lg md:text-xl md:text-left">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-            consequuntur amet culpa cum itaque neque. Lorem ipsum dolor, sit
-            amet consectetur adipisicing elit. Incidunt consequuntur amet culpa
-            cum itaque neque.
+            <a href="https://devsintech.netlify.app/">DevsInTech</a> is a thriving and welcoming community of developers,
+            tech professionals,and enthusiasts who share a common passion for technology.
+            We are an Open-source project available on <a href="https://github.com/devs-in-tech/DevsInTech">GitHub</a>
           </p>
           <ul className="mt-6 flex justify-center gap-6 md:justify-start md:gap-8">
             <li>

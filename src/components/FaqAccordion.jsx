@@ -4,7 +4,7 @@ import Header from "./header";
 
 const FaqAccordion = () => {
   return (
-    <>
+    <div id="faqs">
       <Header name="Frequently Asked Questions" />
       <div className="grid md:grid-cols-2 mt-10">
         <div>
@@ -20,7 +20,7 @@ const FaqAccordion = () => {
           ></iframe>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
