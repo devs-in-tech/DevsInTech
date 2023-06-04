@@ -18,7 +18,7 @@ const AboutCommunity = () => {
     },
   ];
   return (
-    <div className="sm:mt-10 mt-16" id="aboutCommunity">
+    <div className="sm:mt-10 mt-16 scroll-my-32" id="aboutCommunity">
       <Header name="What is DevsInTech Community?" />
       <p className="my-7 text-justify font-secondary text-white">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
