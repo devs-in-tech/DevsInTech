@@ -25,7 +25,6 @@ const Navbar = () => {
           </span>
           DevsInTech
         </div>
-
         <ul
           className={`md:flex md:items-center md:pb-0 px-20 md:px-0 pb-12 md:justify-center absolute md:static md:z-auto left-0 w-full transition-all duration-500 ease-in ${
             open ? "top-24  bg-black" : "top-[-550px]"
@@ -35,7 +34,6 @@ const Navbar = () => {
             <li
               key={link.name}
               className="md:ml-8 whitespace-nowrap text-xl md:my-0 my-7"
-              onClick={() => setOpen(!open)}
             >
               <Link
                 href={link.link}
