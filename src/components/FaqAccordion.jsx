@@ -4,7 +4,7 @@ import Header from "./header";
 
 const FaqAccordion = () => {
   return (
-    <div id="faqs">
+    <div id="faqs" className="scroll-my-32">
       <Header name="Frequently Asked Questions" />
       <div className="grid md:grid-cols-2 mt-10">
         <div>
