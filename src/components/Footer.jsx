@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
+
   FaDiscord,
   FaFacebookF,
   FaInstagram,
@@ -10,6 +11,7 @@ import {
 import logo from "../../public/Images/logo.jpg";
 
 const Footer = () => {
+  
   let year = new Date().getFullYear();
 
   return (
@@ -54,9 +56,7 @@ const Footer = () => {
             <li>
               <Link
                 href="https://twitter.com/devs_in_tech"
-                aria-label="Visit us on Twitter" 
-                title="Twitter (External Link)"
-                rel="noopener noreferrer"
+                rel="noreferrer"
                 target="_blank"
                 className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
@@ -69,10 +69,8 @@ const Footer = () => {
             <li>
               <Link
                 href="/"
+                rel="noreferrer"
                 target="_blank"
-                aria-label="Visit us on Linkedin" 
-                title="Linkedin (External Link)"
-                rel="noopener noreferrer"
                 className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
                 <FaLinkedinIn size={20} />
@@ -84,9 +82,7 @@ const Footer = () => {
             <li>
               <Link
                 href="/"
-                aria-label="Visit us on Instagram" 
-                title="Instagram (External Link)"
-                rel="noopener noreferrer"
+                rel="noreferrer"
                 target="_blank"
                 className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
@@ -99,9 +95,7 @@ const Footer = () => {
             <li>
               <Link
                 href="https://discord.com/invite/g7FmxB9uZp"
-                aria-label="Join with us on Discord" 
-                title="Discord (External Link)"
-                rel="noopener noreferrer"
+                rel="noreferrer"
                 target="_blank"
                 className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
