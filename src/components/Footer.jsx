@@ -45,22 +45,22 @@ const Footer = () => {
                 href="/"
                 rel="noreferrer"
                 target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
-                <FaFacebookF size={20} />
+                <FaFacebookF size={20}
+                  className="dark:text-white dark:hover:text-[#3b5998] transition-all duration-150 ease-in-out" />
               </Link>
             </li>
 
             <li>
               <Link
                 href="https://twitter.com/devs_in_tech"
-                aria-label="Visit us on Twitter" 
+                aria-label="Visit us on Twitter"
                 title="Twitter (External Link)"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
-                <FaTwitter size={20} />
+                <FaTwitter size={20}
+                  className="dark:fill-white dark:hover:fill-[#1DA1F2] transition-all duration-200 ease-in-out" />
               </Link>
             </li>
 
@@ -70,12 +70,12 @@ const Footer = () => {
               <Link
                 href="/"
                 target="_blank"
-                aria-label="Visit us on Linkedin" 
+                aria-label="Visit us on Linkedin"
                 title="Linkedin (External Link)"
                 rel="noopener noreferrer"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
-                <FaLinkedinIn size={20} />
+                <FaLinkedinIn size={20}
+                  className="dark:hover:fill-[#0072b1] dark:fill-white transition-all duration-200 ease-in-out" />
               </Link>
             </li>
 
@@ -84,13 +84,13 @@ const Footer = () => {
             <li>
               <Link
                 href="/"
-                aria-label="Visit us on Instagram" 
+                aria-label="Visit us on Instagram"
                 title="Instagram (External Link)"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
-                <FaInstagram size={20} />
+                <FaInstagram size={20}
+                  className="dark:hover:fill-[#E4405F] dark:fill-white transition-all ease-in-out duration-200" />
               </Link>
             </li>
 
@@ -99,13 +99,13 @@ const Footer = () => {
             <li>
               <Link
                 href="https://discord.com/invite/g7FmxB9uZp"
-                aria-label="Join with us on Discord" 
+                aria-label="Join with us on Discord"
                 title="Discord (External Link)"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
-                <FaDiscord size={20} />
+                <FaDiscord size={20}
+                  className="dark:hover:fill-[#5865F2] dark:fill-white transition-all duration-200 ease-in-out" />
               </Link>
             </li>
           </ul>
