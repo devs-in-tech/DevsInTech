@@ -20,7 +20,7 @@ const AboutCommunity = () => {
   return (
     <div className="px-5 sm:mt-10 mt-16" id="aboutCommunity">
       <Header name="What is DevsInTech Community?" />
-      <p className="my-7 text-justify font-secondary text-white">
+      <p className="my-7 font-secondary text-white">
         At DevsInTech, we believe in the power of community. We know that when
         developers come together, amazing things can happen. That is why we are
         dedicated to creating a space where everyone feels welcome and
