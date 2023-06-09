@@ -12,6 +12,7 @@ import logo from "../../public/Images/logo.jpg";
 const Footer = () => {
   let year = new Date().getFullYear();
 
+
   return (
     <footer className="bg-black bottom-0 mb-6 pt-32 font-primary">
       <div className="flex flex-col gap-8 justify-between content-center md:flex-row">
@@ -60,7 +61,7 @@ const Footer = () => {
                 target="_blank"
               >
                 <FaTwitter size={20}
-                  className="dark:fill-white dark:hover:fill-[#1DA1F2] transition-all duration-200 ease-in-out" />
+                  className="dark:fill-white hover:fill-[#1DA1F2] transition-all duration-200 ease-in-out" />
               </Link>
             </li>
 
@@ -75,7 +76,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn size={20}
-                  className="dark:hover:fill-[#0072b1] dark:fill-white transition-all duration-200 ease-in-out" />
+                  className="hover:fill-[#0072b1] dark:fill-white transition-all duration-200 ease-in-out" />
               </Link>
             </li>
 
@@ -90,7 +91,7 @@ const Footer = () => {
                 target="_blank"
               >
                 <FaInstagram size={20}
-                  className="dark:hover:fill-[#E4405F] dark:fill-white transition-all ease-in-out duration-200" />
+                  className="hover:fill-[#E4405F] dark:fill-white transition-all ease-in-out duration-200" />
               </Link>
             </li>
 
@@ -105,7 +106,7 @@ const Footer = () => {
                 target="_blank"
               >
                 <FaDiscord size={20}
-                  className="dark:hover:fill-[#5865F2] dark:fill-white transition-all duration-200 ease-in-out" />
+                  className="hover:fill-[#5865F2] dark:fill-white transition-all duration-200 ease-in-out" />
               </Link>
             </li>
           </ul>
