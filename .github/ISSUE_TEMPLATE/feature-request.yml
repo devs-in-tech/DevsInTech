@@ -9,7 +9,7 @@ body:
       label: Description
       description: A clear and concise description of any alternative solution or features you've considered.
     validations:
-      required: true
+      required: 
   - type: textarea
     id: screenshots
     attributes:
