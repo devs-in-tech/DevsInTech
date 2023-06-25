@@ -34,12 +34,12 @@ const Navbar = () => {
           {Links.map((link) => (
             <li
               key={link.name}
-              className="md:ml-8 whitespace-nowrap text-xl md:my-0 my-7"
+              className="md:ml-8 flex whitespace-nowrap text-xl md:my-0 my-7"
               onClick={() => setOpen(!open)}
             >
               <Link
                 href={link.link}
-                className="text-white relative group after:contents-[''] after:w-0 after:absolute after:top-[100%] after:left-0 after:hover:w-full after:h-0.5 after:bg-gray-400 after:transition-all after:duration-500 after:opacity-90 hover:text-gray-400 duration-500"
+                className="text-white relative group after:contents-[''] after:w-0 after:absolute after:top-[100%] after:left-0 after:hover:w-full after:h-0.5 after:bg-gray-400  after:transition-all transition-all after:duration-500 after:opacity-90 hover:text-gray-400 duration-500"
               >
                 {link.name}
               </Link>
