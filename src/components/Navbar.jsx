@@ -3,13 +3,14 @@ import Link from "next/link";
 import { useState } from "react";
 import Logo from "../../public/logo2.png";
 import Button from "./button";
+import HeaderSocialMedia from "./HeaderSocialMedia";
 
 const Navbar = () => {
   let Links = [
     { name: "Home", link: "/" },
     { name: "About Us", link: "/#aboutCommunity" },
     { name: "Events", link: "/events" },
-    { name: "Team", link: "/" },
+    { name: "Team", link: "/team" },
     { name: "FAQs", link: "/#faqs" },
   ];
   let [open, setOpen] = useState(false);
@@ -28,7 +29,7 @@ const Navbar = () => {
 
         <ul
           className={`md:flex md:items-center md:pb-0 px-20 md:px-0 pb-12 md:justify-center absolute md:static md:z-auto left-0 w-full transition-all duration-500 ease-in ${
-            open ? "top-24  bg-black" : "top-[-550px]"
+            open ? "top-24 bg-black" : "top-[-550px]"
           }`}
         >
           {Links.map((link) => (
@@ -39,22 +40,30 @@ const Navbar = () => {
             >
               <Link
                 href={link.link}
-                className="text-white font-3 hover:text-transparent bg-clip-text bg-gradient-to-r from-[#AF7AF2] via-[#A5F7A8] to-[#AF7AF2] duration-200"
+                className="text-white hover:text-gray-400 duration-500"
               >
                 {link.name}
               </Link>
             </li>
           ))}
-          <span className="md:hidden block">
-            <Button
-              name="Join Us"
-              url="https://discord.com/invite/g7FmxB9uZp"
-            />
-          </span>
+          <li
+            className="md:ml-8 whitespace-nowrap text-xl md:my-0 my-7"
+            onClick={() => setOpen(!open)}
+          >
+            <Link
+              href="https://discord.com/invite/g7FmxB9uZp"
+              className="text-white font-3 hover:text-transparent bg-clip-text bg-gradient-to-r from-[#AF7AF2] via-[#A5F7A8] to-[#AF7AF2] duration-200"
+            >
+              Join Us
+            </Link>
+          </li>
+          <div className="md:hidden flex gap-4">
+            <HeaderSocialMedia width={35} height={30} />
+          </div>
         </ul>
-        <span className="md:ml-auto md:block hidden">
-          <Button name="Join Us" url="https://discord.com/invite/g7FmxB9uZp " />
-        </span>
+        <div className="lg:flex lg:gap-5 hidden md:flex md:gap-3">
+          <HeaderSocialMedia width={47} height={47} />
+        </div>
       </div>
       <div
         onClick={() => setOpen(!open)}

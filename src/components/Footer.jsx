@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
-
   FaDiscord,
   FaFacebookF,
   FaInstagram,
@@ -11,8 +10,8 @@ import {
 import logo from "../../public/Images/logo.jpg";
 
 const Footer = () => {
-  
   let year = new Date().getFullYear();
+
 
   return (
     <footer className="bg-black bottom-0 mb-6 pt-32 font-primary">
@@ -47,20 +46,22 @@ const Footer = () => {
                 href="/"
                 rel="noreferrer"
                 target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
-                <FaFacebookF size={20} />
+                <FaFacebookF size={20}
+                  className="dark:text-white dark:hover:text-[#3b5998] transition-all duration-150 ease-in-out" />
               </Link>
             </li>
 
             <li>
               <Link
                 href="https://twitter.com/devs_in_tech"
-                rel="noreferrer"
+                aria-label="Visit us on Twitter"
+                title="Twitter (External Link)"
+                rel="noopener noreferrer"
                 target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
-                <FaTwitter size={20} />
+                <FaTwitter size={20}
+                  className="dark:fill-white hover:fill-[#1DA1F2] transition-all duration-200 ease-in-out" />
               </Link>
             </li>
 
@@ -69,11 +70,13 @@ const Footer = () => {
             <li>
               <Link
                 href="/"
-                rel="noreferrer"
                 target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+                aria-label="Visit us on Linkedin"
+                title="Linkedin (External Link)"
+                rel="noopener noreferrer"
               >
-                <FaLinkedinIn size={20} />
+                <FaLinkedinIn size={20}
+                  className="hover:fill-[#0072b1] dark:fill-white transition-all duration-200 ease-in-out" />
               </Link>
             </li>
 
@@ -82,11 +85,13 @@ const Footer = () => {
             <li>
               <Link
                 href="/"
-                rel="noreferrer"
+                aria-label="Visit us on Instagram"
+                title="Instagram (External Link)"
+                rel="noopener noreferrer"
                 target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
-                <FaInstagram size={20} />
+                <FaInstagram size={20}
+                  className="hover:fill-[#E4405F] dark:fill-white transition-all ease-in-out duration-200" />
               </Link>
             </li>
 
@@ -95,11 +100,13 @@ const Footer = () => {
             <li>
               <Link
                 href="https://discord.com/invite/g7FmxB9uZp"
-                rel="noreferrer"
+                aria-label="Join with us on Discord"
+                title="Discord (External Link)"
+                rel="noopener noreferrer"
                 target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
-                <FaDiscord size={20} />
+                <FaDiscord size={20}
+                  className="hover:fill-[#5865F2] dark:fill-white transition-all duration-200 ease-in-out" />
               </Link>
             </li>
           </ul>
