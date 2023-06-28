@@ -3,18 +3,19 @@ import Link from "next/link";
 import { useState } from "react";
 import Logo from "../../public/logo2.png";
 import Button from "./button";
+import  HeaderSocialMedia from "./HeaderSocialMedia";
 
 const Navbar = () => {
   let Links = [
     { name: "Home", link: "/" },
     { name: "About Us", link: "/#aboutCommunity" },
-    { name: "Events", link: "/#events" },
-    { name: "Team", link: "/" },
+    { name: "Events", link: "/events" },
+    { name: "Team", link: "/team" },
     { name: "FAQs", link: "/#faqs" },
   ];
   let [open, setOpen] = useState(false);
   return (
-    <div className="w-full z-10 top-0 left-0 sticky bg-black">
+    <div className="w-full z-999 top-0 left-0 sticky bg-black">
       <div className="md:flex md:items-center md:justify-between py-4 px-7">
         <div
           className="font-bold text-base cursor-pointer flex flex-col md:items-center font-secondary 
@@ -45,16 +46,13 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-          <span className="md:hidden block">
-            <Button
-              name="Join Us"
-              url="https://discord.com/invite/g7FmxB9uZp"
-            />
-          </span>
+          <div className="md:hidden flex gap-4">
+          <HeaderSocialMedia width={35} height={30}/>
+          </div>
         </ul>
-        <span className="md:ml-auto md:block hidden">
-          <Button name="Join Us" url="https://discord.com/invite/g7FmxB9uZp " />
-        </span>
+        <div className="lg:flex lg:gap-5 hidden md:flex md:gap-3">
+       <HeaderSocialMedia width={47} height={47}/>
+        </div>
       </div>
       <div
         onClick={() => setOpen(!open)}
