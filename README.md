@@ -32,7 +32,7 @@ DevsInTech offers a wide range of resources and opportunities for developers and
 
 **Workshops and Webinars:** We organize workshops and webinars led by industry experts on various topics such as programming languages, frameworks, software development methodologies, and emerging technologies.
 
-**Tech Talks and Panel Discussions:** We host engaging tech talks and panels with industry experts cover trends, best practices, and real-world experiences, offering valuable insights and inspiring conversations.
+**Tech Talks and Panel Discussions:** We host engaging tech talks and panels with industry experts covering latest trends, best practices, and real-world experiences, offering valuable insights and producing inspiring conversations.
 
 **Networking and Community Events:** We facilitate networking through meetups, conferences, and events, fostering connections, idea sharing, collaboration, and professional relationships.
 
