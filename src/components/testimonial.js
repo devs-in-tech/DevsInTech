@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Header from "./header";
 
 const testimonials = [
@@ -40,7 +40,7 @@ const testimonials = [
 ];
 
 const Testimonial = ({ testimonial }) => (
-  <div className="bg-black p-6 rounded-lg delay-150 hover:-translate-y-1 duration-300 hover:scale-110 m-6 p-4 h-100">
+  <div className="bg-black p-4 rounded-xl delay-150 hover:-translate-y-1 duration-300 hover:scale-110 md:m-6 m-2 mt-8 h-100 border-2 border-white">
     <p className="text-white">{testimonial.text}</p>
     <div className="flex items-center mt-4">
       <div className="flex-shrink-0">
@@ -104,39 +104,39 @@ const TestimonialCarousel = () => {
   return (
     <div className="py-10">
       <Header name="What Our Members Say About Us" />
-        <div className="flex flex-col items-center justify-center">
-          <div className="flex items-center mb-6">
-            <button
-              onClick={goToPrev}
-              className="bg-gray-800 text-white rounded-full p-3 flex justify-center items-center mr-2"
-            >
-              {"<"}
-            </button>
-            {visibleTestimonials.map((testimonial) => (
-              <div key={testimonial.id}>
-                <Testimonial testimonial={testimonial} />
-              </div>
-            ))}
-            <button
-              onClick={goToNext}
-              className="bg-gray-800 text-white rounded-full p-4 flex justify-center items-center ml-2"
-            >
-              {">"}
-            </button>
-          </div>
-          <div className="flex justify-center">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={testimonial.id}
-                className={`h-2 w-2 rounded-full mx-2 bg-gray-400 ${current === index ? "bg-gray-200" : "bg-gray-900"
-                  }`}
-                onClick={() => setCurrent(index)}
-              ></div>
-            ))}
-          </div>
+      <div className="flex flex-col items-center justify-center">
+        <div className="flex items-center mb-6">
+          <button
+            onClick={goToPrev}
+            className="bg-gray-800 text-white rounded-full p-3 flex justify-center items-center mr-2"
+          >
+            {"<"}
+          </button>
+          {visibleTestimonials.map((testimonial) => (
+            <div key={testimonial.id}>
+              <Testimonial testimonial={testimonial} />
+            </div>
+          ))}
+          <button
+            onClick={goToNext}
+            className="bg-gray-800 text-white rounded-full p-4 flex justify-center items-center ml-2"
+          >
+            {">"}
+          </button>
+        </div>
+        <div className="flex justify-center">
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={testimonial.id}
+              className={`h-2 w-2 rounded-full mx-2 bg-gray-400 ${current === index ? "bg-gray-200" : "bg-gray-900"
+                }`}
+              onClick={() => setCurrent(index)}
+            ></div>
+          ))}
         </div>
       </div>
-      );
+    </div>
+  );
 };
 
-      export default TestimonialCarousel;
+export default TestimonialCarousel;
