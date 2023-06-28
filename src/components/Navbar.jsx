@@ -40,7 +40,7 @@ const Navbar = () => {
             >
               <Link
                 href={link.link}
-                className="text-white hover:text-gray-400 duration-500"
+                className="text-white hover:text-gradient-to-r from-purple-400 via-green-400 to-purple-400 duration-500"
               >
                 {link.name}
               </Link>
