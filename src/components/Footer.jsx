@@ -35,9 +35,11 @@ const Footer = () => {
 
         <div className="flex flex-col content-center">
           <p className="text-center text-white text-md sm:text-lg md:text-xl md:text-left">
-            <a href="https://devsintech.netlify.app/">DevsInTech</a> is a thriving and welcoming community of developers,
-            tech professionals,and enthusiasts who share a common passion for technology.
-            We are an Open-source project available on <a href="https://github.com/devs-in-tech/DevsInTech">GitHub</a>
+            <a href="https://devsintech.netlify.app/">DevsInTech</a> is a
+            thriving and welcoming community of developers, tech
+            professionals,and enthusiasts who share a common passion for
+            technology. We are an Open-source project available on{" "}
+            <a href="https://github.com/devs-in-tech/DevsInTech">GitHub</a>
           </p>
           <ul className="mt-6 flex justify-center gap-6 md:justify-start md:gap-8">
             <li>
@@ -54,7 +56,7 @@ const Footer = () => {
             <li>
               <Link
                 href="https://twitter.com/devs_in_tech"
-                aria-label="Visit us on Twitter" 
+                aria-label="Visit us on Twitter"
                 title="Twitter (External Link)"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -70,7 +72,7 @@ const Footer = () => {
               <Link
                 href="/"
                 target="_blank"
-                aria-label="Visit us on Linkedin" 
+                aria-label="Visit us on Linkedin"
                 title="Linkedin (External Link)"
                 rel="noopener noreferrer"
                 className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
@@ -84,7 +86,7 @@ const Footer = () => {
             <li>
               <Link
                 href="/"
-                aria-label="Visit us on Instagram" 
+                aria-label="Visit us on Instagram"
                 title="Instagram (External Link)"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -99,7 +101,7 @@ const Footer = () => {
             <li>
               <Link
                 href="https://discord.com/invite/g7FmxB9uZp"
-                aria-label="Join with us on Discord" 
+                aria-label="Join with us on Discord"
                 title="Discord (External Link)"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -118,7 +120,7 @@ const Footer = () => {
               <p className="text-lg font-medium text-white">Community</p>
 
               <nav aria-label="Footer About Nav" className="mt-4 text-center">
-                <ul className="space-y-4 font-light text-xs">
+                <ul className="space-y-4 font-black text-base">
                   <li>
                     <Link
                       className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
@@ -173,7 +175,7 @@ const Footer = () => {
                 aria-label="Footer Services Nav"
                 className="mt-4 text-center"
               >
-                <ul className="space-y-4 font-light text-xs">
+                <ul className="space-y-4 font-black text-base">
                   <li>
                     <Link
                       className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
