@@ -5,6 +5,7 @@ import Cards from "@/components/HomePage/Events_Cards";
 import Navbar from "@/components/Navbar";
 import TestimonialCarousel from "@/components/testimonial";
 import ScrollToTop from "@/components/ScrollToTop";
+import TeamPage from "@/components/TeamPage";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <ScrollToTop />
       <AboutCommunity />
       <Cards />
+      <TeamPage />
       <FaqAccordion />
       <TestimonialCarousel />
       <Footer />

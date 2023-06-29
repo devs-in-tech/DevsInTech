@@ -6,7 +6,7 @@ import Header from "../header";
 
 const TeamPage = () => {
   return (
-    <div className="mt-5">
+    <div id="team" className="mt-5">
       <Header name="Team Members" />
 
       <div className="flex flex-wrap pt-14 justify-center sm:-m-4 -mx-4 -mb-10 -mt-4">
