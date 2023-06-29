@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaDiscord, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
-const HeaderSocialMedia = (props) => {
+const HeaderSocialMedia = () => {
   return (
     <>
       <div>
@@ -20,15 +20,15 @@ const HeaderSocialMedia = (props) => {
       </div>
       <div>
         <Link
-          href="https://twitter.com/devs_in_tech"
+          href="https://github.com/devs-in-tech/DevsInTech"
           aria-label="Visit us on Twitter"
-          title="Twitter (External Link)"
+          title="Github (External Link)"
           rel="noopener noreferrer"
           target="_blank"
         >
           <FaGithub
             size={30}
-            className="dark:fill-white hover:fill-[#211F1F] transition-all duration-200 ease-in-out"
+            className="dark:fill-white hover:fill-[#7a7272] transition-all duration-200 ease-in-out"
           />
         </Link>
       </div>
