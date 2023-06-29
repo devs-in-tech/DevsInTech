@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Card from "@/components/HomePage/Events_Cards/card";
 import Navbar from "@/components/Navbar";
+import ScrollToTop from "@/components/ScrollToTop";
 import data from "../../components/content/events";
 
 const Events = () => {
@@ -20,6 +21,7 @@ const Events = () => {
             ))}
         </div>
       </section>
+      <ScrollToTop />
       <Footer />
     </>
   );
