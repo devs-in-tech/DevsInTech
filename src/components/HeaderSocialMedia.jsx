@@ -14,7 +14,8 @@ const HeaderSocialMedia = () => {
         >
           <FaDiscord
             size={30}
-            className="hover:fill-[#5865F2] dark:fill-white transition-all duration-200 ease-in-out"
+            className="hover:scale-110 duration-300 hover:fill-[#5865F2] dark:fill-white transition-all duration-200 ease-in-out"
+            // className=" hover:fill-[#5865F2] dark:fill-white transition-all duration-200 ease-in-out"
           />
         </Link>
       </div>
@@ -28,7 +29,7 @@ const HeaderSocialMedia = () => {
         >
           <FaGithub
             size={30}
-            className="dark:fill-white hover:fill-[#7a7272] transition-all duration-200 ease-in-out"
+            className="hover:scale-110 duration-300 dark:fill-white hover:fill-[#7a7272] transition-all duration-200 ease-in-out"
           />
         </Link>
       </div>
@@ -42,7 +43,7 @@ const HeaderSocialMedia = () => {
         >
           <FaTwitter
             size={30}
-            className="dark:fill-white hover:fill-[#1DA1F2] transition-all duration-200 ease-in-out"
+            className="hover:scale-110 duration-300 dark:fill-white hover:fill-[#1DA1F2] transition-all duration-200 ease-in-out"
           />
         </Link>
       </div>
@@ -56,7 +57,7 @@ const HeaderSocialMedia = () => {
         >
           <FaLinkedinIn
             size={30}
-            className="hover:fill-[#0072b1] dark:fill-white transition-all duration-200 ease-in-out"
+            className="hover:scale-110 duration-300 hover:fill-[#0072b1] dark:fill-white transition-all duration-200 ease-in-out"
           />
         </Link>
       </div>
