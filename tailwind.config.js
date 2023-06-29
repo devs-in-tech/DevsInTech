@@ -22,11 +22,6 @@ module.exports = {
       width: {
         "fill-available": "-webkit-fill-available",
       },
-      colors: {
-        "discord-blue": "#7289DA",
-        "github-gray": "#333333",
-        "linkedin-blue": "#0077B5",
-      },
     },
   },
   plugins: [],
