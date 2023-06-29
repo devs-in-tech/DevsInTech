@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       zIndex: {
-        '999': 999,
+        999: 999,
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -21,6 +21,11 @@ module.exports = {
       },
       width: {
         "fill-available": "-webkit-fill-available",
+      },
+      colors: {
+        "discord-blue": "#7289DA",
+        "github-gray": "#333333",
+        "linkedin-blue": "#0077B5",
       },
     },
   },
