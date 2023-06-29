@@ -12,7 +12,7 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      let height = 530;
+      let height = 580;
       const scrollCheck =
         document.documentElement.scrollTop || document.body.scrollTop;
       if (scrollCheck > height) {
