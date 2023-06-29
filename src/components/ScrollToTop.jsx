@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { FiArrowUp } from "react-icons/fi";
+import smoothscroll from "smoothscroll-polyfill";
 
 const ScrollToTop = () => {
   const [scroll, setScroll] = useState(false);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -11,16 +13,23 @@ const ScrollToTop = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    smoothscroll.polyfill(); // Apply smoothscroll polyfill for older browsers
+    const handleScroll = () => {
       let height = 580;
       const scrollCheck =
-        document.documentElement.scrollTop || document.body.scrollTop;
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
       if (scrollCheck > height) {
         setScroll(true);
       } else {
         setScroll(false);
       }
-    });
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (

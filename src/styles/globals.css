@@ -50,6 +50,6 @@ body {
 ::-webkit-scrollbar-thumb {
   border: 0.21em solid transparent;
   border-radius: 100px;
-  background: linear-gradient(#a569f4,#A7DEB6);
+  background: linear-gradient(#a569f4, #a7deb6);
   background-clip: content-box;
 }
