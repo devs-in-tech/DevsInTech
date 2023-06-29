@@ -1,26 +1,22 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
 import { AiOutlineClose, AiOutlinePlus } from "react-icons/ai";
 
-const FaqAccordionItem = ({ faq }) => {
-  const [expanded, setExpanded] = useState(false);
+const FaqAccordionItem = ({ faq, isActive, onAccordionItemClick }) => {
   return (
     <div
       className="text-white  font-gilroy border-b-[1px] px-4 md:py-2 py-4 border-white  hover:border-sky-500/100"
-      onClick={() => {
-        setExpanded((prev) => !prev);
-      }}
+      onClick={onAccordionItemClick}
     >
       <div className="cursor-pointer flex items-start md:py-2 py-0 gap-16 justify-between  hover:text-sky-500/100">
         <h3
           className={`md:text-xl sm:text-2xl text-lg leading-none ${
-            expanded && "mb-1"
+            isActive && "mb-1"
           }`}
         >
           {faq.question}
         </h3>
         <div>
-          {expanded ? (
+          {isActive ? (
             <AiOutlineClose className="text-2xl" />
           ) : (
             <AiOutlinePlus className="text-2xl" />
@@ -28,7 +24,7 @@ const FaqAccordionItem = ({ faq }) => {
         </div>
       </div>
       <AnimatePresence initial={false}>
-        {expanded && (
+        {isActive && (
           <motion.p
             key="content"
             initial="collapsed"
