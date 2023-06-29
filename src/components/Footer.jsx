@@ -35,7 +35,7 @@ const Footer = () => {
         {/* About Us */}
 
         <div className="flex flex-col content-center">
-          <p className="text-center text-white text-md sm:text-lg md:text-xl md:text-left">
+          <p className="text-center text-white text-md sm:text-md md:text-lg md:text-left">
             <a href="https://devsintech.netlify.app/">DevsInTech</a> is a thriving and welcoming community of developers,
             tech professionals,and enthusiasts who share a common passion for technology.
             We are an Open-source project available on <a href="https://github.com/devs-in-tech/DevsInTech">GitHub</a>
