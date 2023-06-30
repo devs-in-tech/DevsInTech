@@ -125,7 +125,7 @@ const Footer = () => {
                 <ul className="space-y-4 font-black text-base">
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Collaborate
@@ -134,7 +134,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Communicate
@@ -143,7 +143,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Courses
@@ -152,7 +152,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Webinars
@@ -161,7 +161,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Meetups
@@ -180,7 +180,7 @@ const Footer = () => {
                 <ul className="space-y-4 font-black text-base">
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Collaborate
@@ -189,7 +189,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Events
@@ -198,7 +198,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Courses
@@ -207,7 +207,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Webinars
@@ -216,7 +216,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Meetups
