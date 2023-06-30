@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Logo from "../../public/logo2.png";
-import Button from "./button";
+// import Button from "./button";
 import HeaderSocialMedia from "./HeaderSocialMedia";
 
 const Navbar = () => {
