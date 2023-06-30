@@ -1,3 +1,5 @@
+
+
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -11,7 +13,6 @@ import logo from "../../public/Images/logo.jpg";
 
 const Footer = () => {
   let year = new Date().getFullYear();
-
 
   return (
     <footer className="bg-black bottom-0 mb-6 pt-32 font-primary">
@@ -35,10 +36,12 @@ const Footer = () => {
         {/* About Us */}
 
         <div className="flex flex-col content-center">
-          <p className="text-center text-white text-md sm:text-md md:text-lg md:text-left">
-            <Link href="https://devsintech.netlify.app/">DevsInTech</Link> is a thriving and welcoming community of developers,
-            tech professionals,and enthusiasts who share a common passion for technology.
-            We are an Open-source project available on <Link href="https://github.com/devs-in-tech/DevsInTech">GitHub</Link>
+          <p className="text-center text-white text-md sm:text-lg md:text-xl md:text-left">
+            <a href="https://devsintech.netlify.app/">DevsInTech</a> is a
+            thriving and welcoming community of developers, tech
+            professionals,and enthusiasts who share a common passion for
+            technology. We are an Open-source project available on{" "}
+            <a href="https://github.com/devs-in-tech/DevsInTech">GitHub</a>
           </p>
           <ul className="mt-6 flex justify-center gap-6 md:justify-start md:gap-8">
             <li>
@@ -46,9 +49,9 @@ const Footer = () => {
                 href="/"
                 rel="noreferrer"
                 target="_blank"
+                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
-                <FaFacebookF size={20}
-                  className="dark:text-white dark:hover:text-[#3b5998] transition-all duration-150 ease-in-out" />
+                <FaFacebookF size={20} />
               </Link>
             </li>
 
@@ -59,9 +62,9 @@ const Footer = () => {
                 title="Twitter (External Link)"
                 rel="noopener noreferrer"
                 target="_blank"
+                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
-                <FaTwitter size={20}
-                  className="dark:fill-white hover:fill-[#1DA1F2] transition-all duration-200 ease-in-out" />
+                <FaTwitter size={20} />
               </Link>
             </li>
 
@@ -74,9 +77,9 @@ const Footer = () => {
                 aria-label="Visit us on Linkedin"
                 title="Linkedin (External Link)"
                 rel="noopener noreferrer"
+                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
-                <FaLinkedinIn size={20}
-                  className="hover:fill-[#0072b1] dark:fill-white transition-all duration-200 ease-in-out" />
+                <FaLinkedinIn size={20} />
               </Link>
             </li>
 
@@ -89,9 +92,9 @@ const Footer = () => {
                 title="Instagram (External Link)"
                 rel="noopener noreferrer"
                 target="_blank"
+                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
-                <FaInstagram size={20}
-                  className="hover:fill-[#E4405F] dark:fill-white transition-all ease-in-out duration-200" />
+                <FaInstagram size={20} />
               </Link>
             </li>
 
@@ -104,9 +107,9 @@ const Footer = () => {
                 title="Discord (External Link)"
                 rel="noopener noreferrer"
                 target="_blank"
+                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
-                <FaDiscord size={20}
-                  className="hover:fill-[#5865F2] dark:fill-white transition-all duration-200 ease-in-out" />
+                <FaDiscord size={20} />
               </Link>
             </li>
           </ul>
@@ -119,10 +122,10 @@ const Footer = () => {
               <p className="text-lg font-medium text-white">Community</p>
 
               <nav aria-label="Footer About Nav" className="mt-4 text-center">
-                <ul className="space-y-4 font-light text-xs">
+                <ul className="space-y-4 font-black text-base">
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Collaborate
@@ -131,7 +134,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Communicate
@@ -140,7 +143,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Courses
@@ -149,7 +152,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Webinars
@@ -158,7 +161,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Meetups
@@ -174,10 +177,10 @@ const Footer = () => {
                 aria-label="Footer Services Nav"
                 className="mt-4 text-center"
               >
-                <ul className="space-y-4 font-light text-xs">
+                <ul className="space-y-4 font-black text-base">
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Collaborate
@@ -186,7 +189,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Events
@@ -195,7 +198,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Courses
@@ -204,7 +207,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Webinars
@@ -213,7 +216,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Meetups
