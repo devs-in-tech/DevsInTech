@@ -13,7 +13,7 @@ const FaqAccordion = () => {
   };
 
   return (
-    <div id="faqs" className="scroll-my-32">
+    <div id="faqs" className="scroll-my-32 p-6 mt-3">
       <Header name="Frequently Asked Questions" />
       <div className="grid md:grid-cols-2 mt-10">
         <div>
