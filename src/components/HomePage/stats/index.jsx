@@ -27,7 +27,7 @@ const Stats = ({ stats }) => {
             w-[24rem] 
             h-[10rem] 
             p-6 
-            bg-[#3D164D] 
+            bg-gradient-to-r from-indigo-800 to-purple-500 
             border 
             border-gray-200 
             rounded-lg 
@@ -36,7 +36,7 @@ const Stats = ({ stats }) => {
             items-center 
             justify-center 
             text-center
-            hover:translate-y-4
+            hover:translate-y-2
             transition-transform
             ">
               <h2 className="mb-2 text-5xl font-bold tracking-tight text-white dark:text-white text-center">
