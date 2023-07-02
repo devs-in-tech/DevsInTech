@@ -38,9 +38,10 @@ DevsInTech offers a wide range of resources and opportunities for developers and
 
 ## Get in touch👋 
 
-<Link href="https://discord.com/invite/g7FmxB9uZp"><img src="https://img.icons8.com/color/2x/discord--v2.png" title="Discord" alt="Discord Community" height="60px"></img><Link/>
-<Link href="https://twitter.com/devs_in_tech"><img src="https://img.icons8.com/fluency/2x/twitter.png" title="Twitter" alt="Twitter Account" height="60px"></img><Link/>
-<Link href="https://www.linkedin.com/company/devsintech-community/mycompany/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" title="LinkedIn" alt="LinkedIn Account" height="60px"></img><Link/>
+[![Discord](https://img.icons8.com/color/2x/discord--v2.png)](https://discord.com/invite/g7FmxB9uZp)
+[![Twitter](https://img.icons8.com/fluency/2x/twitter.png)](https://twitter.com/devs_in_tech)
+[![LinkedIn](https://img.icons8.com/fluency/2x/linkedin.png)](https://www.linkedin.com/company/devsintech-community/)
+
 
 ## Tech stack used to build DevsInTech⚙️
 

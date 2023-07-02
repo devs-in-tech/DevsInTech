@@ -72,7 +72,7 @@ const Footer = () => {
 
             <li>
               <Link
-                href="/"
+                href="https://www.linkedin.com/company/devsintech-community/"
                 target="_blank"
                 aria-label="Visit us on Linkedin"
                 title="Linkedin (External Link)"
