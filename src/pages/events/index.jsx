@@ -15,7 +15,7 @@ const Events = () => {
     <>
       <Navbar />
       <div style={{ marginTop: 100, color: 'white', alignItems: 'center' }}>
-        <h1 className="text-5xl  text-center text-blue-500">Welcome to the DevsinTech Community Events Page!</h1>
+        <h1 className="text-5xl font-bold text-center text-blue-500">Welcome to the DevsinTech Community Events Page!</h1>
         <div className='w-[100%] flex flex-wrap mx-auto justify-center items-center mt-26 py-8 mb-5 max-w-screen-2xl format-card'>
           <div className="md:w-2/3 ml-5" data-aos="fade-left" data-aos-duration="500">
             <p className="team-description  text-2xl text-center">
