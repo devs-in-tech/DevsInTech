@@ -53,9 +53,9 @@ const Events = () => {
           </Link>
           <div class="p-5">
             <Link href='/events/tech' >
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-white text-center">Online Tech Events</h5>
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-white text-center">Webinars</h5>
             </Link>
-            <p class="mb-5 font-medium text-gray-400 text-lg text-justify">Online tech events are virtual gatherings that bring together tech enthusiasts, professionals, and industry experts from around the world.</p>
+            <p class="mb-5 font-medium text-gray-400 text-lg text-justify">Webinars are highly valuable resources for individuals interested in technology and software development. We conduct webinars at regular intervals for individuals looking to enhance their technical skills.</p>
             <Link href="/events/tech" class="relative w-max items-center py-3 px-7 font-medium transition-all duration-75 group flex flex-row gap-1 bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 outline-none text-white">
               Explore...
               <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
