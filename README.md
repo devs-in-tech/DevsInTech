@@ -1,6 +1,6 @@
 # DevsInTech 🚀
 
-<p align="center"><a href="/"><img src="https://user-images.githubusercontent.com/76242769/233774732-447713dd-db8d-4c95-9c66-827ef84cbcf8.png" title="Logo" alt="Logo" height="150px"/></a></p>
+<p align="center"><Link href="/"><img src="https://user-images.githubusercontent.com/76242769/233774732-447713dd-db8d-4c95-9c66-827ef84cbcf8.png" title="Logo" alt="Logo" height="150px"/><Link/></p>
 <div align="center">
 <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
 <img src="https://forthebadge.com/images/badges/uses-brains.svg" />
@@ -32,15 +32,16 @@ DevsInTech offers a wide range of resources and opportunities for developers and
 
 **Workshops and Webinars:** We organize workshops and webinars led by industry experts on various topics such as programming languages, frameworks, software development methodologies, and emerging technologies.
 
-**Tech Talks and Panel Discussions:** We host engaging tech talks and panels with industry experts cover trends, best practices, and real-world experiences, offering valuable insights and inspiring conversations.
+**Tech Talks and Panel Discussions:** We host engaging tech talks and panels with industry experts covering latest trends, best practices, and real-world experiences, offering valuable insights and producing inspiring conversations.
 
 **Networking and Community Events:** We facilitate networking through meetups, conferences, and events, fostering connections, idea sharing, collaboration, and professional relationships.
 
 ## Get in touch👋 
 
-<a href="https://discord.com/invite/g7FmxB9uZp"><img src="https://img.icons8.com/color/2x/discord--v2.png" title="Discord" alt="Discord Community" height="60px"></img></a>
-<a href="https://twitter.com/devs_in_tech"><img src="https://img.icons8.com/fluency/2x/twitter.png" title="Twitter" alt="Twitter Account" height="60px"></img></a>
-<a href="https://www.linkedin.com/company/devsintech-community/mycompany/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" title="LinkedIn" alt="LinkedIn Account" height="60px"></img></a>
+[![Discord](https://img.icons8.com/color/2x/discord--v2.png)](https://discord.com/invite/g7FmxB9uZp)
+[![Twitter](https://img.icons8.com/fluency/2x/twitter.png)](https://twitter.com/devs_in_tech)
+[![LinkedIn](https://img.icons8.com/fluency/2x/linkedin.png)](https://www.linkedin.com/company/devsintech-community/)
+
 
 ## Tech stack used to build DevsInTech⚙️
 
@@ -48,15 +49,15 @@ DevsInTech offers a wide range of resources and opportunities for developers and
 
 # Contribute
 
-We welcome contributions in our community. Learn how to start contributing, from installing the project on your device to submitting a pull request with our<a href="https://github.com/devs-in-tech/DevsInTech/blob/main/CONTRIBUTING.md"> Contribution guide.</a>
+We welcome contributions in our community. Learn how to start contributing, from installing the project on your device to submitting a pull request with our<Link href="https://github.com/devs-in-tech/DevsInTech/blob/main/CONTRIBUTING.md"> Contribution guide.<Link/>
 
 # Code of Conduct
 
-Check out the <a href="https://github.com/devs-in-tech/DevsInTech/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> to know an inclusive environment that respects all contributions.
+Check out the <Link href="https://github.com/devs-in-tech/DevsInTech/blob/main/CODE_OF_CONDUCT.md">Code of Conduct<Link/> to know an inclusive environment that respects all contributions.
 
 # License
 
-This Community is <a href="https://github.com/devs-in-tech/DevsInTech/blob/main/LICENSE">Licensed</a> under MIT license.
+This Community is <Link href="https://github.com/devs-in-tech/DevsInTech/blob/main/LICENSE">Licensed<Link/> under MIT license.
 
 ## 🙏Support
 
@@ -64,6 +65,6 @@ Don't forget to leave a star ⭐️
 
 ## Thank You to Our Contributors❤️
 
-<a href="https://github.com/devs-in-tech/DevsInTech/graphs/contributors">
+<Link href="https://github.com/devs-in-tech/DevsInTech/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=devs-in-tech/DevsInTech" />
-</a>
+<Link/>
