@@ -38,6 +38,8 @@ const Stats = ({ stats }) => {
             text-center
             hover:translate-y-2
             transition-transform
+            mt-4
+            mb-4
             ">
               <h2 className="mb-2 text-5xl font-bold tracking-tight text-white dark:text-white text-center">
               {count > data.number ? data.number : count}+

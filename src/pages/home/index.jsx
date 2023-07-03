@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Cards from "@/components/HomePage/Events_Cards";
 import Navbar from "@/components/Navbar";
 import ScrollToTop from "@/components/ScrollToTop";
+import TestimonialCarousel from "@/components/testimonial";
 import { useEffect, useState } from "react";
 import HashLoader from "react-spinners/HashLoader";
 const Home = () => {
@@ -33,8 +34,11 @@ const Home = () => {
           <ScrollToTop />
           <AboutCommunity />
           <Cards />
+          <TestimonialCarousel />
           <FaqAccordion />
-          <Footer /></>)}
+          <Footer />
+        </>
+      )}
     </>
   );
 };
