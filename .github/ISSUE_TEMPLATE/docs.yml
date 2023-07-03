@@ -30,3 +30,5 @@ body:
       description: By submitting this issue, you agree to follow our Code of Conduct
       options:
         - label: I agree to follow this project's Code of Conduct
+        - label: "I am a GSSoC'23 contributor"
+          required: false

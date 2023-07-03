@@ -1,5 +1,5 @@
-name: 👯‍♂️ Style Changing Request
-description: Suggest a style designs
+name:"👯‍♀️Style Changing Request"
+description: "Suggest a style designs"
 title: "[style]: "
 labels: ["style"]
 body:
@@ -29,3 +29,12 @@ body:
       description: By submitting this issue, you agree to follow our Code of Conduct
       options:
         - label: I agree to follow this project's Code of Conduct
+        
+- type: checkboxes
+    id: gssoc
+    attributes:
+      label: GSSOC 
+      description: This is for GSSoC'23 contributors only.
+      options:
+        - label: I am a GSSOC'23 Contributor.
+        
