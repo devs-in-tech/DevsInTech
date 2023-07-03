@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,7 +30,7 @@ html {
 body {
   width: 90%;
   margin: auto;
-  background-color: black;
+  /* background-color: black; */
   /* 1280px */
   max-width: 100rem;
   @apply mx-auto w-11/12;
@@ -107,7 +106,90 @@ body {
 ::-webkit-scrollbar-thumb {
   border: 0.21em solid transparent;
   border-radius: 100px;
-  background: linear-gradient(#a569f4,#A7DEB6);
+  background: linear-gradient(#a569f4, #a7deb6);
   background-clip: content-box;
 }
 
+.Contributor_container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.Contributor_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid white;
+  padding: 20px;
+  height: 25rem;
+  width: 30rem;
+  border-radius: 0.5cm;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.Contributor_card:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2), 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+.Contributor_image img {
+  width: 145px;
+  height: 145px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid white;
+}
+
+.Contributor_image img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  border: 2px solid #ffcad4;
+}
+
+.Contributor_name h1 {
+  margin: 1.3rem;
+  color: white;
+  font-size: 2.4rem;
+}
+
+.Contributor_Contributions h3 {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.Contributor_account a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.Contributor_view_button {
+  border: 2px solid white;
+  width: 15rem;
+  padding: 0.7rem;
+  border-radius: 0.3cm;
+  transition: all 0.3s ease-in-out;
+}
+
+.Contributor_view_button:hover {
+  transform: scale(1.05);
+  border: 1.5px solid #ffe5d9;
+}
+@media (max-width: 767px) {
+  .Contributor_container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .Contributor_card {
+    height: auto;
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+}
