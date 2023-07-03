@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import Header from "./header";
 
@@ -44,7 +45,13 @@ const Testimonial = ({ testimonial }) => (
     <p className="text-white">{testimonial.text}</p>
     <div className="flex items-center mt-4">
       <div className="flex-shrink-0">
-        <img className="w-12 h-12 rounded-full" src="https://via.placeholder.com/150" alt={testimonial.name} />
+        <Image
+          width={0}
+          height={0}
+          className="w-12 h-12 rounded-full"
+          src={testimonial.image}
+          alt={testimonial.name}
+        />
       </div>
       <div className="ml-4">
         <div className="text-gray-500 font-medium">{testimonial.name}</div>
@@ -80,10 +87,7 @@ const TestimonialCarousel = () => {
     };
   }, []);
 
-  const visibleTestimonials = testimonials.slice(
-    current,
-    current + numVisible
-  );
+  const visibleTestimonials = testimonials.slice(current, current + numVisible);
 
   const goToPrev = () => {
     if (current === 0) {
@@ -128,8 +132,9 @@ const TestimonialCarousel = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={testimonial.id}
-              className={`h-2 w-2 rounded-full mx-2 bg-gray-400 ${current === index ? "bg-gray-200" : "bg-gray-900"
-                }`}
+              className={`h-2 w-2 rounded-full mx-2 bg-gray-400 ${
+                current === index ? "bg-gray-200" : "bg-gray-900"
+              }`}
               onClick={() => setCurrent(index)}
             ></div>
           ))}

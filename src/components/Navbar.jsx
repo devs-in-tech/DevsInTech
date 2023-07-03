@@ -2,8 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Logo from "../../public/logo2.png";
-import Button from "./button";
-import  HeaderSocialMedia from "./HeaderSocialMedia";
+import HeaderSocialMedia from "./HeaderSocialMedia";
 
 const Navbar = () => {
   let Links = [
@@ -47,11 +46,11 @@ const Navbar = () => {
             </li>
           ))}
           <div className="md:hidden flex gap-4">
-          <HeaderSocialMedia width={35} height={30}/>
+            <HeaderSocialMedia width={35} height={30} />
           </div>
         </ul>
         <div className="lg:flex lg:gap-5 hidden md:flex md:gap-3">
-       <HeaderSocialMedia width={47} height={47}/>
+          <HeaderSocialMedia width={47} height={47} />
         </div>
       </div>
       <div
