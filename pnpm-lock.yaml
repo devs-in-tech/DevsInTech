@@ -1,61 +1,63 @@
 lockfileVersion: '6.0'
 
-importers:
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
-  .:
-    dependencies:
-      '@commitlint/cli':
-        specifier: ^17.6.3
-        version: 17.6.3
-      '@commitlint/config-conventional':
-        specifier: ^17.6.3
-        version: 17.6.3
-      autoprefixer:
-        specifier: 10.4.14
-        version: 10.4.14(postcss@8.4.23)
-      eslint:
-        specifier: 8.40.0
-        version: 8.40.0
-      eslint-config-next:
-        specifier: 13.4.1
-        version: 13.4.1(eslint@8.40.0)(typescript@5.0.4)
-      framer-motion:
-        specifier: ^10.12.8
-        version: 10.12.8(react-dom@18.2.0)(react@18.2.0)
-      husky:
-        specifier: ^8.0.3
-        version: 8.0.3
-      next:
-        specifier: 13.4.1
-        version: 13.4.1(react-dom@18.2.0)(react@18.2.0)
-      pnpm:
-        specifier: ^8.5.1
-        version: 8.5.1
-      postcss:
-        specifier: 8.4.23
-        version: 8.4.23
-      react:
-        specifier: 18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
-      react-icons:
-        specifier: ^4.8.0
-        version: 4.8.0(react@18.2.0)
-      react-spinners:
-        specifier: ^0.13.8
-        version: 0.13.8(react-dom@18.2.0)(react@18.2.0)
-      smoothscroll-polyfill:
-        specifier: ^0.4.4
-        version: 0.4.4
-      tailwindcss:
-        specifier: 3.3.2
-        version: 3.3.2(ts-node@10.9.1)
-    devDependencies:
-      prettier:
-        specifier: 2.8.8
-        version: 2.8.8
+dependencies:
+  '@commitlint/cli':
+    specifier: ^17.6.3
+    version: 17.6.3
+  '@commitlint/config-conventional':
+    specifier: ^17.6.3
+    version: 17.6.3
+  autoprefixer:
+    specifier: 10.4.14
+    version: 10.4.14(postcss@8.4.23)
+  eslint:
+    specifier: 8.40.0
+    version: 8.40.0
+  eslint-config-next:
+    specifier: 13.4.7
+    version: 13.4.7(eslint@8.40.0)(typescript@5.0.4)
+  framer-motion:
+    specifier: ^10.12.8
+    version: 10.12.8(react-dom@18.2.0)(react@18.2.0)
+  husky:
+    specifier: ^8.0.3
+    version: 8.0.3
+  next:
+    specifier: 13.4.1
+    version: 13.4.1(react-dom@18.2.0)(react@18.2.0)
+  pnpm:
+    specifier: ^8.5.1
+    version: 8.5.1
+  postcss:
+    specifier: 8.4.23
+    version: 8.4.23
+  react:
+    specifier: 18.2.0
+    version: 18.2.0
+  react-dom:
+    specifier: 18.2.0
+    version: 18.2.0(react@18.2.0)
+  react-icons:
+    specifier: ^4.8.0
+    version: 4.8.0(react@18.2.0)
+  react-spinners:
+    specifier: ^0.13.8
+    version: 0.13.8(react-dom@18.2.0)(react@18.2.0)
+  smoothscroll-polyfill:
+    specifier: ^0.4.4
+    version: 0.4.4
+  tailwindcss:
+    specifier: 3.3.2
+    version: 3.3.2(ts-node@10.9.1)
+
+devDependencies:
+  prettier:
+    specifier: 2.8.8
+    version: 2.8.8
 
 packages:
 
@@ -387,8 +389,8 @@ packages:
     resolution: {integrity: sha512-eD6WCBMFjLFooLM19SIhSkWBHtaFrZFfg2Cxnyl3vS3DAdFRfnx5TY2RxlkuKXdIRCC0ySbtK9JXXt8qLCqzZg==}
     dev: false
 
-  /@next/eslint-plugin-next@13.4.1:
-    resolution: {integrity: sha512-tVPS/2FKlA3ANCRCYZVT5jdbUKasBU8LG6bYqcNhyORDFTlDYa4cAWQJjZ7msIgLwMQIbL8CAsxrOL8maa/4Lg==}
+  /@next/eslint-plugin-next@13.4.7:
+    resolution: {integrity: sha512-ANEPltxzXbyyG7CvqxdY4PmeM5+RyWdAJGufTHnU+LA/i3J6IDV2r8Z4onKwskwKEhwqzz5lMaSYGGXLyHX+mg==}
     dependencies:
       glob: 7.1.7
     dev: false
@@ -1317,8 +1319,8 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /eslint-config-next@13.4.1(eslint@8.40.0)(typescript@5.0.4):
-    resolution: {integrity: sha512-ajuxjCkW1hvirr0EQZb3/B/bFH52Z7CT89uCtTcICFL9l30i5c8hN4p0LXvTjdOXNPV5fEDcxBgGHgXdzTj1/A==}
+  /eslint-config-next@13.4.7(eslint@8.40.0)(typescript@5.0.4):
+    resolution: {integrity: sha512-+IRAyD0+J1MZaTi9RQMPUfr6Q+GCZ1wOkK6XM52Vokh7VI4R6YFGOFzdkEFHl4ZyIX4FKa5vcwUP2WscSFNjNQ==}
     peerDependencies:
       eslint: ^7.23.0 || ^8.0.0
       typescript: '>=3.3.1'
@@ -1326,7 +1328,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@next/eslint-plugin-next': 13.4.1
+      '@next/eslint-plugin-next': 13.4.7
       '@rushstack/eslint-patch': 1.2.0
       '@typescript-eslint/parser': 5.59.2(eslint@8.40.0)(typescript@5.0.4)
       eslint: 8.40.0
@@ -3739,7 +3741,3 @@ packages:
   /zod@3.21.4:
     resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
     dev: false
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
