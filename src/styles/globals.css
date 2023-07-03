@@ -1,3 +1,60 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.hero-heading {
+  background: radial-gradient(50% 50% at 50% 50%, #a5f7a8 22.09%, #af7af2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  --webkit-text-fill-color: transparent;
+}
+
+body {
+  width: 90%;
+  margin: auto;
+  background-color: black;
+  /* 1280px */
+  max-width: 100rem;
+  @apply mx-auto w-11/12;
+}
+
+/*Scroll Bar*/
+::-webkit-scrollbar {
+  width: 16px; /* Width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100vw;
+  background: transparent;
+  margin-block: 0.4em;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 0.21em solid transparent;
+  border-radius: 100px;
+  background: linear-gradient(#a569f4, #a7deb6);
+  background-clip: content-box;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -53,3 +110,4 @@ body {
   background: linear-gradient(#a569f4,#A7DEB6);
   background-clip: content-box;
 }
+

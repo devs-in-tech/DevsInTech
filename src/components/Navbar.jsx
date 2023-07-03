@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Logo from "../../public/logo2.png";
+// import Button from "./button";
 import HeaderSocialMedia from "./HeaderSocialMedia";
 
 const Navbar = () => {
@@ -28,7 +29,7 @@ const Navbar = () => {
 
         <ul
           className={`md:flex md:items-center md:pb-0 px-20 md:px-0 pb-12 md:justify-center absolute md:static md:z-auto left-0 w-full transition-all duration-500 ease-in ${
-            open ? "top-24  bg-black" : "top-[-550px]"
+            open ? "top-24 bg-black" : "top-[-550px]"
           }`}
         >
           {Links.map((link) => (
@@ -39,12 +40,23 @@ const Navbar = () => {
             >
               <Link
                 href={link.link}
-                className="text-white hover:text-gray-400 duration-500"
+                className="text-white font-3 hover:text-transparent bg-clip-text bg-gradient-to-r from-[#AF7AF2] via-[#A5F7A8] to-[#AF7AF2] duration-200"
               >
                 {link.name}
               </Link>
             </li>
           ))}
+          <li
+            className="md:ml-8 whitespace-nowrap text-xl md:my-0 my-7"
+            onClick={() => setOpen(!open)}
+          >
+            <Link
+              href="https://discord.com/invite/g7FmxB9uZp"
+              className="text-white font-3 hover:text-transparent bg-clip-text bg-gradient-to-r from-[#AF7AF2] via-[#A5F7A8] to-[#AF7AF2] duration-200"
+            >
+              Join Us
+            </Link>
+          </li>
           <div className="md:hidden flex gap-4">
             <HeaderSocialMedia width={35} height={30} />
           </div>
