@@ -232,29 +232,36 @@ Read more about [Conventional Commits](https://www.conventionalcommits.org/en/v1
 ### Using Command Line for Pull Requests
 
 - If you have already forked the project, update your copy before working.
+
   ```bash
   git remote update
   git checkout <branch-name>
   git rebase upstream/<branch-name>
 
   ```
+
   ⚠️ **Warning:** Avoid commting changes in the Main Branch ⚠️
+
 - Create a new branch for your changes:
   **Note:** Creating a new branch allows for isolated development and avoids merge conflicts while making PRs
+
   ```bash
   git checkout -b my-branch
   #Utilize the branch name to specify the type of issue you are addressing, whether it's a feature, bug fix, or enhancement.
 
   ```
+
 - Commit and push your changes to your forked repository:
   **Note:** A PR should have only one commit. Multiple commits should be squashed. Always write a clear log message for your commits. One-line messages are fine for small changes, but bigger changes should be more descriptive.
 - Make sure all of your commits are atomic (one feature per commit).
+
   ```bash
   git add .
   git commit -m "Add my changes"
   git push origin my-branch
 
   ```
+
 - Go to your repository in browser and click on compare and pull requests. Then add a title and description to your pull request that explains your contribution.
   ![https://i.postimg.cc/1Xh6dxLJ/Final-PR.png](https://i.postimg.cc/1Xh6dxLJ/Final-PR.png)
 
