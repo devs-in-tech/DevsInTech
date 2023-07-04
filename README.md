@@ -36,12 +36,11 @@ DevsInTech offers a wide range of resources and opportunities for developers and
 
 **Networking and Community Events:** We facilitate networking through meetups, conferences, and events, fostering connections, idea sharing, collaboration, and professional relationships.
 
-## Get in touch👋 
+## Get in touch👋
 
 [![Discord](https://img.icons8.com/color/2x/discord--v2.png)](https://discord.com/invite/g7FmxB9uZp)
 [![Twitter](https://img.icons8.com/fluency/2x/twitter.png)](https://twitter.com/devs_in_tech)
 [![LinkedIn](https://img.icons8.com/fluency/2x/linkedin.png)](https://www.linkedin.com/company/devsintech-community/)
-
 
 ## Tech stack used to build DevsInTech⚙️
 
