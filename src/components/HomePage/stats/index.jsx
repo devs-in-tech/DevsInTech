@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import img from '../../../assets/Team/Developer.jpg';
-import Image from 'next/image';
+import { useEffect, useState } from 'react';
+// import img from '../../../assets/Team/Developer.jpg';
+// import Image from 'next/image';
 
 const Stats = ({ stats }) => {
   const [count, setCount] = useState(0);
