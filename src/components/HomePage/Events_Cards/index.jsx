@@ -50,10 +50,11 @@ function Cards() {
       <div className="flex items-center mb-6">
         <button
           onClick={goToPrev}
-          className="bg-gray-800 text-white rounded-full p-3 flex justify-center items-center mr-10"
+          className="bg-gray-800 text-white rounded-full p-3 flex justify-center items-center mr-4"
         >
           {"<"}
         </button>
+        <div className="flex justify-center gap-4">
         {data &&
           visibleCards.map((card, index) => (
             <Card
@@ -63,9 +64,10 @@ function Cards() {
               title={card.title}
             />
           ))}
+          </div>
         <button
           onClick={goToNext}
-          className="bg-gray-800 text-white rounded-full p-4 flex justify-center items-center ml-10"
+          className="bg-gray-800 text-white rounded-full p-3 flex justify-center items-center ml-5"
         >
           {">"}
         </button>

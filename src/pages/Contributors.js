@@ -1,7 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import axios from "axios";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const Contributors = () => {
@@ -35,8 +34,7 @@ const Contributors = () => {
             key={i.id}
           >
             <div className="w-36 h-36 rounded-full overflow-hidden transition duration-300 border-2 border-white">
-              <Image width={0}
-                height= {0}
+              <img
                 className="w-full h-full object-cover transition duration-300 hover:scale-110 hover:cursor-pointer hover:border-pink-200"
                 src={i.avatar_url}
                 alt=""
