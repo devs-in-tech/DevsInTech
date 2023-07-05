@@ -8,7 +8,7 @@ const Stats = ({ stats }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCount((prevCount) => prevCount + 1);
-    }, 10); 
+    }, 10);
 
     return () => {
       clearInterval(interval);
@@ -16,14 +16,14 @@ const Stats = ({ stats }) => {
   }, []);
 
   return (
-    <section className='flex space-x-6 items-center justify-center'>
+    <section className='flex flex-wrap md:space-x-6 items-center justify-center'>
       {
         stats &&
         stats.map((data, index) => {
           return (
-            <div 
-            key={index}
-            className="block 
+            <div
+              key={index}
+              className="block 
             w-[24rem] 
             h-[10rem] 
             p-6 
@@ -42,7 +42,7 @@ const Stats = ({ stats }) => {
             mb-4
             ">
               <h2 className="mb-2 text-5xl font-bold tracking-tight text-white dark:text-white text-center">
-              {count > data.number ? data.number : count}+
+                {count > data.number ? data.number : count}+
               </h2>
               <p className="font-bold text-gray-400 text-2xl mt-5 text-center">{data.name}</p>
             </div>
