@@ -12,7 +12,7 @@ const Navbar = () => {
     { name: "Events", link: "/events" },
     { name: "Team", link: "/team" },
     { name: "FAQs", link: "/#faqs" },
-    { name: "Contributors", link: "/Contributors" }
+    { name: "Contributors", link: "/Contributors" },
   ];
   let [open, setOpen] = useState(false);
   return (
@@ -29,8 +29,9 @@ const Navbar = () => {
         </div>
 
         <ul
-          className={`md:flex md:items-center md:pb-0 px-20 md:px-0 pb-12 md:justify-center absolute md:static md:z-auto left-0 w-full transition-all duration-500 ease-in ${open ? "top-24 bg-black" : "top-[-550px]"
-            }`}
+          className={`md:flex md:items-center md:pb-0 px-20 md:px-0 pb-12 md:justify-center absolute md:static md:z-auto left-0 w-full transition-all duration-500 ease-in ${
+            open ? "top-24 bg-black" : "top-[-550px]"
+          }`}
         >
           {Links.map((link) => (
             <li
@@ -80,4 +81,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
