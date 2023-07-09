@@ -26,6 +26,8 @@
 
 DevsInTech is a thriving and welcoming community of developers,tech professionals,and enthusiasts who share a common passion for technology. Our mission is to promote diversity and inclusiveness in the open source community by helping individuals with improving their skills and standing out in the tech space.
 
+Check out our <a href="https://devsintech.vercel.app/">website</a> to get started!
+
 ## What do we provide?✨
 
 DevsInTech offers a wide range of resources and opportunities for developers and tech enthusiasts to expand their skills, connect with peers, and advance their careers. Some of the key offerings include:
@@ -36,12 +38,11 @@ DevsInTech offers a wide range of resources and opportunities for developers and
 
 **Networking and Community Events:** We facilitate networking through meetups, conferences, and events, fostering connections, idea sharing, collaboration, and professional relationships.
 
-## Get in touch👋 
+## Get in touch👋
 
 [![Discord](https://img.icons8.com/color/2x/discord--v2.png)](https://discord.com/invite/g7FmxB9uZp)
 [![Twitter](https://img.icons8.com/fluency/2x/twitter.png)](https://twitter.com/devs_in_tech)
 [![LinkedIn](https://img.icons8.com/fluency/2x/linkedin.png)](https://www.linkedin.com/company/devsintech-community/)
-
 
 ## Tech stack used to build DevsInTech⚙️
 
