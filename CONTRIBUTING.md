@@ -1,29 +1,27 @@
 # Contributing to DevsInTech
 
-Welcome to ***DevsInTech***✨, and thank you for your interest in contributing! After reading this documentation you'll be able to contribute efficiently to our project. **Tip:** Use the Table of Contents to navigate through the document quickly.
+Welcome to **_DevsInTech_**✨, and thank you for your interest in contributing! After reading this documentation you'll be able to contribute efficiently to our project. **Tip:** Use the Table of Contents to navigate through the document quickly.
 
 ## Table Of Contents
 
 - [Resources for new contributors](#resources-for-new-contributors)
 - [How to get started](#how-to-get-started)
-    - [Using the Command Line](#using-the-command-line)
-    - [Using GitHub Desktop](#using-github-desktop)
+  - [Using the Command Line](#using-the-command-line)
+  - [Using GitHub Desktop](#using-github-desktop)
 - [How to set up your Development Environment](#how-to-set-up-your-development-environment)
 - [How to Contribute](#how-to-contribute)
-    - [How to Raise an Issue](#how-to-raise-an-issue)
-        - [How to report a bug](#how-to-report-a-bug)
-        - [How to submit a Documentation Issue/Update](#how-to-submit-a-documentation-issueupdate)
-        - [How to make a Feature Request](#how-to-make-a-feature-request)
-        - [How to make a style change](#how-to-make-a-style-change)
-    - [How to Solve an Issue](#how-to-solve-an-issue)
-    - [How to Submit Pull Requests](#how-to-submit-pull-requests)
-        - [Using Command Line for Pull Requests](#using-command-line-for-pull-requests)
-        - [Using GitHub Desktop for Pull Requests](#using-github-desktop-for-pull-requests)
+  - [How to Raise an Issue](#how-to-raise-an-issue)
+    - [How to report a bug](#how-to-report-a-bug)
+    - [How to submit a Documentation Issue/Update](#how-to-submit-a-documentation-issueupdate)
+    - [How to make a Feature Request](#how-to-make-a-feature-request)
+    - [How to make a style change](#how-to-make-a-style-change)
+  - [How to Solve an Issue](#how-to-solve-an-issue)
+  - [How to Submit Pull Requests](#how-to-submit-pull-requests)
+    - [Using Command Line for Pull Requests](#using-command-line-for-pull-requests)
+    - [Using GitHub Desktop for Pull Requests](#using-github-desktop-for-pull-requests)
 - [Code of Conduct](#code-of-conduct)
 - [Community Guidelines](#community-guidelines)
 - [Licensing](#licensing)
-
-
 
 ## Resources for new contributors
 
@@ -44,7 +42,6 @@ It's worth noting that we have a [Code of Conduct](https://github.com/TanmayAdit
 
 ## What are the tools needed to contribute to this project
 
-
 Before you start, you must install the necessary tools mentioned below onto your device.
 
 [![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en/download/) [![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/downloads) [![pnpm](https://img.shields.io/static/v1?style=for-the-badge&message=pnpm&color=222222&logo=pnpm&logoColor=F69220&label=)](https://pnpm.io/)
@@ -52,48 +49,47 @@ Before you start, you must install the necessary tools mentioned below onto your
 ## How to set up your Development Environment
 
 ##### Using the **Command Line**
- 
+
 1. Fork the repo.
-    ![Fork-Image](https://i.postimg.cc/GpGzgX9Z/Git-Hub-Docs.png)
-  
+   ![Fork-Image](https://i.postimg.cc/GpGzgX9Z/Git-Hub-Docs.png)
+
 2. Clone the Forked Repository to your local machine.
-  
-    ```bash
-    git clone https://github.com/YOUR_USER_NAME/DevsInTech.git
-    ```
+
+   ```bash
+   git clone https://github.com/YOUR_USER_NAME/DevsInTech.git
+   ```
+
 3. Change the working directory.
-    ```bash
-    cd DevsInTech
-    ```
+   ```bash
+   cd DevsInTech
+   ```
 4. Install all dependencies.
-    ```bash
-    pnpm i
-    ```
+   ```bash
+   pnpm i
+   ```
 5. Start the application.
-    ```bash
-    pnpm dev
-    ```
+   ```bash
+   pnpm dev
+   ```
 6. Visit [http://localhost:3000](http://localhost:3000) to view the application
-    
+
 ##### Using **GitHub Desktop**
-    
+
 1. Fork the repo.
-    
-    ![Fork-Image](https://i.postimg.cc/GpGzgX9Z/Git-Hub-Docs.png)
+
+   ![Fork-Image](https://i.postimg.cc/GpGzgX9Z/Git-Hub-Docs.png)
 
 2. In the forked repository click **Open with GitHub Desktop** (make sure to download GitHub Desktop [here](https://desktop.github.com/))
-    
-    ![Open-with-GitHub-Desktop](https://i.postimg.cc/7L4212QN/Open-with-Git-Hub-Desktop.png)
+
+   ![Open-with-GitHub-Desktop](https://i.postimg.cc/7L4212QN/Open-with-Git-Hub-Desktop.png)
 
 3. Once **GitHub Desktop** opens up, make sure "**To contribute to the parent project**" option is selected and then click on **Continue**
 
-    ![Contribute to upstream repo](https://i.postimg.cc/gJn3S63L/Contribute-to-upstream-repo.png)
-  
+   ![Contribute to upstream repo](https://i.postimg.cc/gJn3S63L/Contribute-to-upstream-repo.png)
+
 4. Finally, open the project in your preferred code editor. (**Warning:** To contribute to the project, all code and documentation modifications should be committed to a separate branch rather than **main/master**.)
-    
-    ![open-code-editor](https://i.postimg.cc/TY31xXKf/Open-in-Code-editor.png)
 
-
+   ![open-code-editor](https://i.postimg.cc/TY31xXKf/Open-in-Code-editor.png)
 
 ## How To Contribute
 
@@ -111,7 +107,7 @@ GitHub issues are a way to track and manage tasks, bugs, and discussions in a pr
 
 ---
 
-*Raising an issue* involves creating a new entry in the repository's issue tracker to report problems, suggest improvements, or start discussions, facilitating collaboration and issue resolution. **Note:** Always look for existing issues that are similar to the one you want to raise. If you find any, please do not raise the same issue again; otherwise, you may continue to raise your issue.
+_Raising an issue_ involves creating a new entry in the repository's issue tracker to report problems, suggest improvements, or start discussions, facilitating collaboration and issue resolution. **Note:** Always look for existing issues that are similar to the one you want to raise. If you find any, please do not raise the same issue again; otherwise, you may continue to raise your issue.
 
 You can raise an issue by visiting the issues page and clicking the green **New issue** button.
 
@@ -137,7 +133,6 @@ When reporting bugs on GitHub, it is important to include the following informat
 
 This helps expedite the identification and resolution of the bug.
 
-
 ### How to submit a Documentation Issue/Update
 
 ---
@@ -151,7 +146,6 @@ When reporting a documentation issue or update, it is important to provide clear
 - Mention any confusion or misunderstandings caused by the current documentation.
 - Offer any additional context or information that can assist in resolving the issue.
 
-
 ### How to make a Feature Request
 
 ---
@@ -162,7 +156,6 @@ When submitting a feature request, it is important to provide clear details and 
 - Explain the potential benefits and impact of implementing the requested feature.
 - Consider including any relevant examples, code snippets, or mock-ups to illustrate your request.
 - Explain how the requested feature aligns with the goals and scope of the project.
-
 
 ### How to make a style change
 
@@ -175,11 +168,7 @@ When suggesting a style change on GitHub, it is important to provide clear detai
 - Provide specific examples or comparisons to illustrate the current style and the desired style.
 - Offer any additional context or information that can assist in evaluating and implementing the style change.
 
-
-
 **Note:** If the issue you wish to raise does not fit into one of these categories, create a blank issue.
-
-
 
 ### How to solve an Issue
 
@@ -187,14 +176,9 @@ When suggesting a style change on GitHub, it is important to provide clear detai
 
 If you'd like to solve an issue, you can browse our list of open issues in the repository or on our issue tracker. Using relevant labels, you can identify issues which you are capable of resolving. Some of these labels are listed below:
 
-
-
 [`GSSoC23`](https://github.com/devs-in-tech/DevsInTech/labels/GSSoC23) - This label is assigned to those who want to work on an issue under GSSoC23
 
-
-
-[`Level 1`](https://github.com/devs-in-tech/DevsInTech/labels/Level%201) - 10 Points  (Docs/Minor bugs)
-
+[`Level 1`](https://github.com/devs-in-tech/DevsInTech/labels/Level%201) - 10 Points (Docs/Minor bugs)
 
 [`Level 2`](https://github.com/devs-in-tech/DevsInTech/labels/Level%202) - 25 Points (Enhancement of Exisiting feature)
 
@@ -244,69 +228,54 @@ Make sure to commit following the Conventional Commits Standards. Your commit me
 `description` : A short summary providing additional contextual information about the code changes.
 
 Read more about [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
-    
+
 ### Using Command Line for Pull Requests
 
-    
 - If you have already forked the project, update your copy before working.
-    
-    ```bash
-    git remote update
-    git checkout <branch-name>
-    git rebase upstream/<branch-name>
-    
-    ```
-    
-    ⚠️ **Warning:** Avoid  commting  changes in the Main Branch ⚠️
-    
-- Create a new branch for your changes:
-    
-    **Note:** Creating a new branch allows for isolated development and avoids merge conflicts while making PRs
-    
-    ```bash
-    git checkout -b my-branch
-    #Utilize the branch name to specify the type of issue you are addressing, whether it's a feature, bug fix, or enhancement.
-    
-    ```
-    
-- Commit and push your changes to your forked repository:
-    
-    **Note:** A PR should have only one commit. Multiple commits should be squashed. Always write a clear log message for your commits. One-line messages are fine for small changes, but bigger changes should be more descriptive.
-    
-- Make sure all of your commits are atomic (one feature per commit).
-    
-    ```bash
-    git add .
-    git commit -m "Add my changes"
-    git push origin my-branch
-    
-    ```
-    
-- Go to your repository in browser and click on compare and pull requests. Then add a title and description to your pull request that explains your contribution.
-    
-    ![https://i.postimg.cc/1Xh6dxLJ/Final-PR.png](https://i.postimg.cc/1Xh6dxLJ/Final-PR.png)
 
-    
-### Using GitHub Desktop for Pull Requests
-    
+  ```bash
+  git remote update
+  git checkout <branch-name>
+  git rebase upstream/<branch-name>
+
+  ```
+
+  ⚠️ **Warning:** Avoid commting changes in the Main Branch ⚠️
+
 - Create a new branch for your changes:
-    
-    [![new-branch.png](https://i.postimg.cc/DypKNNW7/new-branch.png)](https://postimg.cc/4mcM7Bb0)
-    
+  **Note:** Creating a new branch allows for isolated development and avoids merge conflicts while making PRs
+
+  ```bash
+  git checkout -b my-branch
+  #Utilize the branch name to specify the type of issue you are addressing, whether it's a feature, bug fix, or enhancement.
+
+  ```
+
+- Commit and push your changes to your forked repository:
+  **Note:** A PR should have only one commit. Multiple commits should be squashed. Always write a clear log message for your commits. One-line messages are fine for small changes, but bigger changes should be more descriptive.
+- Make sure all of your commits are atomic (one feature per commit).
+
+  ```bash
+  git add .
+  git commit -m "Add my changes"
+  git push origin my-branch
+
+  ```
+
+- Go to your repository in browser and click on compare and pull requests. Then add a title and description to your pull request that explains your contribution.
+  ![https://i.postimg.cc/1Xh6dxLJ/Final-PR.png](https://i.postimg.cc/1Xh6dxLJ/Final-PR.png)
+
+### Using GitHub Desktop for Pull Requests
+
+- Create a new branch for your changes:
+  [![new-branch.png](https://i.postimg.cc/DypKNNW7/new-branch.png)](https://postimg.cc/4mcM7Bb0)
 - Open your external code editor and connect to the repository. When you're through with your changes, commit and push them to your forked repository.:
-    
-    **Note:** Always write a clear log message for your commits. One-line messages are fine for small changes, but bigger changes should be more descriptive.
-    
-    ![https://i.postimg.cc/5y5PMs7J/Commit-Github-desktop.png](https://i.postimg.cc/5y5PMs7J/Commit-Github-desktop.png)
-    
+  **Note:** Always write a clear log message for your commits. One-line messages are fine for small changes, but bigger changes should be more descriptive.
+  ![https://i.postimg.cc/5y5PMs7J/Commit-Github-desktop.png](https://i.postimg.cc/5y5PMs7J/Commit-Github-desktop.png)
 - Click on **Push origin** or press `Ctrl`+`P` or `⌘`+`P` to push your commits to the branch of your repository on Github. Learn more GitHub Desktop keyboard shortcuts [here](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/github-desktop-keyboard-shortcuts).
-    
-    ![https://i.postimg.cc/j5QdRGD8/push-origin.png](https://i.postimg.cc/j5QdRGD8/push-origin.png)
-    
+  ![https://i.postimg.cc/j5QdRGD8/push-origin.png](https://i.postimg.cc/j5QdRGD8/push-origin.png)
 - Go to your repository in browser and click on compare and pull requests. Then add a title and description to your pull request that explains your contribution or press `Ctrl` + `R` or `⌘` + `R` on the keyboard in GitHub Desktop.
-    
-    ![https://i.postimg.cc/1Xh6dxLJ/Final-PR.png](https://i.postimg.cc/1Xh6dxLJ/Final-PR.png)
-    
+  ![https://i.postimg.cc/1Xh6dxLJ/Final-PR.png](https://i.postimg.cc/1Xh6dxLJ/Final-PR.png)
 
 ### Best Practices for Creating a Pull Request (PR):
 

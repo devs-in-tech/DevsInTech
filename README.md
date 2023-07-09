@@ -1,6 +1,6 @@
 # DevsInTech 🚀
 
-<p align="center"><a href="/"><img src="https://user-images.githubusercontent.com/76242769/233774732-447713dd-db8d-4c95-9c66-827ef84cbcf8.png" title="Logo" alt="Logo" height="150px"/></a></p>
+<p align="center"><Link href="/"><img src="https://user-images.githubusercontent.com/76242769/233774732-447713dd-db8d-4c95-9c66-827ef84cbcf8.png" title="Logo" alt="Logo" height="150px"/><Link/></p>
 <div align="center">
 <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
 <img src="https://forthebadge.com/images/badges/uses-brains.svg" />
@@ -26,6 +26,8 @@
 
 DevsInTech is a thriving and welcoming community of developers,tech professionals,and enthusiasts who share a common passion for technology. Our mission is to promote diversity and inclusiveness in the open source community by helping individuals with improving their skills and standing out in the tech space.
 
+Check out our <a href="https://devsintech.vercel.app/">website</a> to get started!
+
 ## What do we provide?✨
 
 DevsInTech offers a wide range of resources and opportunities for developers and tech enthusiasts to expand their skills, connect with peers, and advance their careers. Some of the key offerings include:
@@ -36,11 +38,11 @@ DevsInTech offers a wide range of resources and opportunities for developers and
 
 **Networking and Community Events:** We facilitate networking through meetups, conferences, and events, fostering connections, idea sharing, collaboration, and professional relationships.
 
-## Get in touch👋 
+## Get in touch👋
 
-<a href="https://discord.com/invite/g7FmxB9uZp"><img src="https://img.icons8.com/color/2x/discord--v2.png" title="Discord" alt="Discord Community" height="60px"></img></a>
-<a href="https://twitter.com/devs_in_tech"><img src="https://img.icons8.com/fluency/2x/twitter.png" title="Twitter" alt="Twitter Account" height="60px"></img></a>
-<a href="https://www.linkedin.com/company/devsintech-community/mycompany/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" title="LinkedIn" alt="LinkedIn Account" height="60px"></img></a>
+[![Discord](https://img.icons8.com/color/2x/discord--v2.png)](https://discord.com/invite/g7FmxB9uZp)
+[![Twitter](https://img.icons8.com/fluency/2x/twitter.png)](https://twitter.com/devs_in_tech)
+[![LinkedIn](https://img.icons8.com/fluency/2x/linkedin.png)](https://www.linkedin.com/company/devsintech-community/)
 
 ## Tech stack used to build DevsInTech⚙️
 
@@ -48,15 +50,15 @@ DevsInTech offers a wide range of resources and opportunities for developers and
 
 # Contribute
 
-We welcome contributions in our community. Learn how to start contributing, from installing the project on your device to submitting a pull request with our<a href="https://github.com/devs-in-tech/DevsInTech/blob/main/CONTRIBUTING.md"> Contribution guide.</a>
+We welcome contributions in our community. Learn how to start contributing, from installing the project on your device to submitting a pull request with our<Link href="https://github.com/devs-in-tech/DevsInTech/blob/main/CONTRIBUTING.md"> Contribution guide.<Link/>
 
 # Code of Conduct
 
-Check out the <a href="https://github.com/devs-in-tech/DevsInTech/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> to know an inclusive environment that respects all contributions.
+Check out the <Link href="https://github.com/devs-in-tech/DevsInTech/blob/main/CODE_OF_CONDUCT.md">Code of Conduct<Link/> to know an inclusive environment that respects all contributions.
 
 # License
 
-This Community is <a href="https://github.com/devs-in-tech/DevsInTech/blob/main/LICENSE">Licensed</a> under MIT license.
+This Community is <Link href="https://github.com/devs-in-tech/DevsInTech/blob/main/LICENSE">Licensed<Link/> under MIT license.
 
 ## 🙏Support
 
@@ -64,6 +66,6 @@ Don't forget to leave a star ⭐️
 
 ## Thank You to Our Contributors❤️
 
-<a href="https://github.com/devs-in-tech/DevsInTech/graphs/contributors">
+<Link href="https://github.com/devs-in-tech/DevsInTech/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=devs-in-tech/DevsInTech" />
-</a>
+<Link/>

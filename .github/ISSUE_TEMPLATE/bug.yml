@@ -41,3 +41,5 @@ body:
         - Chrome
         - Safari
         - Microsoft Edge
+        - label: "I am a GSSoC'23 contributor"
+          required: false
