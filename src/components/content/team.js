@@ -84,7 +84,8 @@ const TeamData = [
     name: "Shailesh Thakur",
     position: "Event Management Team",
     GitHub: "https://github.com/shaileshthakur1",
-    LinkedIn: "https://www.linkedin.com/mwlite/in/shailesh-kumar-thakur-991316205",
+    LinkedIn:
+      "https://www.linkedin.com/mwlite/in/shailesh-kumar-thakur-991316205",
     Twitter: "https://twitter.com/shylesstwts",
   },
   {
