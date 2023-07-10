@@ -48,6 +48,85 @@ DevsInTech offers a wide range of resources and opportunities for developers and
 
 [![Next.js](https://img.shields.io/badge/next.js-%2320232a.svg?style=for-the-badge&logo=next.js&logoColor=%2361DAFB)](https://nextjs.org/) [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-%23326ce9.svg?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
+## Getting Started 👩‍💻
+
+> ⚠️Prerequisites
+>
+> - Before getting into it, make sure you have [pnpm](https://nodejs.org/download) installed.
+
+
+### Let's jump right in🌟
+
+1. Fork the project
+2. Clone the project to run on your local machine using the following command:
+
+   ```sh
+   git clone https://github.com/<your_github_username>/DevsInTech.git
+   ```
+
+3. Get into the root directory
+
+   ```sh
+   cd DevsInTech
+   ```
+
+4. Install all dependencies by running
+
+   ```sh
+   pnpm install
+   ```
+
+5. Create your branch
+
+   ```sh
+   git checkout -b <your_branch_name>
+   ```
+
+6. Run and view the application on localhost
+
+   ```sh
+   pnpm run dev
+   ```
+
+7. Make your changes
+
+8. Stage your changes
+
+   ```sh
+   git add <filename>
+   ```
+
+9. Commit your changes
+
+   ```sh
+   git commit -m "<your-commit-message>"
+   ```
+
+10. Push your changes to your branch
+
+    ```sh
+    git push origin "<your_branch_name>"
+    ```
+
+11. Create a Pull Request.
+
+    > Click _compare across forks_ if you don't see your branch
+
+### Setup using Docker
+
+  * Enter the root directory
+
+    ```sh
+    docker build .
+
+    ```
+
+    
+    ```sh
+    docker run -p 3000:80 <Image>
+    ```
+
+    
 # Contribute
 
 We welcome contributions in our community. Learn how to start contributing, from installing the project on your device to submitting a pull request with our<Link href="https://github.com/devs-in-tech/DevsInTech/blob/main/CONTRIBUTING.md"> Contribution guide.<Link/>
