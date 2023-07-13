@@ -5,9 +5,10 @@ import Link from "next/link";
 import {
   FaDiscord,
   FaFacebookF,
+  FaGithub,
   FaInstagram,
   FaLinkedinIn,
-  FaTwitter,
+  FaTwitter
 } from "react-icons/fa";
 import logo from "../../public/Images/logo.jpg";
 
