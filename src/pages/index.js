@@ -2,7 +2,14 @@ import Head from "next/head";
 import Script from "next/script";
 import Home from "./home";
 
+const About = React.lazy(() => import("./about/index"));
+const events = React.lazy(() => import("./events/index"));
+const home = React.lazy(() => import("./home"));
+const team = React.lazy(() => import("./team"));
+
+
 export default function Main() {
+  About, events, home, team
   return (
     <>
       <Head>
