@@ -112,6 +112,22 @@ const Footer = () => {
                 <FaDiscord size={20} />
               </Link>
             </li>
+
+            {/* GitHub icon */}
+
+            <li>
+              <Link
+                href="https://github.com/devs-in-tech/DevsInTech"
+                aria-label="Join with us on GitHub"
+                title="GitHub (External Link)"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+              >
+                <FaGithub size={20} />
+              </Link>
+            </li>
+
           </ul>
         </div>
 
