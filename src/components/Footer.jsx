@@ -15,11 +15,11 @@ const Footer = () => {
   let year = new Date().getFullYear();
 
   return (
-    <footer className="bg-black bottom-0 mb-6 pt-32 font-primary">
-      <div className="flex flex-col gap-8 justify-between content-center md:flex-row">
+    <footer className="bg-black  bottom-0 mb-6 pt-32 font-primary justify-center">
+      <div className=" flex-col gap-8 justify-between content-center md:flex-row">
         {/* Logo */}
-        <div className="grid-auto">
-          <div className="flex flex-col justify-center">
+        <div className="grid-auto ">
+          <div className=" flex-col justify-center">
             <Image
               src={logo}
               alt="DevsInTech"
@@ -27,7 +27,7 @@ const Footer = () => {
               height={140}
               className="mx-auto"
             />
-            <p className="font-medium text-center justify-items-center">
+            <p className="text-green-500 font-medium text-center justify-items-center font-mono">
               DevsInTech
             </p>
           </div>
@@ -35,23 +35,23 @@ const Footer = () => {
 
         {/* About Us */}
 
-        <div className="flex flex-col content-center">
-          <p className="text-center text-white text-md sm:text-lg md:text-xl md:text-left">
-            <a href="https://devsintech.netlify.app/">DevsInTech</a> is a
+        <div className="flex flex-col justif-center">
+          <p className="text-center text-white text-md sm:text-lg md:text-m md:text-center">
+            <a href="https://devsintech.netlify.app/" className="text-green-500 font-mono">DevsInTech</a> is a
             thriving and welcoming community of developers, tech
             professionals,and enthusiasts who share a common passion for
             technology. We are an Open-source project available on{" "}
-            <a href="https://github.com/devs-in-tech/DevsInTech">GitHub</a>
+            <a href="https://github.com/devs-in-tech/DevsInTech" className="text-blue-500">GitHub</a>
           </p>
-          <ul className="mt-6 flex justify-center gap-6 md:justify-start md:gap-8">
+          <ul className="mt-6 flex justify-center text-center gap-6 md:justify-end md:gap-8">
             <li>
               <Link
                 href="/"
                 rel="noreferrer"
                 target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+                className="text-blue-500 transition hover:text-blue-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
-                <FaFacebookF size={20} />
+                <FaFacebookF size={30} />
               </Link>
             </li>
 
@@ -62,9 +62,9 @@ const Footer = () => {
                 title="Twitter (External Link)"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+                className="text-sky-500 transition hover:text-sky-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
-                <FaTwitter size={20} />
+                <FaTwitter size={30} />
               </Link>
             </li>
 
@@ -77,9 +77,9 @@ const Footer = () => {
                 aria-label="Visit us on Linkedin"
                 title="Linkedin (External Link)"
                 rel="noopener noreferrer"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+                className="text-blue-800 transition hover:text-blue-900/75 dark:text-white dark:hover:text-gray-100/90"
               >
-                <FaLinkedinIn size={20} />
+                <FaLinkedinIn size={30} />
               </Link>
             </li>
 
@@ -92,9 +92,9 @@ const Footer = () => {
                 title="Instagram (External Link)"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+                className="text-red-500 transition hover:text-red-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
-                <FaInstagram size={20} />
+                <FaInstagram size={30} />
               </Link>
             </li>
 
@@ -107,9 +107,9 @@ const Footer = () => {
                 title="Discord (External Link)"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+                className="text-blue-500 transition hover:text-blue-700/75 dark:text-white dark:hover:text-gray-100/90"
               >
-                <FaDiscord size={20} />
+                <FaDiscord size={30} />
               </Link>
             </li>
           </ul>
@@ -117,15 +117,15 @@ const Footer = () => {
 
         {/* COLUMNS */}
         <div className="m-auto">
-          <div className="flex justify-between gap-16">
+          <div className="flex justify-center gap-16">
             <div className="text-center font-secondary">
               <p className="text-lg font-medium text-white">Community</p>
 
-              <nav aria-label="Footer About Nav" className="mt-4 text-center">
+              <nav aria-label="Footer About Nav" className="mt-4 text-center ">
                 <ul className="space-y-4 font-black text-base">
                   <li>
                     <Link
-                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
+                      className="text-purple-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Collaborate
@@ -134,7 +134,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
+                      className="text-purple-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Communicate
@@ -143,7 +143,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
+                      className="text-purple-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Courses
@@ -152,7 +152,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
+                      className="text-purple-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Webinars
@@ -161,7 +161,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
+                      className="text-purple-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Meetups
@@ -180,7 +180,7 @@ const Footer = () => {
                 <ul className="space-y-4 font-black text-base">
                   <li>
                     <Link
-                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
+                      className="text-purple-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Collaborate
@@ -189,7 +189,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
+                      className="text-purple-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Events
@@ -198,7 +198,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
+                      className="text-purple-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Courses
@@ -207,7 +207,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
+                      className="text-purple-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Webinars
@@ -216,7 +216,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      className="text-gray-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
+                      className="text-purple-900 transition hover:text-gray-900/75 dark:text-white dark:hover:text-white/75"
                       href="/"
                     >
                       Meetups
@@ -230,8 +230,9 @@ const Footer = () => {
       </div>
       <div className="mt-12 mb-0">
         <div className="text-center font-thin sm:flex sm:justify-center sm:text-center">
-          <p className="mt-4 text-xl text-black dark:text-white sm:order-first sm:mt-0">
-            &copy; {year} by DevsInTech Community
+          <p className="mt-4 text-xl text-white dark:text-white sm:order-first sm:mt-0">
+            &copy; {year} by DevsInTech Community <span className="text-red-600">&hearts;</span>
+
           </p>
         </div>
       </div>
