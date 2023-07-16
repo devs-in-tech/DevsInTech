@@ -47,9 +47,9 @@ const testimonials = [
 ];
 
 const Testimonial = ({ testimonial }) => (
-  <div className="bg-black p-4 rounded-xl delay-150 hover:-translate-y-1 duration-300 hover:scale-110 md:m-6 m-2 mt-8 h-100 border-2 border-white">
+  <div className=" bg-black p-4 rounded-xl delay-150 hover:-translate-y-1 duration-300 hover:scale-110 md:m-6 m-2 mt-8 h-80 w-96 border-2 border-white  text-lg text-center justify-center items-center">
     <p className="text-white">{testimonial.text}</p>
-    <div className="flex items-center mt-4">
+    <div className="flex justify-center mt-8">
       <div className="flex-shrink-0">
         <img
           className="w-12 h-12 rounded-full"
@@ -67,46 +67,56 @@ const Testimonial = ({ testimonial }) => (
 const TestimonialCarousel = () => {
   const [current, setCurrent] = useState(0);
   const [numVisible, setNumVisible] = useState(3);
-
+  const [intervalId, setIntervalId] = useState(null);
   useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
-      if (screenWidth < 640) {
+      if (screenWidth <= 640) {
         setNumVisible(1);
-      } else if (screenWidth < 768) {
+      } else if (screenWidth >= 640 && screenWidth < 768) {
+        setNumVisible(2);
+      } else if (screenWidth >= 768 && screenWidth < 1024) {
         setNumVisible(2);
       } else {
         setNumVisible(3);
       }
     };
 
+    const startAutoCarousel = () => {
+      const id = setInterval(() => {
+        goToNext();
+      }, 5000);
+
+      return id;
+    };
+
     if (typeof window !== "undefined") {
       window.addEventListener("resize", handleResize);
     }
-
-    return () => {
-      if (typeof window !== "undefined") {
-        window.removeEventListener("resize", handleResize);
-      }
-    };
+    const intervalId = startAutoCarousel();
+    return () => clearInterval(intervalId);
   }, []);
 
   const visibleTestimonials = testimonials.slice(current, current + numVisible);
 
   const goToPrev = () => {
-    if (current === 0) {
-      setCurrent(testimonials.length - numVisible);
-    } else {
-      setCurrent(current - 1);
-    }
+    setCurrent((prev) => {
+      if (prev === 0) {
+        return testimonials.length - numVisible;
+      } else {
+        return prev - 1;
+      }
+    });
   };
 
   const goToNext = () => {
-    if (current === testimonials.length - numVisible) {
-      setCurrent(0);
-    } else {
-      setCurrent(current + 1);
-    }
+    setCurrent((prev) => {
+      if (prev + numVisible === testimonials.length) {
+        return 0;
+      } else {
+        return prev + 1;
+      }
+    });
   };
 
   return (
@@ -114,24 +124,20 @@ const TestimonialCarousel = () => {
       <Header name="What Our Members Say About Us" />
       <div className="flex flex-col items-center justify-center">
         <div className="flex items-center mb-6">
-          <button
-            onClick={goToPrev}
-            className="bg-gray-800 text-white rounded-full p-3 flex justify-center items-center mr-2"
-          >
-            {"<"}
-          </button>
           {visibleTestimonials.map((testimonial) => (
             <div key={testimonial.id}>
               <Testimonial testimonial={testimonial} />
             </div>
           ))}
-          <button
-            onClick={goToNext}
-            className="bg-gray-800 text-white rounded-full p-4 flex justify-center items-center ml-2"
-          >
-            {">"}
-          </button>
         </div>
+      </div>
+      <div className="flex justify-center items-center gap-4">
+        <button
+          onClick={goToPrev}
+          className="bg-gray-800 text-white rounded-full p-3 flex justify-center items-center mr-2"
+        >
+          {"<"}
+        </button>
         <div className="flex justify-center">
           {testimonials.map((testimonial, index) => (
             <div
@@ -143,6 +149,12 @@ const TestimonialCarousel = () => {
             ></div>
           ))}
         </div>
+        <button
+          onClick={goToNext}
+          className="bg-gray-800 text-white rounded-full p-3 flex justify-center items-center mr-2"
+        >
+          {">"}
+        </button>
       </div>
     </div>
   );
