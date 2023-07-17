@@ -3,7 +3,7 @@ import axios from "axios";
 export default async function handler(req, res) {
   try {
     const { email } = req.body;
-    const publicationId = "63c14bbba4c81d219549640e";
+    const publicationId = process.env.NEXT_PUBLIC_PUBLICATION_ID;
 
     // Make the API call to subscribe to the newsletter
     const response = await axios.post(
