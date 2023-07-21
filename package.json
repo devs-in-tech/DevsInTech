@@ -23,7 +23,7 @@
     "eslint-config-next": "13.4.8",
     "framer-motion": "^10.12.18",
     "husky": "^8.0.3",
-    "next": "13.4.8",
+    "next": "13.4.11",
     "pnpm": "^8.6.6",
     "postcss": "8.4.24",
     "react": "18.2.0",
