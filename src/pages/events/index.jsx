@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import ScrollToTop from "@/components/ScrollToTop";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import about from "../../../public/about.png";
 import blog from "../../../public/blog.jpg";
 import coffee from "../../../public/coffee.jpg";
@@ -55,6 +55,26 @@ const Events = () => {
   const FilteredData = EventsData.filter((event) =>
     event.name.toLowerCase().includes(searchInput.toLowerCase())
   );
+
+  useEffect(() => {
+    const alanBtn = require("@alan-ai/alan-sdk-web");
+    alanBtn({
+      key: "f9b22abe4b61e7c364a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+
+      onCommand: function (commandData) {
+        if (commandData && commandData.command === "openURL") {
+          if (commandData.target === "_blank") {
+            window.open(
+              commandData.url,
+              "_newtab" + Math.floor(Math.random() * 999999)
+            );
+          } else {
+            window.location.href = commandData.url;
+          }
+        }
+      },
+    });
+  }, []);
 
   return (
     <>
