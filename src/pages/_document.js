@@ -14,10 +14,6 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
             rel="stylesheet"
           />
-          <script type="text/javascript"
- src="https://studio.alan.app/web/lib/alan_lib.min.js" async></script>
-
-              
         </Head>
         <body>
           <Main />

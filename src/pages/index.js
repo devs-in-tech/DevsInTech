@@ -1,27 +1,15 @@
 import Head from "next/head";
 import Script from "next/script";
-
 import Home from "./home";
-import { useEffect } from "react";
 
 export default function Main() {
- 
- 
   return (
     <>
       <Head>
         <title>Devs In Tech</title>
         <meta name="description" content="Devs In Tech Community website" />
         <link rel="icon" href="/logo2.png" />
-  
       </Head>
-      <Script
-      
-        src="https://studio.alan.app/web/lib/alan_lib.min.js"
-      />
-
-
-  
       <Home />
       <Script
         type="module"
@@ -31,8 +19,6 @@ export default function Main() {
         nomodule
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
       ></Script>
-
-      
     </>
   );
 }

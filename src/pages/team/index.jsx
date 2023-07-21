@@ -1,11 +1,9 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import ScrollToTop from "@/components/ScrollToTop";
 import TeamPage from "@/components/TeamPage";
-import { useEffect } from "react";
+import ScrollToTop from "@/components/ScrollToTop";
+
 const Team = () => {
-
-
   return (
     <>
       <Navbar />

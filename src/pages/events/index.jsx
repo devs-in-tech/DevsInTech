@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import ScrollToTop from "@/components/ScrollToTop";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import about from "../../../public/about.png";
 import blog from "../../../public/blog.jpg";
 import coffee from "../../../public/coffee.jpg";
@@ -55,8 +55,6 @@ const Events = () => {
   const FilteredData = EventsData.filter((event) =>
     event.name.toLowerCase().includes(searchInput.toLowerCase())
   );
-
-
 
   return (
     <>
