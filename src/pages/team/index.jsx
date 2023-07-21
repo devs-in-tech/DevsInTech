@@ -8,6 +8,8 @@ const Team = () => {
     const alanBtn = require("@alan-ai/alan-sdk-web");
     alanBtn({
       key: "f9b22abe4b61e7c364a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+      left: "50px",
+      bottom: "50px",
 
       onCommand: function (commandData) {
         if (commandData && commandData.command === "openURL") {
