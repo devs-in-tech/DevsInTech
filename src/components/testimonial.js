@@ -47,7 +47,7 @@ const testimonials = [
 ];
 
 const Testimonial = ({ testimonial }) => (
-  <div className=" bg-black p-4 rounded-xl delay-150 hover:-translate-y-1 duration-300 hover:scale-110 md:m-6 m-2 mt-8 h-80 w-96 border-2 border-white  text-lg text-center justify-center items-center">
+  <div className=" bg-black p-4 rounded-xl delay-150 hover:-translate-y-1 duration-300 hover:scale-110 md:m-6 m-2 mt-8 h-80 w-[375px] border-2 border-white  text-lg text-center justify-center items-center">
     <p className="text-white">{testimonial.text}</p>
     <div className="flex justify-center mt-8">
       <div className="flex-shrink-0">
@@ -71,11 +71,11 @@ const TestimonialCarousel = () => {
   useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
-      if (screenWidth <= 640) {
+      if (screenWidth <= 700) {
         setNumVisible(1);
-      } else if (screenWidth >= 640 && screenWidth < 768) {
+      } else if (screenWidth >= 700 && screenWidth < 1024) {
         setNumVisible(2);
-      } else if (screenWidth >= 768 && screenWidth < 1024) {
+      } else if (screenWidth >= 1024 && screenWidth < 1300) {
         setNumVisible(2);
       } else {
         setNumVisible(3);
@@ -123,7 +123,7 @@ const TestimonialCarousel = () => {
     <div className="py-10">
       <Header name="What Our Members Say About Us" />
       <div className="flex flex-col items-center justify-center">
-        <div className="flex items-center mb-6">
+        <div className="flex items-center mb-6 mx-auto">
           {visibleTestimonials.map((testimonial) => (
             <div key={testimonial.id}>
               <Testimonial testimonial={testimonial} />
