@@ -23,8 +23,8 @@ const Footer = () => {
             <Image
               src={logo}
               alt="DevsInTech"
-              width={140}
-              height={140}
+              width={100}
+              height={120}
               className="mx-auto"
             />
             <p className="text-green-500 text-2xl text-center justify-items-center font-mono">
