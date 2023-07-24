@@ -15,6 +15,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@alan-ai/alan-sdk-web": "^1.8.48",
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",
     "autoprefixer": "10.4.14",
@@ -36,4 +37,4 @@
   "devDependencies": {
     "prettier": "2.8.8"
   }
-}
+} 
