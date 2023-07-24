@@ -54,7 +54,6 @@ DevsInTech offers a wide range of resources and opportunities for developers and
 >
 > - Before getting into it, make sure you have [pnpm](https://nodejs.org/download) installed.
 
-
 ### Let's jump right in🌟
 
 1. Fork the project
@@ -114,19 +113,17 @@ DevsInTech offers a wide range of resources and opportunities for developers and
 
 ### Setup using Docker
 
-  * Enter the root directory
+- Enter the root directory
 
-    ```sh
-    docker build .
+  ```sh
+  docker build .
 
-    ```
+  ```
 
-    
-    ```sh
-    docker run -p 3000:80 <Image>
-    ```
+  ```sh
+  docker run -p 3000:80 <Image>
+  ```
 
-    
 # Contribute
 
 We welcome contributions in our community. Learn how to start contributing, from installing the project on your device to submitting a pull request with our<Link href="https://github.com/devs-in-tech/DevsInTech/blob/main/CONTRIBUTING.md"> Contribution guide.<Link/>
