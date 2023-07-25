@@ -1,27 +1,24 @@
-// alan-ai-setup.js
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
-const AlanAIProjectKey =
-  "f9b22abe4b61e7c364a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage";
+const AlanAIProjectKey = `${process.env.NEXT_PUBLIC_ALAN_AI_CHATBOT}/stage`;
 
 function AlanAIComponent() {
   useEffect(() => {
     // Load Alan AI script asynchronously when the component mounts on the client side
+    // const additionalStyles = `
+    //   .alanBtn-root {
+    //     right: 2rem !important;
+    //     bottom: 2rem !important;
+    //   }
+    // `;
 
-    const additionalStyles = `
-    .alanBtn-root {
-      right: 46px !important;
-      bottom: 150px !important;
-    }
-  `;
-
-    const styleTag = document.createElement("style");
-    styleTag.innerHTML = additionalStyles;
-    document.head.appendChild(styleTag);
+    // const styleTag = document.createElement("style");
+    // styleTag.innerHTML = additionalStyles;
+    // document.head.appendChild(styleTag);
 
     // Initialize Alan AI and handle commands once the script is loaded
     /* global alanBtn */
-    var alanBtnInstance = alanBtn({
+    const alanBtnInstance = alanBtn({
       key: AlanAIProjectKey,
       onCommand: function (commandData) {
         if (commandData && commandData.command === "openURL") {
@@ -36,9 +33,14 @@ function AlanAIComponent() {
         }
       },
     });
+
+    // Clean up the Alan AI instance when the component unmounts
+    return () => {
+      alanBtnInstance.deactivate();
+    };
   }, []);
 
-  return <div id="alan-btn" />; // This div will serve as the mount point for the Alan AI button
+  return <div id="alan-btn" className="fixed cursor-pointer bg-[#13161B] bottom-16 left-10 p-4"></div>; // This div will serve as the mount point for the Alan AI button
 }
 
 export default AlanAIComponent;
