@@ -26,6 +26,8 @@
 
 DevsInTech is a thriving and welcoming community of developers,tech professionals,and enthusiasts who share a common passion for technology. Our mission is to promote diversity and inclusiveness in the open source community by helping individuals with improving their skills and standing out in the tech space.
 
+Check out our <a href="https://devsintech.vercel.app/">website</a> to get started!
+
 ## What do we provide?✨
 
 DevsInTech offers a wide range of resources and opportunities for developers and tech enthusiasts to expand their skills, connect with peers, and advance their careers. Some of the key offerings include:
@@ -36,15 +38,91 @@ DevsInTech offers a wide range of resources and opportunities for developers and
 
 **Networking and Community Events:** We facilitate networking through meetups, conferences, and events, fostering connections, idea sharing, collaboration, and professional relationships.
 
-## Get in touch👋 
+## Get in touch👋
 
-<Link href="https://discord.com/invite/g7FmxB9uZp"><img src="https://img.icons8.com/color/2x/discord--v2.png" title="Discord" alt="Discord Community" height="60px"></img><Link/>
-<Link href="https://twitter.com/devs_in_tech"><img src="https://img.icons8.com/fluency/2x/twitter.png" title="Twitter" alt="Twitter Account" height="60px"></img><Link/>
-<Link href="https://www.linkedin.com/company/devsintech-community/mycompany/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" title="LinkedIn" alt="LinkedIn Account" height="60px"></img><Link/>
+[![Discord](https://img.icons8.com/color/2x/discord--v2.png)](https://discord.com/invite/g7FmxB9uZp)
+[![Twitter](https://img.icons8.com/fluency/2x/twitter.png)](https://twitter.com/devs_in_tech)
+[![LinkedIn](https://img.icons8.com/fluency/2x/linkedin.png)](https://www.linkedin.com/company/devsintech-community/)
 
 ## Tech stack used to build DevsInTech⚙️
 
 [![Next.js](https://img.shields.io/badge/next.js-%2320232a.svg?style=for-the-badge&logo=next.js&logoColor=%2361DAFB)](https://nextjs.org/) [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-%23326ce9.svg?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+
+## Getting Started 👩‍💻
+
+> ⚠️Prerequisites
+>
+> - Before getting into it, make sure you have [pnpm](https://nodejs.org/download) installed.
+
+### Let's jump right in🌟
+
+1. Fork the project
+2. Clone the project to run on your local machine using the following command:
+
+   ```sh
+   git clone https://github.com/<your_github_username>/DevsInTech.git
+   ```
+
+3. Get into the root directory
+
+   ```sh
+   cd DevsInTech
+   ```
+
+4. Install all dependencies by running
+
+   ```sh
+   pnpm install
+   ```
+
+5. Create your branch
+
+   ```sh
+   git checkout -b <your_branch_name>
+   ```
+
+6. Run and view the application on localhost
+
+   ```sh
+   pnpm run dev
+   ```
+
+7. Make your changes
+
+8. Stage your changes
+
+   ```sh
+   git add <filename>
+   ```
+
+9. Commit your changes
+
+   ```sh
+   git commit -m "<your-commit-message>"
+   ```
+
+10. Push your changes to your branch
+
+    ```sh
+    git push origin "<your_branch_name>"
+    ```
+
+11. Create a Pull Request.
+
+    > Click _compare across forks_ if you don't see your branch
+
+### Setup using Docker
+
+- Enter the root directory
+
+  ```sh
+  docker build .
+
+  ```
+
+  ```sh
+  docker run -p 3000:80 <Image>
+  ```
 
 # Contribute
 

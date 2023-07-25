@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaDiscord, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
+
 const HeaderSocialMedia = () => {
   return (
     <>
@@ -15,7 +16,7 @@ const HeaderSocialMedia = () => {
           <FaDiscord
             size={30}
             className="hover:scale-110 duration-300 hover:fill-[#5865F2] dark:fill-white transition-all duration-200 ease-in-out"
-            // className=" hover:fill-[#5865F2] dark:fill-white transition-all duration-200 ease-in-out"
+          // className=" hover:fill-[#5865F2] dark:fill-white transition-all duration-200 ease-in-out"
           />
         </Link>
       </div>
@@ -49,7 +50,7 @@ const HeaderSocialMedia = () => {
       </div>
       <div>
         <Link
-          href="/"
+          href="https://www.linkedin.com/company/devsintech-community/"
           target="_blank"
           aria-label="Visit us on Linkedin"
           title="Linkedin (External Link)"
@@ -60,6 +61,7 @@ const HeaderSocialMedia = () => {
             className="hover:scale-110 duration-300 hover:fill-[#0072b1] dark:fill-white transition-all duration-200 ease-in-out"
           />
         </Link>
+
       </div>
     </>
   );
