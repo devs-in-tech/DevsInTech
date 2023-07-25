@@ -6,8 +6,8 @@ export default function Main() {
   return (
     <>
       <Head>
-        <title>Devs In Tech</title>
-        <meta name="description" content="Devs In Tech Community website" />
+        <title>DevsInTech</title>
+        <meta name="description" content="DevsInTech Community website" />
         <link rel="icon" href="/logo2.png" />
       </Head>
       <Home />
