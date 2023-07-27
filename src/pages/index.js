@@ -6,10 +6,10 @@ export default function Main() {
   return (
     <>
       <Head>
-        <title>Devs In Tech</title>
+        <title>DevsInTech</title>
         <meta name="description" content="Devs In Tech promotes diversity and inclusiveness in the open source community by helping individuals with improving their skills and standing out in the tech space." />
         {/* Primary Meta Tags */}
-        <meta name="title" content="Devs In Tech" />
+        <meta name="title" content="DevsInTech" />
         <meta
         name="description"
         content="Devs In Tech promotes diversity and inclusiveness in the open source community by helping individuals with improving their skills and standing out in the tech space."
@@ -22,9 +22,9 @@ export default function Main() {
 
         {/* Open Graph / Facebook  */}
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Devs In Tech" />
+        <meta property="og:site_name" content="DevsInTech" />
         <meta property="og:url" content="https://devsintech.vercel.app/" />
-        <meta property="og:title" content="Devs In Tech" />
+        <meta property="og:title" content="DevsInTech" />
         <meta
         property="og:description"
         content="Devs In Tech promotes diversity and inclusiveness in the open source community by helping individuals with improving their skills and standing out in the tech space."
@@ -34,7 +34,6 @@ export default function Main() {
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://devsintech.vercel.app/" />
-        
         <link rel="icon" href="/logo2.png" />
       </Head>
       <Home />
