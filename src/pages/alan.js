@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const AlanAIProjectKey = `${process.env.NEXT_PUBLIC_ALAN_AI_CHATBOT}/stage`;
+const AlanAIProjectKey = `${process.env.NEXT_PUBLIC_ALAN_AI_CHATBOT}`;
 
 function AlanAIComponent() {
   useEffect(() => {
