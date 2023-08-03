@@ -17,12 +17,7 @@ const BlogAThons = () => {
             data-aos-duration="500"
           >
             <p className="team-description font-bold text-2xl text-center">
-              Join our DevsinTech community for an array of exciting online tech
-              events. Attend insightful webinars featuring industry experts,
-              dive deep into practical workshops to enhance your skills, and
-              unleash your creativity in our competitive hackathons. Engage with
-              fellow developers, expand your network, and stay updated on
-              cutting-edge technologies and industry trends.
+              Join our DevsInTech community for an array of exciting online tech events. Attend insightful webinars featuring industry experts, dive deep into practical workshops to enhance your skills, and unleash your creativity in our competitive hackathons. Engage with fellow developers, expand your network, and stay updated on cutting-edge technologies and industry trends.
             </p>
           </div>
         </div>

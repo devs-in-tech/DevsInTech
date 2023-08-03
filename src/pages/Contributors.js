@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import axios from "axios";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { BsGithub } from "react-icons/bs";
 
 const Contributors = () => {
   const [contributors, setContributors] = useState([]);
@@ -29,45 +30,28 @@ const Contributors = () => {
       <h1 className="text-5xl font-bold text-white text-center">
         Our Contributors
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-8 justify-center">
+      <div className="contributor-container relative z-[1] flex justify-center items-center flex-wrap p-[1em]">
         {contributors.map((i) => (
-          <div
-            className="flex justify-center items-center flex-col border border-white p-8 h-110 w-110 rounded-[0.7cm] transition duration-300 shadow-md hover:scale-105 hover:cursor-pointer hover:shadow-xl hover:border-white hover:border-opacity-60 hover:shadow-lg"
-            key={i.id}
-          >
-            <div className="w-36 h-36 rounded-full overflow-hidden transition duration-300 border-2 border-white">
-              <Image
-                className="object-cover transition duration-300 hover:scale-110 hover:cursor-pointer hover:border-pink-200"
-                src={i.avatar_url}
-                alt=""
-                objectFit="cover"
-                width={300}
-                height={300}
-              />
-            </div>
-            <div className="mt-5">
-              <h1 className="text-white text-2xl sm:text-3xl text-center">
-                {i.login}
-              </h1>
-            </div>
-            <div className="mt-2">
-              <h3 className="text-white text-xl sm:text-2xl text-center">
-                Commits: {i.contributions}
-              </h3>
-            </div>
+          <div className="contributor-card relative w-[300px] h-[400px] shadow-[0_15px_35px_rgba(0,0,0,0.9)] flex justify-center items-center flex-col backdrop-blur-2xl bg-clip-padding shadow-[0px_10px_10px_rgba(46,54,68,0.03)] m-[1em] rounded-[15px] border-[solid] border-transparent bg-gray-900 cursor-auto" key={i.login}>
+            <div className="contributor-content  relative flex justify-center items-center flex-col opacity-50 transition duration-[0.5s]">
+              <div class="relative w-[150px] h-[150px] overflow-hidden rounded-[50%] border-[10px] border-solid border-[rgba(0,0,0,0.25)]">
+                <Image className="absolute w-full h-full object-cover left-0 top-0" src={i.avatar_url} alt={i.login} width={300} height={300} />
+              </div>
 
-            <div className="mt-4">
-              <button className="border-2 border-white w-40 md:w-56 py-2 rounded transition duration-300 hover:scale-105 hover:border-pink-100 relative overflow-hidden mx-auto my-2 sm:my-0 sm:mx-2">
-                <a
-                  className="text-white text-2xl sm:text-3xl"
-                  href={i.html_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View
-                </a>
-              </button>
+
+              <div class="contributor-details">
+                <h3 className="text-white uppercase tracking-[2px] font-medium text-lg text-center leading-[1.1em] mt-5 mb-2.5 mx-0">
+                  {i.login}<br />
+                  <span className="text-xs font-light">Commits: {i.contributions}</span>
+                </h3>
+              </div>
             </div>
+        
+              <ul className="contributor-social-icons absolute flex justify-center items-center bottom-[50px]">
+                <li className="translate-y-10 opacity-0 transition duration-[0.5s] mx-2.5 my-0">
+                  <a href={i.html_url} target="_blank" rel="noopener noreferrer" className="text-2xl text-white"><BsGithub /></a>
+                </li>
+              </ul>
           </div>
         ))}
       </div>
