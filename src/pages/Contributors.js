@@ -37,8 +37,6 @@ const Contributors = () => {
               <div class="relative w-[150px] h-[150px] overflow-hidden rounded-[50%] border-[10px] border-solid border-[rgba(0,0,0,0.25)]">
                 <Image className="absolute w-full h-full object-cover left-0 top-0" src={i.avatar_url} alt={i.login} width={300} height={300} />
               </div>
-
-
               <div class="contributor-details">
                 <h3 className="text-white uppercase tracking-[2px] font-medium text-lg text-center leading-[1.1em] mt-5 mb-2.5 mx-0">
                   {i.login}<br />

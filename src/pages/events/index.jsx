@@ -51,7 +51,7 @@ const Events = () => {
       link: "/events/spaces",
     },
   ];
-  const [EventsData] = useState(eventsData);
+  const [EventsData, SetEventsData] = useState(eventsData);
   const FilteredData = EventsData.filter((event) =>
     event.name.toLowerCase().includes(searchInput.toLowerCase())
   );
@@ -205,3 +205,4 @@ const Events = () => {
 };
 
 export default Events;
+
