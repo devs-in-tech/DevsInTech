@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 // import img from '../../../assets/Team/Developer.jpg';
 // import Image from 'next/image';
 
@@ -16,9 +16,8 @@ const Stats = ({ stats }) => {
   }, []);
 
   return (
-    <section className='flex flex-wrap md:space-x-6 items-center justify-center'>
-      {
-        stats &&
+    <section className="flex flex-wrap md:space-x-6 items-center justify-center">
+      {stats &&
         stats.map((data, index) => {
           return (
             <div
@@ -40,17 +39,18 @@ const Stats = ({ stats }) => {
             transition-transform
             mt-4
             mb-4
-            ">
+            "
+            >
               <h2 className="mb-2 text-5xl font-bold tracking-tight text-white dark:text-white text-center">
                 {count > data.number ? data.number : count}+
               </h2>
-              <p className="font-bold text-gray-400 text-2xl mt-5 text-center">{data.name}</p>
+              <p className="font-bold text-gray-400 text-2xl mt-5 text-center">
+                {data.name}
+              </p>
             </div>
-          )
-        })
-      }
+          );
+        })}
     </section>
-
   );
 };
 

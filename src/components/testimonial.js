@@ -1,48 +1,49 @@
 import { useEffect, useState } from "react";
 import Header from "./header";
+import Image from "next/image";
 
 const testimonials = [
   {
     id: 1,
     name: "Aarav Patel",
     text: "DevsInTech's collaborative community has accelerated my learning and inspired me to tackle ambitious projects, thanks to the talented and supportive developers always ready to lend a hand.",
-    image: "boy.png",
+    image: "/boy.png",
   },
   {
     id: 2,
     name: "Aanya Gupta",
     text: "Through expert sessions at DevsInTech, I've gained valuable knowledge from industry professionals, opening doors to exciting career opportunities and enhancing my personal and professional growth.",
-    image: "girl.jpg",
+    image: "/girl.jpg",
   },
   {
     id: 3,
     name: "Rohan Sharma",
     text: "DevsInTech's code reviews have significantly improved the quality of my work, thanks to constructive feedback from experienced developers, helping me refine my coding skills and develop a more efficient style.",
-    image: "boy.png",
+    image: "/boy.png",
   },
   {
     id: 4,
     name: "Aditi Verma",
     text: "DevsInTech's hackathons have fueled my problem-solving abilities and creativity, providing an exhilarating platform to collaborate with talented developers, innovate, and showcase my skills.",
-    image: "girl.jpg",
+    image: "/girl.jpg",
   },
   {
     id: 5,
     name: "Aryan Desai",
     text: "The mentorship program at DevsInTech has transformed my development journey, with a seasoned developer guiding me, setting goals, and offering personalized support, accelerating my growth and fostering a sense of community.",
-    image: "boy.png",
+    image: "/boy.png",
   },
   {
     id: 6,
     name: "Mike Smilga",
     text: "DevsInTech's inclusive and supportive community has been a breath of fresh air for me as a beginner developer. The encouragement and guidance I've received from fellow community members have boosted my confidence and helped me overcome obstacles.",
-    image: "boy.png",
+    image: "/boy.png",
   },
   {
     id: 7,
     name: "Richard Paul",
     text: "As an experienced developer, DevsInTech has provided me with a platform to share my knowledge and give back to the community. The opportunity to mentor aspiring developers and contribute to the growth of others has been fulfilling and rewarding..",
-    image: "boy.png",
+    image: "/boy.png",
   },
 ];
 
@@ -51,10 +52,13 @@ const Testimonial = ({ testimonial }) => (
     <p className="text-white">{testimonial.text}</p>
     <div className="flex items-center mt-4">
       <div className="flex-shrink-0">
-        <img
-          className="w-12 h-12 rounded-full"
+        <Image
+          className="rounded-full"
           src={testimonial.image}
           alt={testimonial.name}
+          width={32}
+          height={32}
+        
         />
       </div>
       <div className="ml-4">

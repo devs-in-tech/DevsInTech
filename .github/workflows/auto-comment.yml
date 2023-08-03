@@ -56,5 +56,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           issuesAssigned: |
             Hello @{{ author }}, thank you for raising an issue. 🙌 Kindly wait for the maintainers to assign you the issue before starting any work on it. If you encounter any problems, please feel free to connect with us. 👍
-
-      

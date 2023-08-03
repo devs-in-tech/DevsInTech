@@ -10,7 +10,14 @@ const HeroSection = () => {
             Devs In Tech Community
           </h1>
           <p className="text-left md:text-xl font-secondary sm:text-xl text-lg text-white">
-            Welcome to DevsInTech, an all inclusive community where developers come to learn, grow, and create together. Whether you&apos;re a beginner or an experienced developer, you&apos;ll find a place here to connect, collaborate, and build new skills. With weekly coffee chats, movie nights, expert sessions, and more, we offer endless opportunities to improve your craft and connect with like-minded individuals. Join us today and become a part of a community that&apos;s all about helping you succeed.
+            Welcome to DevsInTech, an all inclusive community where developers
+            come to learn, grow, and create together. Whether you&apos;re a
+            beginner or an experienced developer, you&apos;ll find a place here
+            to connect, collaborate, and build new skills. With weekly coffee
+            chats, movie nights, expert sessions, and more, we offer endless
+            opportunities to improve your craft and connect with like-minded
+            individuals. Join us today and become a part of a community
+            that&apos;s all about helping you succeed.
           </p>
           <div className="flex flex-wrap gap-8 items-center justify-center md:justify-start">
             <Button

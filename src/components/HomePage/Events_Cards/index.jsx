@@ -55,16 +55,16 @@ function Cards() {
           {"<"}
         </button>
         <div className="flex justify-center gap-4">
-        {data &&
-          visibleCards.map((card, index) => (
-            <Card
-              key={index}
-              text={card.text}
-              img={card.img}
-              title={card.title}
-            />
-          ))}
-          </div>
+          {data &&
+            visibleCards.map((card, index) => (
+              <Card
+                key={index}
+                text={card.text}
+                img={card.img}
+                title={card.title}
+              />
+            ))}
+        </div>
         <button
           onClick={goToNext}
           className="bg-gray-800 text-white rounded-full p-3 flex justify-center items-center ml-5"
@@ -77,5 +77,3 @@ function Cards() {
 }
 
 export default Cards;
-
-
