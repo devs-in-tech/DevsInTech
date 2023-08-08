@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 const AlanAIProjectKey = `${process.env.NEXT_PUBLIC_ALAN_AI_CHATBOT}/stage`;
-console.log(AlanAIProjectKey);
+
 function AlanAIComponent() {
   useEffect(() => {
     // Load Alan AI script asynchronously when the component mounts on the client side
