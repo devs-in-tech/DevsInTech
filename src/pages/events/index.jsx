@@ -88,15 +88,11 @@ const Events = () => {
             data-aos-duration="500"
           >
             <h1 className="text-5xl mb-7 font-bold text-blue-500">Features</h1>
-            <ul className="team-description font-bold text-3xl">
+            <p className="team-description text-left ml-3 text-3xl">
               <li className="mb-5">Networking Opportunities</li>
               <li className="mb-5">Learning from Industry Experts</li>
-              <li className="mb-5">
-                Collaboration and Partnership Opportunities
-              </li>
-              <li className="mb-5">
-                Stay Up-to-Date with the Latest Tech Trends
-              </li>
+              <li className="mb-5">Collaboration and Partnership <span className="ml-10">Opportunities</span> </li>
+              <li className="mb-5">Stay Up-to-Date with the Latest Tech Trends</li>
               <li className="mb-5">Expand Your Knowledge and Skillset</li>
             </ul>
           </div>
