@@ -9,7 +9,7 @@ body:
       label: Description
       description: A clear and concise description of any alternative solution or features you've considered.
     validations:
-      required: 
+      required: true
   - type: textarea
     id: screenshots
     attributes:
@@ -24,7 +24,7 @@ body:
       description: Add any other context or anything else about this idea
     validations:
       required: false
- - type: checkboxes
+  - type: checkboxes
     id: terms
     attributes:
       label: Code of Conduct
