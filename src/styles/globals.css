@@ -110,4 +110,12 @@ body {
   background: linear-gradient(#a569f4,#A7DEB6);
   background-clip: content-box;
 }
+.contributor-container .contributor-card:hover .contributor-content {
+  opacity: 1;
+  transform: translateY(-20px);
+}
 
+.contributor-container .contributor-card:hover .contributor-social-icons li {
+  transform: translateY(0px);
+  opacity: 1;
+}
