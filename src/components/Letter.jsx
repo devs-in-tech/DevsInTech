@@ -5,22 +5,38 @@ import { useState } from "react";
 export default function Letter() {
   const [email, setEmail] = useState("");
   const [subscriptionSuccess, setSubscriptionSuccess] = useState(false);
+  const [error, seterror] = useState("");
+
+  function validEmail(email) {
+    let re =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (re.test(email)) return true;
+    else return false;
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Make the POST request using Axios
-    axios
-      .post("/api/subscribes", { email })
-      .then((response) => {
-        // Handle the success response here
-        console.log(response.data);
-        setSubscriptionSuccess(true);
-      })
-      .catch((error) => {
-        // Handle the error here
-        console.error(error);
-      });
+
+    if (email === "") {
+      seterror("**E-mail is Required!");
+    } else if (!validEmail(email)) {
+      seterror("**Enter a valid E-mail!");
+    }
+    else {
+      // Make the POST request using Axios
+      axios
+        .post("/api/subscribes", { email })
+        .then((response) => {
+          // Handle the success response here
+          console.log(response.data);
+          setSubscriptionSuccess(true);
+        })
+        .catch((error) => {
+          // Handle the error here
+          console.error(error);
+        });
+    }
   };
 
   const handleEmailChange = (e) => {
@@ -91,12 +107,20 @@ export default function Letter() {
                     <button
                       type="submit"
                       className="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 bg-gradient-to-r from-indigo-800 to-purple-500"
+                      onClick={handleSubmit}
                     >
                       Subscribe
                     </button>
                   </div>
                 </div>
               </form>
+              {error === "**E-mail is Required!" && (
+                <small className="text-lg font-medium text-red-400">**E-mail is Required!</small>
+              )}
+
+              {error === "**Enter a valid E-mail!" && (
+                <small className="text-lg font-medium text-red-400">**Enter a valid E-mail!</small>
+              )}
             </>
           )}
         </div>
