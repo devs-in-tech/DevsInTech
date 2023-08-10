@@ -1,5 +1,5 @@
 name: "Style Changing Request"
-description: "Suggest a style designs"
+description: "Suggest style designs"
 title: "[style]: "
 labels: ["style"]
 body:
@@ -12,14 +12,14 @@ body:
     attributes:
       label: What's the style idea?
       placeholder: Add descriptions
-      value: "We need to improve  "
+      value: "We need to improve "
     validations:
       required: true
   - type: textarea
     id: screenshots
     attributes:
       label: Add screenshots
-      description: Add screenshots to see the demo
+      description: Add screenshots to showcase the style
       placeholder: Add screenshots
       value: "Add screenshots"
   - type: checkboxes
@@ -29,12 +29,10 @@ body:
       description: By submitting this issue, you agree to follow our Code of Conduct
       options:
         - label: "I agree to follow this project's Code of Conduct"
-        
-- type: checkboxes
+  - type: checkboxes
     id: gssoc
     attributes:
-      label: gssoc23 
+      label: GSSoC'23
       description: "This is for GSSoC'23 contributors only."
       options:
-        - label: "I am a GSSOC'23 Contributor."
-        
+        - label: "I am a GSSoC'23 Contributor."
