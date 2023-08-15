@@ -18,7 +18,7 @@ function AlanAIComponent() {
 
     // Initialize Alan AI and handle commands once the script is loaded
     /* global alanBtn */
-    const alanBtnInstance = alanBtn({
+    /* const alanBtnInstance = alanBtn({
       key: AlanAIProjectKey,
       onCommand: function (commandData) {
         if (commandData && commandData.command === "openURL") {
@@ -37,7 +37,7 @@ function AlanAIComponent() {
     // Clean up the Alan AI instance when the component unmounts
     return () => {
       alanBtnInstance.deactivate();
-    };
+    }; */
   }, []);
 
   return <div id="alan-btn" className="fixed cursor-pointer bg-[#13161B] bottom-16 left-10 p-4"></div>; // This div will serve as the mount point for the Alan AI button
