@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import axios from "axios";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { BsGithub } from "react-icons/bs";
 
@@ -31,13 +32,13 @@ const Contributors = () => {
       </h1>
       <div className="contributor-container relative z-[1] flex justify-center items-center flex-wrap p-[1em]">
         {contributors.map((i) => (
-          <div className="contributor-card relative w-[300px] h-[400px] shadow-[0_15px_35px_rgba(0,0,0,0.9)] flex justify-center items-center flex-col backdrop-blur-2xl bg-clip-padding shadow-[0px_10px_10px_rgba(46,54,68,0.03)] m-[1em] rounded-[15px] border-[solid] border-transparent bg-gray-900 cursor-auto" key={i.login}>
+          <div className="contributor-card relative w-[300px] h-[400px] shadow-[0_15px_35px_rgba(0,0,0,0.9)] flex justify-center items-center flex-col backdrop-blur-2xl bg-clip-padding  m-[1em] rounded-[15px]  bg-gray-900 cursor-auto" key={i.login}>
             <div className="contributor-content  relative flex justify-center items-center flex-col opacity-50 transition duration-[0.5s]">
-              <div class="relative w-[150px] h-[150px] overflow-hidden rounded-[50%] border-[10px] border-solid border-[rgba(0,0,0,0.25)]">
-                <img className="absolute w-full h-full object-cover left-0 top-0" src={i.avatar_url} alt={i.login} />
+              <div className="relative w-[150px] h-[150px] overflow-hidden rounded-[50%] border-[10px] border-solid border-[rgba(0,0,0,0.25)]">
+                <Image className="absolute w-full h-full object-cover left-0 top-0" src={i.avatar_url} alt={i.login} width={400} height={400} />
               </div>
 
-              <div class="contributor-details">
+              <div className="contributor-details">
                 <h3 className="text-white uppercase tracking-[2px] font-medium text-lg text-center leading-[1.1em] mt-5 mb-2.5 mx-0">
                   {i.login}<br />
                   <span className="text-xs font-light">Commits: {i.contributions}</span>

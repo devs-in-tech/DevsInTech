@@ -15,7 +15,7 @@ const Navbar = () => {
   ];
   let [open, setOpen] = useState(false);
   return (
-    <div className="w-full z-999 top-0 left-0 sticky bg-black bg-opacity-75 shadow-lg">
+    <div className="w-full z-999 top-0 left-0 sticky bg-black/75 backdrop-blur-sm shadow-lg">
       <div className="md:flex md:items-center md:justify-between py-4 px-7">
         <div className="font-bold text-base cursor-pointer flex flex-col md:items-center font-secondary text-white">
           <span>
@@ -37,7 +37,7 @@ const Navbar = () => {
             >
               <Link
                 href={link.link}
-                className="text-white font-3 hover:text-transparent bg-clip-text bg-gradient-to-r from-[#AF7AF2] via-[#A5F7A8] to-[#AF7AF2] duration-200 relative  transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-1 before:opacity-0  before:transition-all before:duration-500 before:bg-gradient-to-r hover:before:w-full  hover:before:opacity-100"
+                className="text-white font-3 hover:text-transparent bg-clip-text bg-gradient-to-r from-[#AF7AF2] via-[#A5F7A8] to-[#AF7AF2] relative  transition-all duration-200 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-1 before:opacity-0  before:transition-all before:duration-500 before:bg-gradient-to-r hover:before:w-full  hover:before:opacity-100"
               >
                 {link.name}
               </Link>
