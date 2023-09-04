@@ -42,95 +42,11 @@ const Footer = () => {
             technology. We are an Open-source project available on{" "}
             <a href="https://github.com/devs-in-tech/DevsInTech" className="text-blue-500">GitHub</a>
           </p>
-              <ul className="mt-6 flex justify-center gap-6 md:justify-start md:gap-8">
-            <li>
-              <Link
-                href="/"
-                rel="noreferrer"
-                target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
-              >
-                <FaFacebookF size={20} />
-              </Link>
-            </li>
 
-            <li>
-              <Link
-                href="https://twitter.com/devs_in_tech"
-                aria-label="Visit us on Twitter"
-                title="Twitter (External Link)"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
-              >
-                <FaTwitter size={20} />
-              </Link>
-            </li>
-
-            {/* LinkedIn Icon */}
-
-            <li>
-              <Link
-                href="https://www.linkedin.com/company/devsintech-community/"
-                target="_blank"
-                aria-label="Visit us on Linkedin"
-                title="Linkedin (External Link)"
-                rel="noopener noreferrer"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
-              >
-                <FaLinkedinIn size={20} />
-              </Link>
-            </li>
-
-            {/* Instagram icon */}
-
-            <li>
-              <Link
-                href="/"
-                aria-label="Visit us on Instagram"
-                title="Instagram (External Link)"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
-              >
-                <FaInstagram size={20} />
-              </Link>
-            </li>
-
-            {/* Discord icon */}
-
-            <li>
-              <Link
-                href="https://discord.com/invite/g7FmxB9uZp"
-                aria-label="Join with us on Discord"
-                title="Discord (External Link)"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
-              >
-                <FaDiscord size={20} />
-              </Link>
-            </li>
-
-            {/* GitHub icon */}
-
-            <li>
-              <Link
-                href="https://github.com/devs-in-tech/DevsInTech"
-                aria-label="Join with us on GitHub"
-                title="GitHub (External Link)"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
-              >
-                <FaGithub size={20} />
-              </Link>
-            </li>
-          </ul>
         </div>
 
         {/* COLUMNS */}
-        <div className="m-auto">
+        <div className="m-6">
           <div className="flex justify-center gap-16">
             <div className="text-center font-secondary">
               <p className="text-lg font-medium text-white">Community</p>
@@ -243,75 +159,87 @@ const Footer = () => {
         </div>
       </div>
       <ul className="mt-6 flex justify-center text-center gap-6 md:justify-center md:gap-8">
-            <li>
-              <Link
-                href="/"
-                rel="noreferrer"
-                target="_blank"
-                className="text-blue-500 transition hover:text-blue-700/75 dark:text-white dark:hover:text-gray-100/90"
-              >
-                <FaFacebookF size={30} />
-              </Link>
-            </li>
+        <li>
+          <Link
+            href="/"
+            rel="noreferrer"
+            target="_blank"
+            className="text-blue-500 transition hover:text-blue-700/75 dark:text-white dark:hover:text-gray-100/90"
+          >
+            <FaFacebookF size={30} />
+          </Link>
+        </li>
 
-            <li>
-              <Link
-                href="https://twitter.com/devs_in_tech"
-                aria-label="Visit us on Twitter"
-                title="Twitter (External Link)"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="text-sky-500 transition hover:text-sky-700/75 dark:text-white dark:hover:text-gray-100/90"
-              >
-                <FaTwitter size={30} />
-              </Link>
-            </li>
+        <li>
+          <Link
+            href="https://twitter.com/devs_in_tech"
+            aria-label="Visit us on Twitter"
+            title="Twitter (External Link)"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="text-sky-500 transition hover:text-sky-700/75 dark:text-white dark:hover:text-gray-100/90"
+          >
+            <FaTwitter size={30} />
+          </Link>
+        </li>
 
-            {/* LinkedIn Icon */}
+        {/* LinkedIn Icon */}
 
-            <li>
-              <Link
-                href="https://www.linkedin.com/company/devsintech-community/"
-                target="_blank"
-                aria-label="Visit us on Linkedin"
-                title="Linkedin (External Link)"
-                rel="noopener noreferrer"
-                className="text-blue-800 transition hover:text-blue-900/75 dark:text-white dark:hover:text-gray-100/90"
-              >
-                <FaLinkedinIn size={30} />
-              </Link>
-            </li>
+        <li>
+          <Link
+            href="https://www.linkedin.com/company/devsintech-community/"
+            target="_blank"
+            aria-label="Visit us on Linkedin"
+            title="Linkedin (External Link)"
+            rel="noopener noreferrer"
+            className="text-blue-800 transition hover:text-blue-900/75 dark:text-white dark:hover:text-gray-100/90"
+          >
+            <FaLinkedinIn size={30} />
+          </Link>
+        </li>
 
-            {/* Instagram icon */}
+        {/* Instagram icon */}
 
-            <li>
-              <Link
-                href="/"
-                aria-label="Visit us on Instagram"
-                title="Instagram (External Link)"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="text-red-500 transition hover:text-red-700/75 dark:text-white dark:hover:text-gray-100/90"
-              >
-                <FaInstagram size={30} />
-              </Link>
-            </li>
+        <li>
+          <Link
+            href="/"
+            aria-label="Visit us on Instagram"
+            title="Instagram (External Link)"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="text-red-500 transition hover:text-red-700/75 dark:text-white dark:hover:text-gray-100/90"
+          >
+            <FaInstagram size={30} />
+          </Link>
+        </li>
 
-            {/* Discord icon */}
+        {/* Discord icon */}
 
-            <li>
-              <Link
-                href="https://discord.com/invite/g7FmxB9uZp"
-                aria-label="Join with us on Discord"
-                title="Discord (External Link)"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="text-blue-500 transition hover:text-blue-700/75 dark:text-white dark:hover:text-gray-100/90"
-              >
-                <FaDiscord size={30} />
-              </Link>
-            </li>
-          </ul>
+        <li>
+          <Link
+            href="https://discord.com/invite/g7FmxB9uZp"
+            aria-label="Join with us on Discord"
+            title="Discord (External Link)"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="text-blue-500 transition hover:text-blue-700/75 dark:text-white dark:hover:text-gray-100/90"
+          >
+            <FaDiscord size={30} />
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="https://github.com/devs-in-tech/DevsInTech"
+            aria-label="Join with us on GitHub"
+            title="GitHub (External Link)"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="text-black transition hover:text-gray-700/75 dark:text-white dark:hover:text-gray-100/90"
+          >
+            <FaGithub size={30} />
+          </Link>
+        </li>
+      </ul>
       <div className="mt-12 mb-0">
         <div className="text-center font-thin sm:flex sm:justify-center sm:text-center">
           <p className="mt-4 text-xl text-white dark:text-white sm:order-first sm:mt-0">
