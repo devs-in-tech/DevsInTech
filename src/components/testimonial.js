@@ -47,7 +47,7 @@ const testimonials = [
 ];
 
 const Testimonial = ({ testimonial }) => (
-  <div className=" bg-black p-4 rounded-xl delay-150 hover:-translate-y-1 duration-300 hover:scale-110 md:m-6 m-2 mt-8 h-80 w-[375px] border-2 border-white  text-lg text-center justify-center items-center">
+  <div className=" bg-black p-4 rounded-xl delay-150 hover:-translate-y-1 duration-300 hover:scale-110 md:m-6 m-2 mt-8 h-96 w-auto border-2 border-white  text-lg text-center justify-center items-center">
     <p className="text-white">{testimonial.text}</p>
     <div className="flex justify-center mt-8">
       <div className="flex-shrink-0">
@@ -122,7 +122,13 @@ const TestimonialCarousel = () => {
   return (
     <div className="py-10">
       <Header name="What Our Members Say About Us" />
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex items-center justify-center">
+        <button
+          onClick={goToPrev}
+          className="bg-gray-800 text-white rounded-full p-3 flex justify-center items-center mr-2"
+        >
+          {"<"}
+        </button>
         <div className="flex items-center mb-6 mx-auto">
           {visibleTestimonials.map((testimonial) => (
             <div key={testimonial.id}>
@@ -130,14 +136,20 @@ const TestimonialCarousel = () => {
             </div>
           ))}
         </div>
+        <button
+          onClick={goToNext}
+          className="bg-gray-800 text-white rounded-full p-3 flex justify-center items-center mr-2"
+        >
+          {">"}
+        </button>
       </div>
       <div className="flex justify-center items-center gap-4">
-        <button
+        {/* <button
           onClick={goToPrev}
           className="bg-gray-800 text-white rounded-full p-3 flex justify-center items-center mr-2"
         >
           {"<"}
-        </button>
+        </button> */}
         <div className="flex justify-center">
           {testimonials.map((testimonial, index) => (
             <div
@@ -149,12 +161,12 @@ const TestimonialCarousel = () => {
             ></div>
           ))}
         </div>
-        <button
+        {/* <button
           onClick={goToNext}
           className="bg-gray-800 text-white rounded-full p-3 flex justify-center items-center mr-2"
         >
           {">"}
-        </button>
+        </button> */}
       </div>
     </div>
   );
