@@ -51,7 +51,7 @@ const Events = () => {
       link: "/events/spaces",
     },
   ];
-  const [EventsData, SetEventsData] = useState(eventsData);
+  const [EventsData,] = useState(eventsData);
   const FilteredData = EventsData.filter((event) =>
     event.name.toLowerCase().includes(searchInput.toLowerCase())
   );
@@ -88,7 +88,7 @@ const Events = () => {
             data-aos-duration="500"
           >
             <h1 className="text-5xl mb-7 font-bold text-blue-500">Features</h1>
-            <p className="team-description text-left ml-3 text-3xl">
+            <ul className="team-description text-left ml-3 text-3xl">
               <li className="mb-5">Networking Opportunities</li>
               <li className="mb-5">Learning from Industry Experts</li>
               <li className="mb-5">Collaboration and Partnership <span className="ml-10">Opportunities</span> </li>
