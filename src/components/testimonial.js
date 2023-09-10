@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Header from "./header";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -51,10 +52,12 @@ const Testimonial = ({ testimonial }) => (
     <p className="text-white">{testimonial.text}</p>
     <div className="flex justify-center mt-8">
       <div className="flex-shrink-0">
-        <img
+        <Image
           className="w-12 h-12 rounded-full"
-          src={testimonial.image}
+          src={`/${testimonial.image}`}
           alt={testimonial.name}
+          width={48}
+          height={48}
         />
       </div>
       <div className="ml-4">

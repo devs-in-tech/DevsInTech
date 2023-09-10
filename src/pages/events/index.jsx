@@ -51,7 +51,7 @@ const Events = () => {
       link: "/events/spaces",
     },
   ];
-  const [EventsData, SetEventsData] = useState(eventsData);
+  const [EventsData,] = useState(eventsData);
   const FilteredData = EventsData.filter((event) =>
     event.name.toLowerCase().includes(searchInput.toLowerCase())
   );
@@ -59,23 +59,12 @@ const Events = () => {
   return (
     <>
       <Navbar />
-      <div style={{ marginTop: 100, color: "white", alignItems: "center" }}>
-        <h1 className="text-5xl font-bold text-center text-blue-500">
-          Welcome to the DevsinTech Community Events Page!
-        </h1>
-        <div className="w-[100%] flex flex-wrap mx-auto justify-center items-center mt-26 py-8 mb-5 max-w-screen-2xl format-card">
-          <div
-            className="md:w-2/3 ml-5"
-            data-aos="fade-left"
-            data-aos-duration="500"
-          >
+      <div style={{ marginTop: 100, color: 'white', alignItems: 'center' }}>
+        <h1 className="text-5xl font-bold text-center text-blue-500">Welcome to the DevsInTech Community Events Page!</h1>
+        <div className='w-[100%] flex flex-wrap mx-auto justify-center items-center mt-26 py-8 mb-5 max-w-screen-2xl format-card'>
+          <div className="md:w-2/3 ml-5" data-aos="fade-left" data-aos-duration="500">
             <p className="team-description font-bold text-2xl text-center">
-              At DevsinTech, we believe in fostering a vibrant and inclusive
-              community of tech enthusiasts, developers, and industry
-              professionals. Our events are designed to bring together
-              like-minded individuals to learn, share knowledge, and network.
-              <br></br> Join our community to stay updated on the latest tech
-              trends, expand your skillset, and connect with fellow developers.
+              At DevsInTech, we believe in fostering a vibrant and inclusive community of tech enthusiasts, developers, and industry professionals. Our events are designed to bring together like-minded individuals to learn, share knowledge, and network.<br></br> Join our community to stay updated on the latest tech trends, expand your skillset, and connect with fellow developers.
             </p>
           </div>
         </div>
@@ -99,15 +88,11 @@ const Events = () => {
             data-aos-duration="500"
           >
             <h1 className="text-5xl mb-7 font-bold text-blue-500">Features</h1>
-            <ul className="team-description font-bold text-3xl">
+            <ul className="team-description text-left ml-3 text-3xl">
               <li className="mb-5">Networking Opportunities</li>
               <li className="mb-5">Learning from Industry Experts</li>
-              <li className="mb-5">
-                Collaboration and Partnership Opportunities
-              </li>
-              <li className="mb-5">
-                Stay Up-to-Date with the Latest Tech Trends
-              </li>
+              <li className="mb-5">Collaboration and Partnership <span className="ml-10">Opportunities</span> </li>
+              <li className="mb-5">Stay Up-to-Date with the Latest Tech Trends</li>
               <li className="mb-5">Expand Your Knowledge and Skillset</li>
             </ul>
           </div>
@@ -124,7 +109,7 @@ const Events = () => {
         >
           Search
         </label>
-        <div className="relative w-[87vw] mx-auto mb-[8rem]   mr-[7.5rem] mt-[3rem] ">
+        <div className="relative w-[87vw] mx-auto mb-[8rem] mr-[7.5rem] mt-[3rem] ">
           <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
             <svg
               className="w-4 h-4 text-gray-500 dark:text-gray-400"
