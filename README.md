@@ -2,9 +2,9 @@
 
 <p align="center"><Link href="/"><img src="https://user-images.githubusercontent.com/76242769/233774732-447713dd-db8d-4c95-9c66-827ef84cbcf8.png" title="Logo" alt="Logo" height="150px"/><Link/></p>
 <div align="center">
-<img src="https://forthebadge.com/images/badges/built-with-love.svg" />
+<!-- <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
 <img src="https://forthebadge.com/images/badges/uses-brains.svg" />
-<img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" />
+<img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" /> -->
    <br>
    <img src="https://img.shields.io/github/repo-size/devs-in-tech/DevsInTech?style=for-the-badge" />
    <img src="https://img.shields.io/github/issues/devs-in-tech/DevsInTech?style=for-the-badge" />
