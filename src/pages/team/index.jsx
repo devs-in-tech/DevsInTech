@@ -1,13 +1,14 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import TeamPage from "@/components/TeamPage";
+import Revealingsoon from "@/components/revealingsoon";
 import ScrollToTop from "@/components/ScrollToTop";
 
 const Team = () => {
   return (
     <>
       <Navbar />
-      <TeamPage />
+      {/* <TeamPage /> */}
+      <Revealingsoon />
       <ScrollToTop />
       <Footer />
     </>
