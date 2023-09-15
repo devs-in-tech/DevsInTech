@@ -40,7 +40,12 @@ function AlanAIComponent() {
     };
   }, []);
 
-  return <div id="alan-btn" className="fixed cursor-pointer bg-[#13161B] bottom-16 left-10 p-4"></div>; // This div will serve as the mount point for the Alan AI button
+  return (
+    <div
+      id="alan-btn"
+      className="fixed cursor-pointer bg-[#13161B] bottom-16 left-10 p-4"
+    ></div>
+  ); // This div will serve as the mount point for the Alan AI button
 }
 
 export default AlanAIComponent;
