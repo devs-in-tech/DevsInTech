@@ -1,107 +1,24 @@
 import Footer from "@/components/Footer";
+import Header from "@/components/header";
+import Card from "@/components/HomePage/Events_Cards/card";
 import Navbar from "@/components/Navbar";
 import ScrollToTop from "@/components/ScrollToTop";
-import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
-import about from "../../../public/about.png";
-import blog from "../../../public/blog.jpg";
-import coffee from "../../../public/coffee.jpg";
-import quiz from "../../../public/quiz.jpg";
-import spaces from "../../../public/spaces.jpg";
-import tech from "../../../public/tech-events.jpg";
+import EventData from "../../components/content/events";
 
 const Events = () => {
   const [searchInput, setSearchInput] = useState("");
 
-  const eventsData = [
-    {
-      name: "Webinars",
-      description:
-        "Webinars are highly valuable resources for individuals interested in technology and software development. We conduct webinars at regular intervals for individuals looking to enhance their technical skills.",
-      image: tech,
-      link: "/events/tech",
-    },
-    {
-      name: "Blog-a-thons",
-      description:
-        "Participate in our thrilling Blog-a-thon event, where passionate writers and tech enthusiasts come together to showcase their expertise and share their insights on trending tech topics.",
-      image: blog,
-      link: "/events/blogathon",
-    },
-    {
-      name: "Quiz Nights",
-      description:
-        "Participate in our thrilling Blog-a-thon event, where passionate writers and tech enthusiasts come together to showcase their expertise and share their insights on trending tech topics.",
-      image: quiz,
-      link: "/events/quiz",
-    },
-    {
-      name: "Coffee Chats",
-      description:
-        "Unwind and engage in meaningful conversations with our Coffee Chats, where you can connect with fellow tech enthusiasts in a relaxed and informal setting.",
-      image: coffee,
-      link: "/events/coffee",
-    },
-    {
-      name: "Twitter Spaces",
-      description:
-        "Unwind and engage in meaningful conversations with our Coffee Chats, where you can connect with fellow tech enthusiasts in a relaxed and informal setting.",
-      image: spaces,
-      link: "/events/spaces",
-    },
-  ];
-  const [EventsData,] = useState(eventsData);
-  const FilteredData = EventsData.filter((event) =>
-    event.name.toLowerCase().includes(searchInput.toLowerCase())
+
+  const [Data,] = useState(EventData);
+  const FilteredData = Data.filter((event) =>
+    event.title.toLowerCase().includes(searchInput.toLowerCase())
   );
 
   return (
     <>
       <Navbar />
-      <div style={{ marginTop: 100, color: 'white', alignItems: 'center' }}>
-        <h1 className="text-5xl font-bold text-center text-blue-500">Welcome to the DevsInTech Community Events Page!</h1>
-        <div className='w-[100%] flex flex-wrap mx-auto justify-center items-center mt-26 py-8 mb-5 max-w-screen-2xl format-card'>
-          <div className="md:w-2/3 ml-5" data-aos="fade-left" data-aos-duration="500">
-            <p className="team-description font-bold text-2xl text-center">
-              At DevsInTech, we believe in fostering a vibrant and inclusive community of tech enthusiasts, developers, and industry professionals. Our events are designed to bring together like-minded individuals to learn, share knowledge, and network.<br></br> Join our community to stay updated on the latest tech trends, expand your skillset, and connect with fellow developers.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div
-        className="book-formats-container"
-        style={{ marginTop: 100, color: "white" }}
-      >
-        <div className="w-11/12 flex flex-wrap mx-auto justify-center items-center mt-26 py-8 mb-5 max-w-screen-2xl format-card">
-          <div className="" data-aos="fade-right" data-aos-duration="500">
-            <Image
-              src={about}
-              className="team-member-image rounded-lg"
-              alt="team"
-            />
-          </div>
-          <div
-            className="md:w-1/2 ml-5 items-center text-center"
-            data-aos="fade-left"
-            data-aos-duration="500"
-          >
-            <h1 className="text-5xl mb-7 font-bold text-blue-500">Features</h1>
-            <ul className="team-description text-left ml-3 text-3xl">
-              <li className="mb-5">Networking Opportunities</li>
-              <li className="mb-5">Learning from Industry Experts</li>
-              <li className="mb-5">Collaboration and Partnership <span className="ml-10">Opportunities</span> </li>
-              <li className="mb-5">Stay Up-to-Date with the Latest Tech Trends</li>
-              <li className="mb-5">Expand Your Knowledge and Skillset</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <h1 className="text-6xl font-bold text-center text-blue-500 mt-10 py-4">
-        Explore our Events!
-      </h1>
+      <Header name="Explore our events" />
       <form>
         <label
           htmlFor="default-search"
@@ -148,49 +65,12 @@ const Events = () => {
 
       <div className="grid md:grid-cols-2 my-10 lg:grid-cols-3 gap-6 max-w-xs md:max-w-full m-auto">
         {FilteredData.map((event, index) => (
-          <div
+          <Card
             key={index}
-            className="max-w-sm border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-          >
-            <Link href={event.link}>
-              <Image
-                className="rounded-t-lg"
-                src={event.image}
-                alt=""
-                height={4000}
-                width={6000}
-              />
-            </Link>
-            <div className="p-5">
-              <Link href={event.link}>
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-white text-center">
-                  {event.name}
-                </h5>
-              </Link>
-              <p className="mb-5 font-medium text-gray-400 text-lg text-justify">
-                {event.description}
-              </p>
-              <Link
-                href={event.link}
-                className="relative w-max items-center py-3 px-7 font-medium transition-all duration-75 group flex flex-row gap-1 bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 outline-none text-white"
-              >
-                Explore...
-                <svg
-                  aria-hidden="true"
-                  className="w-4 h-4 ml-2 -mr-1"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </Link>
-            </div>
-          </div>
+            text={event.text}
+            img={event.img}
+            title={event.title}
+          />
         ))}
       </div>
 
