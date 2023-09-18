@@ -10,7 +10,7 @@ const Card = (props) => {
           alt=""
         />
         <div className="mt-5">
-          <h3 className="text-3 xl font-bold mb-3 text-[#A5F7A8]">
+          <h3 className="text-xl font-bold mb-3 text-[#A5F7A8]">
             {props.title}
           </h3>
           <p className="text-lg font-normal text-white ">{props.text}</p>
