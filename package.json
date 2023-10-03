@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@alan-ai/alan-sdk-web": "^1.8.48",
-    "@commitlint/cli": "^17.6.6",
+    "@commitlint/cli": "^17.7.2",
     "@commitlint/config-conventional": "^17.6.6",
     "autoprefixer": "10.4.14",
     "axios": "^1.4.0",
