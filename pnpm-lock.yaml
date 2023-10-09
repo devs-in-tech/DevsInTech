@@ -36,8 +36,8 @@ dependencies:
     specifier: 13.4.8
     version: 13.4.8(react-dom@18.2.0)(react@18.2.0)
   pnpm:
-    specifier: ^8.6.10
-    version: 8.6.10
+    specifier: ^8.9.0
+    version: 8.9.0
   postcss:
     specifier: 8.4.24
     version: 8.4.24
@@ -2905,8 +2905,8 @@ packages:
     engines: {node: '>= 6'}
     dev: false
 
-  /pnpm@8.6.10:
-    resolution: {integrity: sha512-EBlPdgrAqmIDK6lflNm8M4lueWGM4PKJIDngt6vJ1+fmzh3e0482tg52nUjiuGvkzZ2sngA181GLqknXhAHgIg==}
+  /pnpm@8.9.0:
+    resolution: {integrity: sha512-74hZk44fBTe5/PAwkEQxE5Lzs4s0QXbmzU/e4hsiVSSwrCobCK4q4t3Vs/9LjKSW1neOlQ8+fJ9VW4EyWYJEHA==}
     engines: {node: '>=16.14'}
     hasBin: true
     dev: false
