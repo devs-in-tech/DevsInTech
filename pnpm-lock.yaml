@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@alan-ai/alan-sdk-web':
-    specifier: ^1.8.53
-    version: 1.8.53
+    specifier: ^1.8.54
+    version: 1.8.54
   '@commitlint/cli':
     specifier: ^17.8.0
     version: 17.8.0
@@ -72,8 +72,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /@alan-ai/alan-sdk-web@1.8.53:
-    resolution: {integrity: sha512-T3cIDvC1fBy/iS7TyygyQHRJk78GqMdE0IgxIeLm6tIW5MOZp4c+ZmzHZB0ODmEE1HKaHB0MxoK3aLU7m8QMXg==}
+  /@alan-ai/alan-sdk-web@1.8.54:
+    resolution: {integrity: sha512-dcZBXMHkY8BBBO1xaZVdzkPhIh6bastvWjT6LrJrzDIoB7XwegxGtEonqBW0je6o7WBoGipNzEoiQi6F2r/+7w==}
     dev: false
 
   /@alloc/quick-lru@5.2.0:
