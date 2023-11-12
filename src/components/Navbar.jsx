@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import Logo from "../../public/logo2.png";
+import Logo from "../../public/new_logo.png";
 import HeaderSocialMedia from "./HeaderSocialMedia";
 
 const Navbar = () => {
@@ -19,15 +19,20 @@ const Navbar = () => {
       <div className="md:flex md:items-center md:justify-between py-4 px-7">
         <div className="font-bold text-base cursor-pointer flex flex-col md:items-center font-secondary text-white">
           <span>
-            <Image className="h-14 w-14" src={Logo} alt="" />
+            <Image
+              className="h-14 w-14"
+              src={Logo}
+              alt=""
+              style={{ borderRadius: '10%' }}
+            />
+
           </span>
           DevsInTech
         </div>
 
         <ul
-          className={`md:flex md:items-center md:pb-0 px-20 md:px-0 pb-12 md:justify-center absolute md:static md:z-auto left-0 w-full transition-all duration-500 ease-in ${
-            open ? "top-24 bg-black" : "top-[-550px]"
-          }`}
+          className={`md:flex md:items-center md:pb-0 px-20 md:px-0 pb-12 md:justify-center absolute md:static md:z-auto left-0 w-full transition-all duration-500 ease-in ${open ? "top-24 bg-black" : "top-[-550px]"
+            }`}
         >
           {Links.map((link) => (
             <li
