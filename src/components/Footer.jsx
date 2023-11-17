@@ -8,7 +8,7 @@ import {
   FaLinkedinIn,
   FaTwitter
 } from "react-icons/fa";
-import logo from "../../public/Images/logo.jpg";
+import logo from "../../public/new_logo.png";
 
 const Footer = () => {
   let year = new Date().getFullYear();
@@ -25,6 +25,7 @@ const Footer = () => {
               width={100}
               height={120}
               className="mx-auto"
+              style={{ borderRadius: '12%' }}
             />
             <p className="text-green-500 text-2xl text-center justify-items-center font-mono">
               DevsInTech
