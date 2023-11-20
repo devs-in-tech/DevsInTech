@@ -20,7 +20,7 @@
     "@commitlint/config-conventional": "^17.6.6",
     "autoprefixer": "10.4.14",
     "axios": "^1.4.0",
-    "eslint": "8.51.0",
+    "eslint": "8.54.0",
     "eslint-config-next": "13.4.12",
     "framer-motion": "^10.16.4",
     "husky": "^8.0.3",
